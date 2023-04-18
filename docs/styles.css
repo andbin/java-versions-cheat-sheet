@@ -1,0 +1,16 @@
+.card .card-list { margin-bottom: 0; }
+.card-body h5 .value { font-weight: 600; }
+.card-body li .value { font-weight: 600; }
+.card-box:target .card { -webkit-box-shadow: 0px 0px 12px -2px #666; -moz-box-shadow: 0px 0px 12px -2px #666; -o-box-shadow: 0px 0px 12px -2px #666; box-shadow: 0px 0px 12px -2px #666; }
+.fa-bootstrap { color: black; }
+.fa-file-arrow-down { color: forestgreen; }
+.fa-file-pdf { color: #b30b00; }
+.fa-font-awesome { color: black; }
+.ico-left { padding-right: 0.15em; }
+.ico-right { padding-left: 0.15em; }
+i.current-version { color: limegreen; }
+i.future-version { color: deepskyblue; }
+i.maintained-version { color: gold; }
+i.old-version { color: orangered; }
+span.lts-badge { font-size: 75%; vertical-align: 10%; }
+span.updated-at { color: firebrick; }

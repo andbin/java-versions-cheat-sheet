@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-versions update-date="2023-04-17" update-time="18:30:00" update-tz="+02:00">
+
+	<java version="1.0" status="old" lts="no" release-date="January 23, 1996"
+			class-major="45" class-minor="0" latest-build="1.0.2">
+	</java>
+
+	<java version="1.1" status="old" lts="no" release-date="February 2, 1997"
+			class-major="45" class-minor="3" latest-build="1.1.8_16">
+		<code-name version="1.1.4">Sparkler</code-name>
+		<code-name version="1.1.5">Pumpkin</code-name>
+		<code-name version="1.1.6">Abigail</code-name>
+		<code-name version="1.1.7">Brutus</code-name>
+		<code-name version="1.1.8">Chelsea</code-name>
+	</java>
+
+	<java version="1.2" status="old" lts="no" release-date="December 4, 1998"
+			class-major="46" class-minor="0" latest-build="1.2.2_017">
+		<code-name version="1.2.1">Gnat</code-name>
+		<code-name version="1.2.2">Cricket</code-name>
+	</java>
+
+	<java version="1.3" status="old" lts="no" release-date="May 8, 2000"
+			class-major="47" class-minor="0" latest-build="1.3.1_29">
+		<code-name version="1.3.0">Kestrel</code-name>
+		<code-name version="1.3.0_01">Firefly</code-name>
+		<code-name version="1.3.1">Ladybird</code-name>
+		<jdk-docs
+				type="download-page"
+				title="Java Archive Downloads - JDK 1.3 Documentation"
+				url="https://www.oracle.com/java/technologies/java-archive-13docs-downloads.html"/>
+	</java>
+
+	<java version="1.4" status="old" jsr-linked="59" lts="no" release-date="February 13, 2002"
+			class-major="48" class-minor="0" latest-build="1.4.2_30">
+		<code-name version="1.4.0">Merlin</code-name>
+		<code-name version="1.4.1">Hopper</code-name>
+		<code-name version="1.4.2">Mantis</code-name>
+		<jdk-docs
+				type="download-page"
+				title="Java Archive Downloads - JDK 1.4.2 Documentation"
+				url="https://www.oracle.com/java/technologies/java-archive-142docs-downloads.html"/>
+		<sys-confs
+				title="Supported System Configurations J2SE 1.4.2 and Java for Business 1.4.2"
+				url="https://www.oracle.com/java/technologies/javase/javase-system-configurations.html"/>
+	</java>
+
+	<java version="5" status="old" jsr-linked="176" lts="no" release-date="September 29, 2004"
+			class-major="49" class-minor="0" latest-build="5.0u22">
+		<code-name>Tiger</code-name>
+		<jdk-docs
+				title="JDK 5 Documentation"
+				url="https://docs.oracle.com/javase/1.5.0/docs/"/>
+		<api-docs
+				title="JavaTM 2 Platform Standard Edition 5.0 API Specification"
+				url="https://docs.oracle.com/javase/1.5.0/docs/api/"/>
+		<sys-confs
+				title="Supported System Configurations for J2SE 5.0 (1.5.0) and Java for Business 5.0 (1.5.0)"
+				url="https://www.oracle.com/java/technologies/javase/system-configurations.html"/>
+	</java>
+
+	<java version="6" status="old" jsr-linked="270" lts="no" release-date="December 11, 2006"
+			class-major="50" class-minor="0" latest-build="6u45">
+		<code-name>Mustang</code-name>
+		<jdk-docs
+				title="Java SE 6 Documentation"
+				url="https://docs.oracle.com/javase/6/docs/"/>
+		<api-docs
+				title="Java™ Platform, Standard Edition 6 API Specification"
+				url="https://docs.oracle.com/javase/6/docs/api/"/>
+		<jls edition="Third Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se6/html/j3TOC.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se6/jls3.pdf"/>
+		<jvms edition="Second Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se6/html/VMSpecTOC.doc.html"/>
+		<sys-confs
+				title="Oracle Certified System Configurations - Java SE 6"
+				url="https://www.oracle.com/java/technologies/system-configurations.html"/>
+	</java>
+
+	<java version="7" status="old" jsr-linked="336" lts="no" release-date="July 28, 2011"
+			class-major="51" class-minor="0" latest-build="7u80">
+		<code-name>Dolphin</code-name>
+		<jdk-docs
+				title="Java Platform Standard Edition 7 Documentation"
+				url="https://docs.oracle.com/javase/7/docs/"/>
+		<api-docs
+				title="Java™ Platform, Standard Edition 7 API Specification"
+				url="https://docs.oracle.com/javase/7/docs/api/"/>
+		<jls edition="Java SE 7 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se7/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se7/jls7.pdf"/>
+		<jvms edition="Java SE 7 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se7/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se7/jvms7.pdf"/>
+		<rel-notes
+				title="Java SE 7 Features and Enhancements"
+				url="https://www.oracle.com/technetwork/java/javase/jdk7-relnotes-429209.html"/>
+		<sys-confs
+				title="Oracle JDK 7 and JRE 7 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/jdk-jre-7-cs-config.html"/>
+	</java>
+
+	<java version="8" status="maintained" jsr-linked="337" lts="yes" release-date="March 18, 2014"
+			class-major="52" class-minor="0" latest-build="8u361">
+		<jdk-docs
+				title="Java Platform Standard Edition 8 Documentation"
+				url="https://docs.oracle.com/javase/8/docs/"/>
+		<api-docs
+				title="Java™ Platform, Standard Edition 8 API Specification"
+				url="https://docs.oracle.com/javase/8/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 7 &amp; Java SE 8 (b129)"
+				url="https://cr.openjdk.org/~iris/se/8/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 8 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se8/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se8/jls8.pdf"/>
+		<jvms edition="Java SE 8 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se8/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf"/>
+		<rel-notes
+				title="JDK 8 Update Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/8u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 8 and JRE 8 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk8-jre8-certconfig.html"/>
+	</java>
+
+	<java version="9" status="old" jsr-linked="379" lts="no" release-date="September 21, 2017"
+			class-major="53" class-minor="0" latest-build="9.0.4">
+		<jdk-docs
+				title="Oracle JDK 9 Documentation"
+				url="https://docs.oracle.com/javase/9/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 9 API Specification"
+				url="https://docs.oracle.com/javase/9/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 8 &amp; Java SE 9 (build 181)"
+				url="https://cr.openjdk.java.net/~iris/se/9/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 9 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se9/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se9/jls9.pdf"/>
+		<jvms edition="Java SE 9 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se9/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se9/jvms9.pdf"/>
+		<rel-notes
+				title="Java Development Kit 9 Update Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/9u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 9 and JRE 9 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/jdk9certconfig.html"/>
+	</java>
+
+	<java version="10" status="old" jsr-linked="383" lts="no" release-date="March 20, 2018"
+			class-major="54" class-minor="0" latest-build="10.0.2">
+		<jdk-docs
+				title="JDK 10 Documentation"
+				url="https://docs.oracle.com/javase/10/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 10 API Specification"
+				url="https://docs.oracle.com/javase/10/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 9 (build 181) &amp; Java SE 10 (build 44)"
+				url="https://cr.openjdk.java.net/~iris/se/10/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 10 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se10/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se10/jls10.pdf"/>
+		<jvms edition="Java SE 10 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se10/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se10/jvms10.pdf"/>
+		<rel-notes
+				title="Java Development Kit 10 Update Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/10u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 10 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/jdk10certconfig.html"/>
+	</java>
+
+	<java version="11" status="maintained" jsr-linked="384" lts="yes" release-date="September 25, 2018"
+			class-major="55" class-minor="0" latest-build="11.0.18">
+		<jdk-docs
+				title="JDK 11 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/11/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 11 API Specification"
+				url="https://docs.oracle.com/en/java/javase/11/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 10 (build 45) &amp; Java SE 11 (build 28)"
+				url="https://cr.openjdk.java.net/~iris/se/11/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 11 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se11/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se11/jls11.pdf"/>
+		<jvms edition="Java SE 11 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se11/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se11/jvms11.pdf"/>
+		<rel-notes
+				title="Java Development Kit 11 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/11u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 11 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk11certconfig.html"/>
+	</java>
+
+	<java version="12" status="old" jsr-linked="386" lts="no" release-date="March 19, 2019"
+			class-major="56" latest-build="12.0.2">
+		<jdk-docs
+				title="JDK 12 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/12/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 12 API Specification"
+				url="https://docs.oracle.com/en/java/javase/12/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 11 (build 28) &amp; Java SE 12 (build 32)"
+				url="https://cr.openjdk.java.net/~iris/se/12/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 12 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se12/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se12/jls12.pdf"/>
+		<jvms edition="Java SE 12 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se12/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se12/jvms12.pdf"/>
+		<rel-notes
+				title="Java Development Kit 12 Update Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/12u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 12 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk12certconfig.html"/>
+	</java>
+
+	<java version="13" status="old" jsr-linked="388" lts="no" release-date="September 17, 2019"
+			class-major="57" latest-build="13.0.2">
+		<jdk-docs
+				title="JDK 13 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/13/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 13 API Specification"
+				url="https://docs.oracle.com/en/java/javase/13/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 12 (build 32) &amp; Java SE 13 (build 33)"
+				url="https://cr.openjdk.java.net/~iris/se/13/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 13 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se13/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se13/jls13.pdf"/>
+		<jvms edition="Java SE 13 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se13/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se13/jvms13.pdf"/>
+		<rel-notes
+				title="Java Development Kit 13 Update Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/13u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 13 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk13certconfig.html"/>
+	</java>
+
+	<java version="14" status="old" jsr-linked="389" lts="no" release-date="March 17, 2020"
+			class-major="58" latest-build="14.0.2">
+		<jdk-docs
+				title="JDK 14 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/14/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 14 API Specification"
+				url="https://docs.oracle.com/en/java/javase/14/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 13 (build 33) &amp; Java SE 14 (build 36)"
+				url="https://cr.openjdk.java.net/~iris/se/14/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 14 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se14/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se14/jls14.pdf"/>
+		<jvms edition="Java SE 14 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se14/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se14/jvms14.pdf"/>
+		<rel-notes
+				title="Java Development Kit 14 Update Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/14u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 14 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk14certconfig.html"/>
+	</java>
+
+	<java version="15" status="old" jsr-linked="390" lts="no" release-date="September 16, 2020"
+			class-major="59" latest-build="15.0.2">
+		<jdk-docs
+				title="JDK 15 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/15/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 15 API Specification"
+				url="https://docs.oracle.com/en/java/javase/15/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 14 (build 36) &amp; Java SE 15 (build 36)"
+				url="https://cr.openjdk.java.net/~iris/se/15/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 15 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se15/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se15/jls15.pdf"/>
+		<jvms edition="Java SE 15 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se15/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se15/jvms15.pdf"/>
+		<rel-notes
+				title="Java Development Kit 15 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/15u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 15 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk15certconfig.html"/>
+	</java>
+
+	<java version="16" status="old" jsr-linked="391" lts="no" release-date="March 16, 2021"
+			class-major="60" latest-build="16.0.2">
+		<jdk-docs
+				title="JDK 16 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/16/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 16 API Specification"
+				url="https://docs.oracle.com/en/java/javase/16/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 15 (build 36) &amp; Java SE 16 (build 36)"
+				url="https://cr.openjdk.java.net/~iris/se/16/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 16 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se16/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se16/jls16.pdf"/>
+		<jvms edition="Java SE 16 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se16/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se16/jvms16.pdf"/>
+		<rel-notes
+				title="Java Development Kit 16 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/16u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 16 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk16certconfig.html"/>
+	</java>
+
+	<java version="17" status="maintained" jsr-linked="392" lts="yes" release-date="September 14, 2021"
+			class-major="61" latest-build="17.0.6">
+		<jdk-docs
+				title="JDK 17 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/17/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 17 API Specification"
+				url="https://docs.oracle.com/en/java/javase/17/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 16 (build 36) &amp; Java SE 17 (build 35)"
+				url="https://cr.openjdk.java.net/~iris/se/17/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 17 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se17/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se17/jls17.pdf"/>
+		<jvms edition="Java SE 17 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se17/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se17/jvms17.pdf"/>
+		<rel-notes
+				title="Java Development Kit 17 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/17u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 17 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk17certconfig.html"/>
+	</java>
+
+	<java version="18" status="old" jsr-linked="393" lts="no" release-date="March 22, 2022"
+			class-major="62" latest-build="18.0.2.1">
+		<jdk-docs
+				title="JDK 18 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/18/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 18 API Specification"
+				url="https://docs.oracle.com/en/java/javase/18/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 17 (build 35) &amp; Java SE 18 (build 37)"
+				url="https://cr.openjdk.java.net/~iris/se/18/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 18 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se18/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se18/jls18.pdf"/>
+		<jvms edition="Java SE 18 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se18/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se18/jvms18.pdf"/>
+		<rel-notes
+				title="Java Development Kit 18 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/18u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 18 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk18certconfig.html"/>
+	</java>
+
+	<java version="19" status="old" jsr-linked="394" lts="no" release-date="September 20, 2022"
+			class-major="63" latest-build="19.0.2">
+		<jdk-docs
+				title="JDK 19 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/19/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 19 API Specification"
+				url="https://docs.oracle.com/en/java/javase/19/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 18 (build 36) &amp; Java SE 19 (build 36)"
+				url="https://cr.openjdk.java.net/~iris/se/19/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 19 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se19/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se19/jls19.pdf"/>
+		<jvms edition="Java SE 19 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se19/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se19/jvms19.pdf"/>
+		<rel-notes
+				title="Java Development Kit 19 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/19u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 19 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk19certconfig.html"/>
+	</java>
+
+	<java version="20" status="current" jsr-linked="395" lts="no" release-date="March 21, 2023"
+			class-major="64" latest-build="20">
+		<jdk-docs
+				title="JDK 20 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/20/"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 20 API Specification"
+				url="https://docs.oracle.com/en/java/javase/20/docs/api/"/>
+		<api-diff
+				title="API Differences between Java SE 19 (build 36) &amp; Java SE 20 (build 36)"
+				url="https://cr.openjdk.java.net/~iris/se/20/latestSpec/apidiffs/overview-summary.html"/>
+		<jls edition="Java SE 20 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se20/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se20/jls20.pdf"/>
+		<jvms edition="Java SE 20 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se20/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se20/jvms20.pdf"/>
+		<rel-notes
+				title="Java Development Kit 20 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/20u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 20 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk20certconfig.html"/>
+	</java>
+
+	<java version="21" status="future" jsr-linked="396" lts="yes" release-date="September 2023"
+			class-major="65">
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 21 API Specification"
+				url="https://download.java.net/java/early_access/jdk21/docs/api/"/>
+	</java>
+
+	<java version="22" status="future" jsr="397" lts="no" release-date="March 2024"
+			class-major="66">
+	</java>
+
+	<java version="23" status="future" lts="no" release-date="September 2024"
+			class-major="67">
+	</java>
+
+</java-versions>
