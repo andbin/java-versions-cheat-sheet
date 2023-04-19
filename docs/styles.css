@@ -2,6 +2,8 @@
 .card-body h5 .value { font-weight: 600; }
 .card-body li .value { font-weight: 600; }
 .card-box:target .card { -webkit-box-shadow: 0px 0px 12px -2px #666; -moz-box-shadow: 0px 0px 12px -2px #666; -o-box-shadow: 0px 0px 12px -2px #666; box-shadow: 0px 0px 12px -2px #666; }
+.card-list { list-style-type: disc; }
+.card-list ul { list-style-type: square; }
 .fa-bootstrap { color: black; }
 .fa-file-arrow-down { color: forestgreen; }
 .fa-file-pdf { color: #b30b00; }
