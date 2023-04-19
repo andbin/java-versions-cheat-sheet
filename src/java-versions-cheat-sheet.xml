@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2023-04-17" update-time="18:30:00" update-tz="+02:00">
+<java-versions update-date="2023-04-19" update-time="14:00:00" update-tz="+02:00">
 
 	<java version="1.0" status="old" lts="no" release-date="January 23, 1996"
 			class-major="45" class-minor="0" latest-build="1.0.2">
@@ -94,15 +94,15 @@
 				web-url="https://docs.oracle.com/javase/specs/jvms/se7/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se7/jvms7.pdf"/>
 		<rel-notes
-				title="Java SE 7 Features and Enhancements"
-				url="https://www.oracle.com/technetwork/java/javase/jdk7-relnotes-429209.html"/>
+				title="Java SE 7 Update Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/7u-relnotes.html"/>
 		<sys-confs
 				title="Oracle JDK 7 and JRE 7 Certified System Configurations"
 				url="https://www.oracle.com/java/technologies/jdk-jre-7-cs-config.html"/>
 	</java>
 
 	<java version="8" status="maintained" jsr-linked="337" lts="yes" release-date="March 18, 2014"
-			class-major="52" class-minor="0" latest-build="8u361">
+			class-major="52" class-minor="0" latest-build="8u371">
 		<jdk-docs
 				title="Java Platform Standard Edition 8 Documentation"
 				url="https://docs.oracle.com/javase/8/docs/"/>
@@ -177,7 +177,7 @@
 	</java>
 
 	<java version="11" status="maintained" jsr-linked="384" lts="yes" release-date="September 25, 2018"
-			class-major="55" class-minor="0" latest-build="11.0.18">
+			class-major="55" class-minor="0" latest-build="11.0.19">
 		<jdk-docs
 				title="JDK 11 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/11/"/>
@@ -327,7 +327,7 @@
 	</java>
 
 	<java version="17" status="maintained" jsr-linked="392" lts="yes" release-date="September 14, 2021"
-			class-major="61" latest-build="17.0.6">
+			class-major="61" latest-build="17.0.7">
 		<jdk-docs
 				title="JDK 17 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/17/"/>
@@ -402,7 +402,7 @@
 	</java>
 
 	<java version="20" status="current" jsr-linked="395" lts="no" release-date="March 21, 2023"
-			class-major="64" latest-build="20">
+			class-major="64" latest-build="20.0.1">
 		<jdk-docs
 				title="JDK 20 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/20/"/>
