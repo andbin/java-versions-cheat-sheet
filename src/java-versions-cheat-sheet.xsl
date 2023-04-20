@@ -6,6 +6,12 @@
 
 	<xsl:output method="html" version="5" encoding="UTF-8"/>
 
+	<xsl:variable name="pageTitle">Java Versions Cheat Sheet</xsl:variable>
+	<xsl:variable name="pageDescription">An open-source cheat sheet showing all the Java versions with valuable information and links</xsl:variable>
+	<xsl:variable name="pageUrl">https://andbin.github.io/java-versions-cheat-sheet/</xsl:variable>
+	<xsl:variable name="projectName">java-versions-cheat-sheet</xsl:variable>
+	<xsl:variable name="projectUrl">https://github.com/andbin/java-versions-cheat-sheet</xsl:variable>
+
 	<xsl:variable name="processorName" select="fn:system-property('xsl:product-name')"/>
 	<xsl:variable name="processorVersion" select="fn:system-property('xsl:product-version')"/>
 	<xsl:variable name="processorVendor" select="fn:system-property('xsl:vendor')"/>
@@ -37,12 +43,17 @@
 
 		<html lang="en">
 			<head>
-				<title>Java Versions Cheat Sheet</title>
+				<title><xsl:value-of select="$pageTitle"/></title>
 				<meta name="author" content="Andrea Binello"/>
-				<meta name="description" content="An open-source cheat sheet showing all the Java versions with valuable information and links"/>
+				<meta name="description" content="{$pageDescription}"/>
 				<meta name="generator" content="{$processorInfo}"/>
 				<meta name="language" content="English"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1"/>
+				<meta property="og:locale" content="en_US"/>
+				<meta property="og:type" content="website"/>
+				<meta property="og:title" content="{$pageTitle}"/>
+				<meta property="og:description" content="{$pageDescription}"/>
+				<meta property="og:url" content="{$pageUrl}"/>
 				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="styles.css"/>
@@ -50,7 +61,7 @@
 			<body>
 				<div class="container">
 					<div class="jumbotron border-bottom border-2 border-dark mt-2 mb-2">
-						<h1 class="fs-2 fw-semibold">Java Versions Cheat Sheet</h1>
+						<h1 class="fs-2 fw-semibold"><xsl:value-of select="$pageTitle"/></h1>
 					</div>
 
 					<div class="table-responsive mb-3">
@@ -132,7 +143,7 @@
 							<li class="mb-1">
 								<span class="fa-li"><i class="fa-brands fa-github"></i></span>
 								<xsl:text>Hosted on GitHub at </xsl:text>
-								<a href="https://github.com/andbin/java-versions-cheat-sheet">java-versions-cheat-sheet</a>
+								<a href="{$projectUrl}"><xsl:value-of select="$projectName"/></a>
 							</li>
 
 							<li class="mb-1">
@@ -140,7 +151,7 @@
 								<xsl:text>Coded with XML/XSL, </xsl:text>
 								<a href="https://getbootstrap.com"><i class="fa-brands fa-bootstrap ico-left"></i>Bootstrap</a>
 								<xsl:text>, and </xsl:text>
-								<a href="https://fontawesome.com/"><i class="fa-solid fa-font-awesome ico-left"></i>Font Awesome</a>
+								<a href="https://fontawesome.com"><i class="fa-solid fa-font-awesome ico-left"></i>Font Awesome</a>
 							</li>
 
 							<li class="mb-1">
