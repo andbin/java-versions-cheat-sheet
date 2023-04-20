@@ -7,7 +7,7 @@
 	<xsl:output method="html" version="5" encoding="UTF-8"/>
 
 	<xsl:variable name="pageTitle">Java Versions Cheat Sheet</xsl:variable>
-	<xsl:variable name="pageDescription">An open-source cheat sheet showing all the Java versions with valuable information and links</xsl:variable>
+	<xsl:variable name="pageDescription">A friendly open-source cheat sheet showing all the Java versions with many valuable information and links</xsl:variable>
 	<xsl:variable name="pageUrl">https://andbin.github.io/java-versions-cheat-sheet/</xsl:variable>
 	<xsl:variable name="projectName">java-versions-cheat-sheet</xsl:variable>
 	<xsl:variable name="projectUrl">https://github.com/andbin/java-versions-cheat-sheet</xsl:variable>
