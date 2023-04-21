@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java-versions update-date="2023-04-19" update-time="14:00:00" update-tz="+02:00">
 
-	<java version="1.0" status="old" lts="no" release-date="January 23, 1996"
+	<java version="1.0" status="old" lts="no" release-date="1996-01-23"
 			class-major="45" class-minor="0" latest-build="1.0.2">
 	</java>
 
-	<java version="1.1" status="old" lts="no" release-date="February 2, 1997"
+	<java version="1.1" status="old" lts="no" release-date="1997-02-02"
 			class-major="45" class-minor="3" latest-build="1.1.8_16">
 		<code-name version="1.1.4">Sparkler</code-name>
 		<code-name version="1.1.5">Pumpkin</code-name>
@@ -14,13 +14,13 @@
 		<code-name version="1.1.8">Chelsea</code-name>
 	</java>
 
-	<java version="1.2" status="old" lts="no" release-date="December 4, 1998"
+	<java version="1.2" status="old" lts="no" release-date="1998-12-04"
 			class-major="46" class-minor="0" latest-build="1.2.2_017">
 		<code-name version="1.2.1">Gnat</code-name>
 		<code-name version="1.2.2">Cricket</code-name>
 	</java>
 
-	<java version="1.3" status="old" lts="no" release-date="May 8, 2000"
+	<java version="1.3" status="old" lts="no" release-date="2000-05-08"
 			class-major="47" class-minor="0" latest-build="1.3.1_29">
 		<code-name version="1.3.0">Kestrel</code-name>
 		<code-name version="1.3.0_01">Firefly</code-name>
@@ -31,7 +31,7 @@
 				url="https://www.oracle.com/java/technologies/java-archive-13docs-downloads.html"/>
 	</java>
 
-	<java version="1.4" status="old" jsr-linked="59" lts="no" release-date="February 13, 2002"
+	<java version="1.4" status="old" jsr-linked="59" lts="no" release-date="2002-02-13"
 			class-major="48" class-minor="0" latest-build="1.4.2_30">
 		<code-name version="1.4.0">Merlin</code-name>
 		<code-name version="1.4.1">Hopper</code-name>
@@ -45,7 +45,7 @@
 				url="https://www.oracle.com/java/technologies/javase/javase-system-configurations.html"/>
 	</java>
 
-	<java version="5" status="old" jsr-linked="176" lts="no" release-date="September 29, 2004"
+	<java version="5" status="old" jsr-linked="176" lts="no" release-date="2004-09-29"
 			class-major="49" class-minor="0" latest-build="5.0u22">
 		<code-name>Tiger</code-name>
 		<jdk-docs
@@ -59,7 +59,7 @@
 				url="https://www.oracle.com/java/technologies/javase/system-configurations.html"/>
 	</java>
 
-	<java version="6" status="old" jsr-linked="270" lts="no" release-date="December 11, 2006"
+	<java version="6" status="old" jsr-linked="270" lts="no" release-date="2006-12-11"
 			class-major="50" class-minor="0" latest-build="6u45">
 		<code-name>Mustang</code-name>
 		<jdk-docs
@@ -78,7 +78,7 @@
 				url="https://www.oracle.com/java/technologies/system-configurations.html"/>
 	</java>
 
-	<java version="7" status="old" jsr-linked="336" lts="no" release-date="July 28, 2011"
+	<java version="7" status="old" jsr-linked="336" lts="no" release-date="2011-07-28"
 			class-major="51" class-minor="0" latest-build="7u80">
 		<code-name>Dolphin</code-name>
 		<jdk-docs
@@ -101,7 +101,7 @@
 				url="https://www.oracle.com/java/technologies/jdk-jre-7-cs-config.html"/>
 	</java>
 
-	<java version="8" status="maintained" jsr-linked="337" lts="yes" release-date="March 18, 2014"
+	<java version="8" status="maintained" jsr-linked="337" lts="yes" release-date="2014-03-18"
 			class-major="52" class-minor="0" latest-build="8u371">
 		<jdk-docs
 				title="Java Platform Standard Edition 8 Documentation"
@@ -126,7 +126,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk8-jre8-certconfig.html"/>
 	</java>
 
-	<java version="9" status="old" jsr-linked="379" lts="no" release-date="September 21, 2017"
+	<java version="9" status="old" jsr-linked="379" lts="no" release-date="2017-09-21"
 			class-major="53" class-minor="0" latest-build="9.0.4">
 		<jdk-docs
 				title="Oracle JDK 9 Documentation"
@@ -151,7 +151,7 @@
 				url="https://www.oracle.com/java/technologies/jdk9certconfig.html"/>
 	</java>
 
-	<java version="10" status="old" jsr-linked="383" lts="no" release-date="March 20, 2018"
+	<java version="10" status="old" jsr-linked="383" lts="no" release-date="2018-03-20"
 			class-major="54" class-minor="0" latest-build="10.0.2">
 		<jdk-docs
 				title="JDK 10 Documentation"
@@ -176,7 +176,7 @@
 				url="https://www.oracle.com/java/technologies/jdk10certconfig.html"/>
 	</java>
 
-	<java version="11" status="maintained" jsr-linked="384" lts="yes" release-date="September 25, 2018"
+	<java version="11" status="maintained" jsr-linked="384" lts="yes" release-date="2018-09-25"
 			class-major="55" class-minor="0" latest-build="11.0.19">
 		<jdk-docs
 				title="JDK 11 Documentation - Home"
@@ -201,7 +201,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk11certconfig.html"/>
 	</java>
 
-	<java version="12" status="old" jsr-linked="386" lts="no" release-date="March 19, 2019"
+	<java version="12" status="old" jsr-linked="386" lts="no" release-date="2019-03-19"
 			class-major="56" latest-build="12.0.2">
 		<jdk-docs
 				title="JDK 12 Documentation - Home"
@@ -226,7 +226,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk12certconfig.html"/>
 	</java>
 
-	<java version="13" status="old" jsr-linked="388" lts="no" release-date="September 17, 2019"
+	<java version="13" status="old" jsr-linked="388" lts="no" release-date="2019-09-17"
 			class-major="57" latest-build="13.0.2">
 		<jdk-docs
 				title="JDK 13 Documentation - Home"
@@ -251,7 +251,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk13certconfig.html"/>
 	</java>
 
-	<java version="14" status="old" jsr-linked="389" lts="no" release-date="March 17, 2020"
+	<java version="14" status="old" jsr-linked="389" lts="no" release-date="2020-03-17"
 			class-major="58" latest-build="14.0.2">
 		<jdk-docs
 				title="JDK 14 Documentation - Home"
@@ -276,7 +276,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk14certconfig.html"/>
 	</java>
 
-	<java version="15" status="old" jsr-linked="390" lts="no" release-date="September 16, 2020"
+	<java version="15" status="old" jsr-linked="390" lts="no" release-date="2020-09-16"
 			class-major="59" latest-build="15.0.2">
 		<jdk-docs
 				title="JDK 15 Documentation - Home"
@@ -301,7 +301,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk15certconfig.html"/>
 	</java>
 
-	<java version="16" status="old" jsr-linked="391" lts="no" release-date="March 16, 2021"
+	<java version="16" status="old" jsr-linked="391" lts="no" release-date="2021-03-16"
 			class-major="60" latest-build="16.0.2">
 		<jdk-docs
 				title="JDK 16 Documentation - Home"
@@ -326,7 +326,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk16certconfig.html"/>
 	</java>
 
-	<java version="17" status="maintained" jsr-linked="392" lts="yes" release-date="September 14, 2021"
+	<java version="17" status="maintained" jsr-linked="392" lts="yes" release-date="2021-09-14"
 			class-major="61" latest-build="17.0.7">
 		<jdk-docs
 				title="JDK 17 Documentation - Home"
@@ -351,7 +351,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk17certconfig.html"/>
 	</java>
 
-	<java version="18" status="old" jsr-linked="393" lts="no" release-date="March 22, 2022"
+	<java version="18" status="old" jsr-linked="393" lts="no" release-date="2022-03-22"
 			class-major="62" latest-build="18.0.2.1">
 		<jdk-docs
 				title="JDK 18 Documentation - Home"
@@ -376,7 +376,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk18certconfig.html"/>
 	</java>
 
-	<java version="19" status="old" jsr-linked="394" lts="no" release-date="September 20, 2022"
+	<java version="19" status="old" jsr-linked="394" lts="no" release-date="2022-09-20"
 			class-major="63" latest-build="19.0.2">
 		<jdk-docs
 				title="JDK 19 Documentation - Home"
@@ -401,7 +401,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk19certconfig.html"/>
 	</java>
 
-	<java version="20" status="current" jsr-linked="395" lts="no" release-date="March 21, 2023"
+	<java version="20" status="current" jsr-linked="395" lts="no" release-date="2023-03-21"
 			class-major="64" latest-build="20.0.1">
 		<jdk-docs
 				title="JDK 20 Documentation - Home"
@@ -426,18 +426,18 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk20certconfig.html"/>
 	</java>
 
-	<java version="21" status="future" jsr-linked="396" lts="yes" release-date="September 2023"
+	<java version="21" status="future" jsr-linked="396" lts="yes" release-date="2023-09"
 			class-major="65">
 		<api-docs
 				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 21 API Specification"
 				url="https://download.java.net/java/early_access/jdk21/docs/api/"/>
 	</java>
 
-	<java version="22" status="future" jsr="397" lts="no" release-date="March 2024"
+	<java version="22" status="future" jsr="397" lts="no" release-date="2024-03"
 			class-major="66">
 	</java>
 
-	<java version="23" status="future" lts="no" release-date="September 2024"
+	<java version="23" status="future" lts="no" release-date="2024-09"
 			class-major="67">
 	</java>
 

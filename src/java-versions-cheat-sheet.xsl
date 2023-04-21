@@ -2,7 +2,8 @@
 <xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:fn="http://www.w3.org/2005/xpath-functions"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		exclude-result-prefixes="fn xs">
+		xmlns:jvcs="https://github.com/andbin/java-versions-cheat-sheet"
+		exclude-result-prefixes="fn xs jvcs">
 
 	<xsl:output method="html" version="5" encoding="UTF-8"/>
 
@@ -213,9 +214,11 @@
 			</td>
 
 			<td class="rel-date text-end">
-				<span title="Java {@version} release date">
-					<xsl:value-of select="@release-date"/>
-				</span>
+				<xsl:if test="@release-date">
+					<span title="Java {@version} release date">
+						<xsl:value-of select="jvcs:dateStr(@release-date)"/>
+					</span>
+				</xsl:if>
 			</td>
 
 			<td class="latest-build">
@@ -349,7 +352,7 @@
 							<li>
 								<xsl:text>Release date: </xsl:text>
 								<span class="value">
-									<xsl:value-of select="@release-date"/>
+									<xsl:value-of select="jvcs:dateStr(@release-date)"/>
 								</span>
 							</li>
 						</xsl:if>
@@ -522,5 +525,21 @@
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
+
+
+	<xsl:function name="jvcs:dateStr" as="xs:string">
+		<xsl:param name="dt" as="xs:string"/>
+		<xsl:choose>
+			<xsl:when test="fn:matches($dt, '^\d{4}-\d{2}$')">
+				<xsl:sequence select="fn:format-date(xs:date(concat($dt, '-01')), '[MNn] [Y]', 'en', (), ())"/>
+			</xsl:when>
+			<xsl:when test="fn:matches($dt, '^\d{4}-\d{2}-\d{2}$')">
+				<xsl:sequence select="fn:format-date(xs:date($dt), '[MNn] [D], [Y]', 'en', (), ())"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:message terminate="yes">Invalid date argument: <xsl:value-of select="$dt"/></xsl:message>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
 
 </xsl:stylesheet>
