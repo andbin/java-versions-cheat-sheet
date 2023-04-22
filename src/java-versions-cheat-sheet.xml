@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2023-04-19" update-time="14:00:00" update-tz="+02:00">
+<java-versions update-date="2023-04-22" update-time="15:00:00" update-tz="+02:00">
 
 	<java version="1.0" status="old" lts="no" release-date="1996-01-23"
 			class-major="45" class-minor="0" latest-build="1.0.2">
@@ -193,6 +193,9 @@
 		<jvms edition="Java SE 11 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se11/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se11/jvms11.pdf"/>
+		<announcement
+				title="Oracle Boosts Software Development Productivity with New Java Release"
+				url="https://www.oracle.com/corporate/pressrelease/java-11-092518.html"/>
 		<rel-notes
 				title="Java Development Kit 11 Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/11u-relnotes.html"/>
@@ -218,6 +221,9 @@
 		<jvms edition="Java SE 12 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se12/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se12/jvms12.pdf"/>
+		<announcement
+				title="Oracle Makes Developers More Productive with Latest Java Release"
+				url="https://www.oracle.com/corporate/pressrelease/latest-java-release-031919.html"/>
 		<rel-notes
 				title="Java Development Kit 12 Update Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/12u-relnotes.html"/>
@@ -243,6 +249,9 @@
 		<jvms edition="Java SE 13 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se13/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se13/jvms13.pdf"/>
+		<announcement
+				title="Oracle Keeps Driving Developer Productivity with New Java Release"
+				url="https://www.oracle.com/corporate/pressrelease/oow19-new-java-release-091619.html"/>
 		<rel-notes
 				title="Java Development Kit 13 Update Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/13u-relnotes.html"/>
@@ -268,6 +277,9 @@
 		<jvms edition="Java SE 14 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se14/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se14/jvms14.pdf"/>
+		<announcement
+				title="Oracle Announces Java 14"
+				url="https://www.oracle.com/corporate/pressrelease/oracle-announces-java14-031720.html"/>
 		<rel-notes
 				title="Java Development Kit 14 Update Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/14u-relnotes.html"/>
@@ -293,6 +305,9 @@
 		<jvms edition="Java SE 15 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se15/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se15/jvms15.pdf"/>
+		<announcement
+				title="Oracle Announces Java 15"
+				url="https://www.oracle.com/news/announcement/oracle-announces-java-15-091520/"/>
 		<rel-notes
 				title="Java Development Kit 15 Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/15u-relnotes.html"/>
@@ -318,6 +333,9 @@
 		<jvms edition="Java SE 16 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se16/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se16/jvms16.pdf"/>
+		<announcement
+				title="Oracle Announces Java 16"
+				url="https://www.oracle.com/id/news/announcement/oracle-announces-java-16-2021-03-16/"/>
 		<rel-notes
 				title="Java Development Kit 16 Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/16u-relnotes.html"/>
@@ -343,6 +361,9 @@
 		<jvms edition="Java SE 17 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se17/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se17/jvms17.pdf"/>
+		<announcement
+				title="Oracle Releases Java 17"
+				url="https://www.oracle.com/news/announcement/oracle-releases-java-17-2021-09-14/"/>
 		<rel-notes
 				title="Java Development Kit 17 Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/17u-relnotes.html"/>
@@ -368,6 +389,9 @@
 		<jvms edition="Java SE 18 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se18/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se18/jvms18.pdf"/>
+		<announcement
+				title="Oracle Announces Java 18"
+				url="https://www.oracle.com/news/announcement/oracle-releases-java-18-2022-03-22/"/>
 		<rel-notes
 				title="Java Development Kit 18 Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/18u-relnotes.html"/>
@@ -393,6 +417,9 @@
 		<jvms edition="Java SE 19 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se19/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se19/jvms19.pdf"/>
+		<announcement
+				title="Oracle Releases Java 19"
+				url="https://www.oracle.com/news/announcement/oracle-releases-java-19-2022-09-20/"/>
 		<rel-notes
 				title="Java Development Kit 19 Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/19u-relnotes.html"/>
@@ -418,6 +445,9 @@
 		<jvms edition="Java SE 20 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se20/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se20/jvms20.pdf"/>
+		<announcement
+				title="Oracle Releases Java 20"
+				url="https://www.oracle.com/news/announcement/oracle-releases-java-20-2023-03-21/"/>
 		<rel-notes
 				title="Java Development Kit 20 Release Notes"
 				url="https://www.oracle.com/java/technologies/javase/20u-relnotes.html"/>

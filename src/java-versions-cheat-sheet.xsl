@@ -454,6 +454,13 @@
 							</li>
 						</xsl:if>
 
+						<xsl:if test="announcement[1]">
+							<li>
+								<xsl:text>Announcement: </xsl:text>
+								<a href="{announcement[1]/@url}" class="value"><xsl:value-of select="announcement[1]/@title"/></a>
+							</li>
+						</xsl:if>
+
 						<xsl:if test="rel-notes[1]">
 							<li>
 								<xsl:text>Release notes: </xsl:text>
