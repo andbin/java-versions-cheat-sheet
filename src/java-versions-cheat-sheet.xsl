@@ -191,9 +191,8 @@
 			<th class="version" scope="row">
 				<xsl:call-template name="status-circle"/>
 				<xsl:text> </xsl:text>
-				<a href="#java-{@version}">
-					<xsl:text>Java </xsl:text>
-					<xsl:value-of select="@version"/>
+				<a href="#{jvcs:stringToId(@lang-name)}">
+					<xsl:value-of select="@lang-name"/>
 				</a>
 
 				<xsl:if test="@lts = 'yes'">
@@ -205,30 +204,30 @@
 			<td class="jsr">
 				<xsl:choose>
 					<xsl:when test="@jsr-linked">
-						<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" title="Java SE {@version} Java Specification Request"><xsl:value-of select="@jsr-linked"/></a>
+						<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" title="{@edition-name} Java Specification Request"><xsl:value-of select="@jsr-linked"/></a>
 					</xsl:when>
 					<xsl:when test="@jsr">
-						<span title="Java SE {@version} Java Specification Request (link not yet available)"><xsl:value-of select="@jsr"/></span>
+						<span title="{@edition-name} Java Specification Request (link not yet available)"><xsl:value-of select="@jsr"/></span>
 					</xsl:when>
 				</xsl:choose>
 			</td>
 
 			<td class="rel-date text-end">
 				<xsl:if test="@release-date">
-					<span title="Java {@version} release date">
+					<span title="{@lang-name} release date">
 						<xsl:value-of select="jvcs:dateStr(@release-date)"/>
 					</span>
 				</xsl:if>
 			</td>
 
 			<td class="latest-build">
-				<span title="Latest JDK {@version} build">
+				<span title="Latest {@jdk-name} build">
 					<xsl:value-of select="@latest-build"/>
 				</span>
 			</td>
 
 			<td class="class-ver">
-				<span title="Java {@version} class file version">
+				<span title="{@lang-name} class file version">
 					<xsl:value-of select="@class-major"/>
 					<xsl:choose>
 						<xsl:when test="@class-minor">.<xsl:value-of select="@class-minor"/></xsl:when>
@@ -288,13 +287,17 @@
 
 
 	<xsl:template match="java" mode="card">
-		<div id="java-{@version}" class="card-box pt-3">
+		<div id="{jvcs:stringToId(@lang-name)}" class="card-box pt-3">
 			<div class="card mb-2 border-secondary">
 				<div class="card-body">
 					<h5 class="card-title">
 						<span class="value">
-							<xsl:text>Java </xsl:text>
-							<xsl:value-of select="@version"/>
+							<xsl:value-of select="@lang-name"/>
+
+							<xsl:if test="@edition-name">
+								<xsl:text> / </xsl:text>
+								<xsl:value-of select="@edition-name"/>
+							</xsl:if>
 						</span>
 
 						<xsl:if test="@lts = 'yes'">
@@ -339,10 +342,10 @@
 								<xsl:text>Java Specification Request: </xsl:text>
 								<xsl:choose>
 									<xsl:when test="@jsr-linked">
-										<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" class="value" title="Java SE {@version} Java Specification Request">JSR-<xsl:value-of select="@jsr-linked"/></a>
+										<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" class="value">JSR-<xsl:value-of select="@jsr-linked"/></a>
 									</xsl:when>
 									<xsl:when test="@jsr">
-										<span class="value" title="Java SE {@version} Java Specification Request (link not yet available)">JSR-<xsl:value-of select="@jsr"/></span>
+										<span class="value">JSR-<xsl:value-of select="@jsr"/></span>
 									</xsl:when>
 								</xsl:choose>
 							</li>
@@ -532,6 +535,12 @@
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
+
+
+	<xsl:function name="jvcs:stringToId" as="xs:string">
+		<xsl:param name="str" as="xs:string"/>
+		<xsl:sequence select="fn:replace(fn:lower-case($str), '\s+', '-')"/>
+	</xsl:function>
 
 
 	<xsl:function name="jvcs:dateStr" as="xs:string">
