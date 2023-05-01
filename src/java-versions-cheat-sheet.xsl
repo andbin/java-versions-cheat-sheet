@@ -221,9 +221,9 @@
 			</td>
 
 			<td class="latest-build">
-				<span title="Latest {@jdk-name} build">
-					<xsl:value-of select="@latest-build"/>
-				</span>
+				<xsl:if test="latest-build">
+					<xsl:apply-templates select="latest-build" mode="table"/>
+				</xsl:if>
 			</td>
 
 			<td class="class-ver">
@@ -360,12 +360,12 @@
 							</li>
 						</xsl:if>
 
-						<xsl:if test="@latest-build">
+						<xsl:if test="latest-build">
 							<li>
-								<xsl:text>Latest JDK build: </xsl:text>
-								<span class="value">
-									<xsl:value-of select="@latest-build"/>
-								</span>
+								<xsl:text>Latest JDK build:</xsl:text>
+								<ul>
+									<xsl:apply-templates select="latest-build" mode="card"/>
+								</ul>
 							</li>
 						</xsl:if>
 
@@ -481,6 +481,62 @@
 				</div>
 			</div>
 		</div>
+	</xsl:template>
+
+
+	<xsl:template match="latest-build" mode="table">
+		<xsl:if test="position() gt 1">
+			<xsl:text> / </xsl:text>
+		</xsl:if>
+		<span>
+			<xsl:attribute name="title">
+				<xsl:text>Latest </xsl:text>
+				<xsl:value-of select="../@jdk-name"/>
+				<xsl:text> build</xsl:text>
+				<xsl:choose>
+					<xsl:when test="@channel">
+						<xsl:text> &#x2013; </xsl:text>
+						<xsl:value-of select="@channel"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text> &#x2013; Public</xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:attribute>
+			<xsl:value-of select="@version"/>
+		</span>
+	</xsl:template>
+
+
+	<xsl:template match="latest-build" mode="card">
+		<li>
+			<span class="value">
+				<xsl:value-of select="@version"/>
+			</span>
+			<xsl:if test="@full-version">
+				<xsl:text> (</xsl:text>
+				<xsl:value-of select="@full-version"/>
+				<xsl:text>)</xsl:text>
+			</xsl:if>
+			<xsl:if test="@release-date">
+				<xsl:text> released on </xsl:text>
+				<span class="value">
+					<xsl:value-of select="jvcs:dateStr(@release-date)"/>
+				</span>
+			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="@channel">
+					<xsl:text> &#x2013; </xsl:text>
+					<span class="value">
+						<xsl:value-of select="@channel"/>
+					</span>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:text> &#x2013; </xsl:text>
+					<span class="value">Public</span>
+				</xsl:otherwise>
+			</xsl:choose>
+		</li>
 	</xsl:template>
 
 
