@@ -66,13 +66,13 @@
 					</div>
 
 					<div class="table-responsive mb-3">
-						<table class="java-versions table table-hover border-secondary text-nowrap mb-1">
+						<table class="table table-hover border-secondary text-nowrap mb-1">
 							<thead>
 								<tr>
 									<th scope="col" title="Java version">Java version</th>
 									<th scope="col" title="Java Specification Request">JSR</th>
 									<th scope="col" title="Release date" class="text-end">Release date</th>
-									<th scope="col" title="Latest JDK build">Latest<br/>build</th>
+									<th scope="col" title="Latest JDK build">Latest build</th>
 									<th scope="col" title="Class file version (major.minor)">Class<br/>vers.</th>
 									<th scope="col" title="JDK Documentation">JDK<br/>Doc.</th>
 									<th scope="col" title="API Specification">API<br/>Spec.</th>
@@ -89,28 +89,28 @@
 
 					<ul class="fa-ul mb-5">
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle old-version" title="{$oldVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle jv-status-old" title="{$oldVersion}"></i></span>
 							<i class="fa-solid fa-arrow-right-long"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$oldVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle maintained-version" title="{$maintainedVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle jv-status-maintained" title="{$maintainedVersion}"></i></span>
 							<i class="fa-solid fa-arrow-right-long"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$maintainedVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-check current-version" title="{$currentVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status-current" title="{$currentVersion}"></i></span>
 							<i class="fa-solid fa-arrow-right-long"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$currentVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle future-version" title="{$futureVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle jv-status-future" title="{$futureVersion}"></i></span>
 							<i class="fa-solid fa-arrow-right-long"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$futureVersion"/>
@@ -126,7 +126,7 @@
 							<li class="mb-1">
 								<span class="fa-li"><i class="fa-solid fa-calendar-day"></i></span>
 								<xsl:text>Java information updated at </xsl:text>
-								<span class="updated-at"><xsl:value-of select="$updatedAtFmt"/></span>
+								<span class="jv-updated-at"><xsl:value-of select="$updatedAtFmt"/></span>
 								<script>
 									<xsl:text>var daysAgo = Math.floor((Date.now() - new Date(</xsl:text>
 									<xsl:value-of select="$updatedAtMillis"/>
@@ -150,9 +150,9 @@
 							<li class="mb-1">
 								<span class="fa-li"><i class="fa-solid fa-code"></i></span>
 								<xsl:text>Coded with XML/XSL, </xsl:text>
-								<a href="https://getbootstrap.com"><i class="fa-brands fa-bootstrap ico-left"></i>Bootstrap</a>
+								<a href="https://getbootstrap.com"><i class="fa-brands fa-bootstrap jv-ico-left"></i>Bootstrap</a>
 								<xsl:text>, and </xsl:text>
-								<a href="https://fontawesome.com"><i class="fa-solid fa-font-awesome ico-left"></i>Font Awesome</a>
+								<a href="https://fontawesome.com"><i class="fa-solid fa-font-awesome jv-ico-left"></i>Font Awesome</a>
 							</li>
 
 							<li class="mb-1">
@@ -188,20 +188,19 @@
 
 	<xsl:template match="java" mode="table">
 		<tr>
-			<th class="version" scope="row">
+			<th scope="row">
 				<xsl:call-template name="status-circle"/>
-				<xsl:text> </xsl:text>
 				<a href="#{jvcs:stringToId(@lang-name)}">
 					<xsl:value-of select="@lang-name"/>
 				</a>
 
 				<xsl:if test="@lts = 'yes'">
 					<xsl:text> </xsl:text>
-					<span class="badge rounded-pill text-bg-primary lts-badge" title="Long-Term Support">LTS</span>
+					<span class="badge rounded-pill text-bg-primary jv-lts-badge" title="Long-Term Support">LTS</span>
 				</xsl:if>
 			</th>
 
-			<td class="jsr">
+			<td>
 				<xsl:choose>
 					<xsl:when test="@jsr-linked">
 						<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" title="{@edition-name} Java Specification Request"><xsl:value-of select="@jsr-linked"/></a>
@@ -212,7 +211,7 @@
 				</xsl:choose>
 			</td>
 
-			<td class="rel-date text-end">
+			<td class="text-end">
 				<xsl:if test="@release-date">
 					<span title="{@lang-name} release date">
 						<xsl:value-of select="jvcs:dateStr(@release-date)"/>
@@ -220,13 +219,13 @@
 				</xsl:if>
 			</td>
 
-			<td class="latest-build">
+			<td>
 				<xsl:if test="latest-build">
 					<xsl:apply-templates select="latest-build" mode="table"/>
 				</xsl:if>
 			</td>
 
-			<td class="class-ver">
+			<td>
 				<span title="{@lang-name} class file version">
 					<xsl:value-of select="@class-major"/>
 					<xsl:choose>
@@ -236,30 +235,30 @@
 				</span>
 			</td>
 
-			<td class="jdk-docs">
+			<td>
 				<xsl:if test="jdk-docs[1]">
 					<a href="{jdk-docs[1]/@url}" title="{jdk-docs[1]/@title}">
 						<xsl:text>Doc</xsl:text>
 						<xsl:if test="jdk-docs[1]/@type = 'download-page'">
-							<i class="fa-solid fa-file-arrow-down ico-right"></i>
+							<i class="fa-solid fa-file-arrow-down jv-ico-right"></i>
 						</xsl:if>
 					</a>
 				</xsl:if>
 			</td>
 
-			<td class="api-docs">
+			<td>
 				<xsl:if test="api-docs[1]">
 					<a href="{api-docs[1]/@url}" title="{api-docs[1]/@title}">API</a>
 				</xsl:if>
 			</td>
 
-			<td class="api-diff">
+			<td>
 				<xsl:if test="api-diff[1]">
 					<a href="{api-diff[1]/@url}" title="{api-diff[1]/@title}">API Diff</a>
 				</xsl:if>
 			</td>
 
-			<td class="jls">
+			<td>
 				<xsl:if test="jls[1]/@web-url">
 					<a href="{jls[1]/@web-url}" title="The Java Language Specification, {jls[1]/@edition}">JLS</a>
 				</xsl:if>
@@ -267,11 +266,11 @@
 					<xsl:text> &#x2022; </xsl:text>
 				</xsl:if>
 				<xsl:if test="jls[1]/@pdf-url">
-					<a href="{jls[1]/@pdf-url}" title="The Java Language Specification, {jls[1]/@edition} (PDF)">JLS<i class="fa-solid fa-file-pdf ico-right"></i></a>
+					<a href="{jls[1]/@pdf-url}" title="The Java Language Specification, {jls[1]/@edition} (PDF)">JLS<i class="fa-solid fa-file-pdf jv-ico-right"></i></a>
 				</xsl:if>
 			</td>
 
-			<td class="jvms">
+			<td>
 				<xsl:if test="jvms[1]/@web-url">
 					<a href="{jvms[1]/@web-url}" title="The Java Virtual Machine Specification, {jvms[1]/@edition}">JVMS</a>
 				</xsl:if>
@@ -279,7 +278,7 @@
 					<xsl:text> &#x2022; </xsl:text>
 				</xsl:if>
 				<xsl:if test="jvms[1]/@pdf-url">
-					<a href="{jvms[1]/@pdf-url}" title="The Java Virtual Machine Specification, {jvms[1]/@edition} (PDF)">JVMS<i class="fa-solid fa-file-pdf ico-right"></i></a>
+					<a href="{jvms[1]/@pdf-url}" title="The Java Virtual Machine Specification, {jvms[1]/@edition} (PDF)">JVMS<i class="fa-solid fa-file-pdf jv-ico-right"></i></a>
 				</xsl:if>
 			</td>
 		</tr>
@@ -287,11 +286,11 @@
 
 
 	<xsl:template match="java" mode="card">
-		<div id="{jvcs:stringToId(@lang-name)}" class="card-box pt-3">
+		<div id="{jvcs:stringToId(@lang-name)}" class="jv-card-box pt-3">
 			<div class="card mb-2 border-secondary">
 				<div class="card-body">
 					<h5 class="card-title">
-						<span class="value">
+						<span class="jv-val">
 							<xsl:value-of select="@lang-name"/>
 
 							<xsl:if test="@edition-name">
@@ -302,7 +301,7 @@
 
 						<xsl:if test="@lts = 'yes'">
 							<xsl:text> </xsl:text>
-							<span class="badge rounded-pill text-bg-primary lts-badge" title="Long-Term Support">LTS</span>
+							<span class="badge rounded-pill text-bg-primary jv-lts-badge" title="Long-Term Support">LTS</span>
 						</xsl:if>
 					</h5>
 
@@ -310,8 +309,7 @@
 						<li>
 							<xsl:text>Status: </xsl:text>
 							<xsl:call-template name="status-circle"/>
-							<xsl:text> </xsl:text>
-							<span class="value">
+							<span class="jv-val">
 								<xsl:call-template name="status-desc"/>
 							</span>
 						</li>
@@ -327,7 +325,7 @@
 									</xsl:when>
 									<xsl:otherwise>
 										<xsl:text>Code-name: </xsl:text>
-										<span class="value">
+										<span class="jv-val">
 											<xsl:text>“</xsl:text>
 											<xsl:value-of select="code-name[1]/text()"/>
 											<xsl:text>”</xsl:text>
@@ -342,10 +340,10 @@
 								<xsl:text>Java Specification Request: </xsl:text>
 								<xsl:choose>
 									<xsl:when test="@jsr-linked">
-										<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" class="value">JSR-<xsl:value-of select="@jsr-linked"/></a>
+										<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" class="jv-val">JSR-<xsl:value-of select="@jsr-linked"/></a>
 									</xsl:when>
 									<xsl:when test="@jsr">
-										<span class="value">JSR-<xsl:value-of select="@jsr"/></span>
+										<span class="jv-val">JSR-<xsl:value-of select="@jsr"/></span>
 									</xsl:when>
 								</xsl:choose>
 							</li>
@@ -354,7 +352,7 @@
 						<xsl:if test="@release-date">
 							<li>
 								<xsl:text>Release date: </xsl:text>
-								<span class="value">
+								<span class="jv-val">
 									<xsl:value-of select="jvcs:dateStr(@release-date)"/>
 								</span>
 							</li>
@@ -371,7 +369,7 @@
 
 						<li>
 							<xsl:text>Class file version (major.minor): </xsl:text>
-							<span class="value">
+							<span class="jv-val">
 								<xsl:value-of select="@class-major"/>
 								<xsl:choose>
 									<xsl:when test="@class-minor">.<xsl:value-of select="@class-minor"/></xsl:when>
@@ -383,7 +381,7 @@
 						<xsl:if test="jdk-docs[1]">
 							<li>
 								<xsl:text>JDK Documentation: </xsl:text>
-								<a href="{jdk-docs[1]/@url}" class="value">
+								<a href="{jdk-docs[1]/@url}" class="jv-val">
 									<xsl:value-of select="jdk-docs[1]/@title"/>
 								</a>
 							</li>
@@ -392,7 +390,7 @@
 						<xsl:if test="api-docs[1]">
 							<li>
 								<xsl:text>API Specification: </xsl:text>
-								<a href="{api-docs[1]/@url}" class="value">
+								<a href="{api-docs[1]/@url}" class="jv-val">
 									<xsl:value-of select="api-docs[1]/@title"/>
 								</a>
 							</li>
@@ -401,7 +399,7 @@
 						<xsl:if test="api-diff[1]">
 							<li>
 								<xsl:text>API Differences: </xsl:text>
-								<a href="{api-diff[1]/@url}" class="value">
+								<a href="{api-diff[1]/@url}" class="jv-val">
 									<xsl:value-of select="api-diff[1]/@title"/>
 								</a>
 							</li>
@@ -413,7 +411,7 @@
 								<ul>
 									<xsl:if test="jls[1]/@web-url">
 										<li>
-											<a href="{jls[1]/@web-url}" class="value">
+											<a href="{jls[1]/@web-url}" class="jv-val">
 												<xsl:text>The Java Language Specification, </xsl:text>
 												<xsl:value-of select="jls[1]/@edition"/>
 											</a>
@@ -421,7 +419,7 @@
 									</xsl:if>
 									<xsl:if test="jls[1]/@pdf-url">
 										<li>
-											<a href="{jls[1]/@pdf-url}" class="value">
+											<a href="{jls[1]/@pdf-url}" class="jv-val">
 												<xsl:text>The Java Language Specification, </xsl:text>
 												<xsl:value-of select="jls[1]/@edition"/>
 												<xsl:text> (PDF)</xsl:text>
@@ -438,7 +436,7 @@
 								<ul>
 									<xsl:if test="jvms[1]/@web-url">
 										<li>
-											<a href="{jvms[1]/@web-url}" class="value">
+											<a href="{jvms[1]/@web-url}" class="jv-val">
 												<xsl:text>The Java Virtual Machine Specification, </xsl:text>
 												<xsl:value-of select="jvms[1]/@edition"/>
 											</a>
@@ -446,7 +444,7 @@
 									</xsl:if>
 									<xsl:if test="jvms[1]/@pdf-url">
 										<li>
-											<a href="{jvms[1]/@pdf-url}" class="value">
+											<a href="{jvms[1]/@pdf-url}" class="jv-val">
 												<xsl:text>The Java Virtual Machine Specification, </xsl:text>
 												<xsl:value-of select="jvms[1]/@edition"/>
 												<xsl:text> (PDF)</xsl:text>
@@ -456,28 +454,33 @@
 								</ul>
 							</li>
 						</xsl:if>
-
-						<xsl:if test="announcement[1]">
-							<li>
-								<xsl:text>Announcement: </xsl:text>
-								<a href="{announcement[1]/@url}" class="value"><xsl:value-of select="announcement[1]/@title"/></a>
-							</li>
-						</xsl:if>
-
-						<xsl:if test="rel-notes[1]">
-							<li>
-								<xsl:text>Release notes: </xsl:text>
-								<a href="{rel-notes[1]/@url}" class="value"><xsl:value-of select="rel-notes[1]/@title"/></a>
-							</li>
-						</xsl:if>
-
-						<xsl:if test="sys-confs[1]">
-							<li>
-								<xsl:text>System configurations: </xsl:text>
-								<a href="{sys-confs[1]/@url}" class="value"><xsl:value-of select="sys-confs[1]/@title"/></a>
-							</li>
-						</xsl:if>
 					</ul>
+
+					<xsl:if test="announcement[1] or rel-notes[1] or sys-confs[1]">
+						<h6 class="jv-extra-info">EXTRA INFO:</h6>
+						<ul class="card-list">
+							<xsl:if test="announcement[1]">
+								<li>
+									<xsl:text>Announcement: </xsl:text>
+									<a href="{announcement[1]/@url}" class="jv-val"><xsl:value-of select="announcement[1]/@title"/></a>
+								</li>
+							</xsl:if>
+
+							<xsl:if test="rel-notes[1]">
+								<li>
+									<xsl:text>Release notes: </xsl:text>
+									<a href="{rel-notes[1]/@url}" class="jv-val"><xsl:value-of select="rel-notes[1]/@title"/></a>
+								</li>
+							</xsl:if>
+
+							<xsl:if test="sys-confs[1]">
+								<li>
+									<xsl:text>System configurations: </xsl:text>
+									<a href="{sys-confs[1]/@url}" class="jv-val"><xsl:value-of select="sys-confs[1]/@title"/></a>
+								</li>
+							</xsl:if>
+						</ul>
+					</xsl:if>
 				</div>
 			</div>
 		</div>
@@ -510,7 +513,7 @@
 
 	<xsl:template match="latest-build" mode="card">
 		<li>
-			<span class="value">
+			<span class="jv-val">
 				<xsl:value-of select="@version"/>
 			</span>
 			<xsl:if test="@full-version">
@@ -520,20 +523,20 @@
 			</xsl:if>
 			<xsl:if test="@release-date">
 				<xsl:text> released on </xsl:text>
-				<span class="value">
+				<span class="jv-val">
 					<xsl:value-of select="jvcs:dateStr(@release-date)"/>
 				</span>
 			</xsl:if>
 			<xsl:choose>
 				<xsl:when test="@channel">
 					<xsl:text> &#x2013; </xsl:text>
-					<span class="value">
+					<span class="jv-val">
 						<xsl:value-of select="@channel"/>
 					</span>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:text> &#x2013; </xsl:text>
-					<span class="value">Public</span>
+					<span class="jv-val">Public</span>
 				</xsl:otherwise>
 			</xsl:choose>
 		</li>
@@ -542,7 +545,7 @@
 
 	<xsl:template match="code-name" mode="card">
 		<li>
-			<span class="value">
+			<span class="jv-val">
 				<xsl:text>“</xsl:text>
 				<xsl:value-of select="text()"/>
 				<xsl:text>”</xsl:text>
@@ -560,16 +563,16 @@
 	<xsl:template name="status-circle">
 		<xsl:choose>
 			<xsl:when test="@status = 'old'">
-				<i class="fa-solid fa-circle old-version" title="{$oldVersion}"></i>
+				<i class="fa-solid fa-circle jv-status jv-status-old" title="{$oldVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'maintained'">
-				<i class="fa-solid fa-circle maintained-version" title="{$maintainedVersion}"></i>
+				<i class="fa-solid fa-circle jv-status jv-status-maintained" title="{$maintainedVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'current'">
-				<i class="fa-solid fa-circle-check current-version" title="{$currentVersion}"></i>
+				<i class="fa-solid fa-circle-check jv-status jv-status-current" title="{$currentVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'future'">
-				<i class="fa-solid fa-circle future-version" title="{$futureVersion}"></i>
+				<i class="fa-solid fa-circle jv-status jv-status-future" title="{$futureVersion}"></i>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
