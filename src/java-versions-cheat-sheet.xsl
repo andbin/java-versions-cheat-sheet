@@ -149,7 +149,11 @@
 
 							<li class="mb-1">
 								<span class="fa-li"><i class="fa-solid fa-code"></i></span>
-								<xsl:text>Coded with XML/XSL, </xsl:text>
+								<xsl:text>Coded with </xsl:text>
+								<a href="https://en.wikipedia.org/wiki/XML">XML</a>
+								<xsl:text>, </xsl:text>
+								<a href="https://en.wikipedia.org/wiki/XSL">XSL</a>
+								<xsl:text>, </xsl:text>
 								<a href="https://getbootstrap.com"><i class="fa-brands fa-bootstrap jv-ico-left"></i>Bootstrap</a>
 								<xsl:text>, and </xsl:text>
 								<a href="https://fontawesome.com"><i class="fa-solid fa-font-awesome jv-ico-left"></i>Font Awesome</a>
