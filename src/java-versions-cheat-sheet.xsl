@@ -25,6 +25,9 @@
 	</xsl:variable>
 
 	<xsl:variable name="epochDateTime" select="xs:dateTime('1970-01-01T00:00:00')"/>
+	<xsl:variable name="currDateTime" select="fn:current-dateTime()"/>
+
+	<xsl:variable name="lastModifiedStr" select="fn:format-dateTime($currDateTime, '[FNn,3-3], [D01] [MNn,3-3] [Y0001] [H01]:[m01]:[s01] [z]', 'en', (), ())"/>
 
 	<xsl:variable name="oldVersion">Old version</xsl:variable>
 	<xsl:variable name="maintainedVersion">Old version but still maintained</xsl:variable>
@@ -38,13 +41,14 @@
 
 
 	<xsl:template match="java-versions">
-		<xsl:variable name="updatedAt" select="xs:dateTime(fn:concat(@update-date, 'T', @update-time, @update-tz))"/>
-		<xsl:variable name="updatedAtMillis" select="($updatedAt - fn:timezone-from-dateTime($updatedAt) - $epochDateTime) div xs:dayTimeDuration('PT0.001S')"/>
-		<xsl:variable name="updatedAtFmt" select="fn:format-dateTime($updatedAt, '[Y0001]-[M01]-[D01] [H01]:[m01]:[s01] [z]')"/>
+		<xsl:variable name="infoUpdatedAt" select="xs:dateTime(fn:concat(@update-date, 'T', @update-time, @update-tz))"/>
+		<xsl:variable name="infoUpdatedAtMillis" select="($infoUpdatedAt - fn:timezone-from-dateTime($infoUpdatedAt) - $epochDateTime) div xs:dayTimeDuration('PT0.001S')"/>
+		<xsl:variable name="infoUpdatedAtFmt" select="fn:format-dateTime($infoUpdatedAt, '[Y0001]-[M01]-[D01] [H01]:[m01]:[s01] [z]')"/>
 
 		<html lang="en">
 			<head>
 				<title><xsl:value-of select="$pageTitle"/></title>
+				<meta http-equiv="last-modified" content="{$lastModifiedStr}"/>
 				<meta name="author" content="Andrea Binello"/>
 				<meta name="description" content="{$pageDescription}"/>
 				<meta name="generator" content="{$processorInfo}"/>
@@ -126,10 +130,10 @@
 							<li class="mb-1">
 								<span class="fa-li"><i class="fa-solid fa-calendar-day"></i></span>
 								<xsl:text>Java information updated at </xsl:text>
-								<span class="jv-updated-at"><xsl:value-of select="$updatedAtFmt"/></span>
+								<span class="jv-updated-at"><xsl:value-of select="$infoUpdatedAtFmt"/></span>
 								<script>
 									<xsl:text>var daysAgo = Math.floor((Date.now() - new Date(</xsl:text>
-									<xsl:value-of select="$updatedAtMillis"/>
+									<xsl:value-of select="$infoUpdatedAtMillis"/>
 									<xsl:text>)) / 86400000); </xsl:text>
 									<xsl:text>document.write(" (" + daysAgo + " " + (daysAgo == 1 ? "day" : "days") + " ago)");</xsl:text>
 								</script>
