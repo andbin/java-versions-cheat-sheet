@@ -141,13 +141,17 @@
 
 							<li class="mb-1">
 								<span class="fa-li"><i class="fa-solid fa-circle-user"></i></span>
-								<xsl:text>Developed by Andrea Binello (“andbin”) &#x2013; </xsl:text>
+								<xsl:text>Developed with </xsl:text>
+								<i class="fa-solid fa-heart"></i>
+								<xsl:text> for Java by Andrea Binello (“andbin”) &#x2013; </xsl:text>
 								<a href="https://andbin.dev">andbin.dev</a>
 							</li>
 
 							<li class="mb-1">
-								<span class="fa-li"><i class="fa-brands fa-github"></i></span>
-								<xsl:text>Hosted on GitHub at </xsl:text>
+								<span class="fa-li"><i class="fa-solid fa-server"></i></span>
+								<xsl:text>Hosted on </xsl:text>
+								<i class="fa-brands fa-github jv-ico-left"></i>
+								<xsl:text>GitHub at </xsl:text>
 								<a href="{$projectUrl}"><xsl:value-of select="$projectName"/></a>
 							</li>
 
@@ -160,7 +164,7 @@
 								<xsl:text>, </xsl:text>
 								<a href="https://getbootstrap.com"><i class="fa-brands fa-bootstrap jv-ico-left"></i>Bootstrap</a>
 								<xsl:text>, and </xsl:text>
-								<a href="https://fontawesome.com"><i class="fa-solid fa-font-awesome jv-ico-left"></i>Font Awesome</a>
+								<a href="https://fontawesome.com"><i class="fa-brands fa-font-awesome jv-ico-left"></i>Font Awesome</a>
 							</li>
 
 							<li class="mb-1">

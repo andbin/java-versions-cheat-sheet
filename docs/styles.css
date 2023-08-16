@@ -1,10 +1,18 @@
 .card .card-list { margin-bottom: 0; }
 .card-list { list-style-type: disc; }
 .card-list ul { list-style-type: square; }
-.fa-bootstrap { color: black; }
+.fa-bootstrap { color: #7532f9; }
+.fa-calendar-day { color: chocolate; }
+.fa-circle-user { color: dodgerblue; }
+.fa-code { color: crimson; }
 .fa-file-arrow-down { color: forestgreen; }
 .fa-file-pdf { color: #b30b00; }
-.fa-font-awesome { color: black; }
+.fa-font-awesome { color: #538dd7; }
+.fa-gear { color: orange; }
+.fa-github { color: #24292f; }
+.fa-heart { color: red; }
+.fa-scale-balanced { color: mediumseagreen; }
+.fa-server { color: darkblue; }
 .jv-card-box:target .card { -webkit-box-shadow: 0px 0px 12px -2px #666; -moz-box-shadow: 0px 0px 12px -2px #666; -o-box-shadow: 0px 0px 12px -2px #666; box-shadow: 0px 0px 12px -2px #666; }
 .jv-extra-info { font-size: 82%; font-weight: 600; margin-top: 0.6em; margin-bottom: 0.3em; }
 .jv-ico-left { padding-right: 0.2em; }
