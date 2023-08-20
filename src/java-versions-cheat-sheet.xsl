@@ -27,7 +27,8 @@
 	<xsl:variable name="epochDateTime" select="xs:dateTime('1970-01-01T00:00:00')"/>
 	<xsl:variable name="currDateTime" select="fn:current-dateTime()"/>
 
-	<xsl:variable name="lastModifiedStr" select="fn:format-dateTime($currDateTime, '[FNn,3-3], [D01] [MNn,3-3] [Y0001] [H01]:[m01]:[s01] [z]', 'en', (), ())"/>
+	<xsl:variable name="lastModifiedStr" select="fn:format-dateTime($currDateTime, '[FNn,3-3], [D01] [MNn,3-3] [Y0001] [H01]:[m01]:00 [z]', 'en', (), ())"/>
+	<xsl:variable name="cacheBusting" select="fn:format-dateTime($currDateTime, '?v=[Y01][M01][D01][H01][m01]', 'en', (), ())"/>
 
 	<xsl:variable name="oldVersion">Old version</xsl:variable>
 	<xsl:variable name="maintainedVersion">Old version but still maintained</xsl:variable>
@@ -61,8 +62,8 @@
 				<meta property="og:url" content="{$pageUrl}"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-				<link rel="stylesheet" href="styles.css"/>
-				<link rel="stylesheet" href="scrolltop.css"/>
+				<link rel="stylesheet" href="styles.css{$cacheBusting}"/>
+				<link rel="stylesheet" href="scrolltop.css{$cacheBusting}"/>
 			</head>
 			<body>
 				<div class="container">
@@ -194,7 +195,7 @@
 				</div>
 
 				<button type="button" id="scrolltop" title="Scroll to top"><i class="fa-solid fa-turn-up"></i></button>
-				<script src="scrolltop.js"/>
+				<script src="scrolltop.js{$cacheBusting}"/>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 			</body>
 		</html>
