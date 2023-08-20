@@ -179,7 +179,7 @@
 								<a href="{$processorVendorUrl}"><xsl:value-of select="$processorVendor"/></a>
 							</li>
 
-							<li>
+							<li class="mb-1">
 								<span class="fa-li"><i class="fa-solid fa-scale-balanced"></i></span>
 								<xsl:text>Licensed under a </xsl:text>
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
@@ -189,6 +189,15 @@
 								<i class="fa-brands fa-creative-commons-by fa-xl"></i>
 								<xsl:text> </xsl:text>
 								<i class="fa-brands fa-creative-commons-sa fa-xl"></i>
+							</li>
+
+							<li class="mb-0">
+								<span class="fa-li"><i class="fa-solid fa-shield-halved"></i></span>
+								<xsl:text>Read </xsl:text>
+								<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>
+								<xsl:text> (for this page) and </xsl:text>
+								<a href="https://www.cloudflare.com/privacypolicy">Cloudflare Privacy Policy</a>
+								<xsl:text> (for Bootstrap/Font Awesome usage)</xsl:text>
 							</li>
 						</ul>
 					</footer>

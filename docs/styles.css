@@ -13,6 +13,7 @@
 .fa-heart { color: red; }
 .fa-scale-balanced { color: mediumseagreen; }
 .fa-server { color: darkblue; }
+.fa-shield-halved { color: darkorchid; }
 .jv-card-box:target .card { -webkit-box-shadow: 0px 0px 12px -2px #666; -moz-box-shadow: 0px 0px 12px -2px #666; -o-box-shadow: 0px 0px 12px -2px #666; box-shadow: 0px 0px 12px -2px #666; }
 .jv-extra-info { font-size: 82%; font-weight: 600; margin-top: 0.6em; margin-bottom: 0.3em; }
 .jv-ico-left { padding-right: 0.2em; }
