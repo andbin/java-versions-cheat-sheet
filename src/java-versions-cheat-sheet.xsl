@@ -95,14 +95,14 @@
 
 					<ul class="fa-ul mb-5">
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle jv-status-old" title="{$oldVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle-minus jv-status-old" title="{$oldVersion}"></i></span>
 							<i class="fa-solid fa-arrow-right-long"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$oldVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle jv-status-maintained" title="{$maintainedVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status-maintained" title="{$maintainedVersion}"></i></span>
 							<i class="fa-solid fa-arrow-right-long"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$maintainedVersion"/>
@@ -116,7 +116,7 @@
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle jv-status-future" title="{$futureVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle-question jv-status-future" title="{$futureVersion}"></i></span>
 							<i class="fa-solid fa-arrow-right-long"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$futureVersion"/>
@@ -588,16 +588,16 @@
 	<xsl:template name="status-circle">
 		<xsl:choose>
 			<xsl:when test="@status = 'old'">
-				<i class="fa-solid fa-circle jv-status jv-status-old" title="{$oldVersion}"></i>
+				<i class="fa-solid fa-circle-minus jv-status jv-status-old" title="{$oldVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'maintained'">
-				<i class="fa-solid fa-circle jv-status jv-status-maintained" title="{$maintainedVersion}"></i>
+				<i class="fa-solid fa-circle-check jv-status jv-status-maintained" title="{$maintainedVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'current'">
 				<i class="fa-solid fa-circle-check jv-status jv-status-current" title="{$currentVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'future'">
-				<i class="fa-solid fa-circle jv-status jv-status-future" title="{$futureVersion}"></i>
+				<i class="fa-solid fa-circle-question jv-status jv-status-future" title="{$futureVersion}"></i>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>

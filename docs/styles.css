@@ -20,9 +20,10 @@
 .jv-ico-right { padding-left: 0.2em; }
 .jv-lts-badge { font-size: 75%; vertical-align: 10%; }
 .jv-status { margin-right: 0.25em; }
-.jv-status-current { color: limegreen; }
-.jv-status-future { color: deepskyblue; }
-.jv-status-maintained { color: gold; }
-.jv-status-old { color: orangered; }
+.jv-status-current { color: #00d800; }
+.jv-status-future { color: #00c8ff; }
+.jv-status-maintained { color: #ffcf00; }
+.jv-status-old { color: #ff0000; }
+.jv-status-current, .jv-status-future, .jv-status-maintained, .jv-status-old { font-size: 1.12em; vertical-align: -0.06em; }
 .jv-updated-at { color: firebrick; }
 .jv-val { font-weight: 600; }
