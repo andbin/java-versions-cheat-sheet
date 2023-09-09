@@ -1,6 +1,10 @@
+body { font-family: 'Roboto Flex', var(--bs-body-font-family); }
+h1 { font-weight: 600; }
+th { font-weight: 600; }
 .card .card-list { margin-bottom: 0; }
 .card-list { list-style-type: disc; }
 .card-list ul { list-style-type: square; }
+.card-title { font-weight: 600; }
 .fa-bootstrap { color: #7532f9; }
 .fa-calendar-day { color: chocolate; }
 .fa-circle-user { color: dodgerblue; }
@@ -18,12 +22,12 @@
 .jv-extra-info { font-size: 82%; font-weight: 600; margin-top: 0.6em; margin-bottom: 0.3em; }
 .jv-ico-left { padding-right: 0.2em; }
 .jv-ico-right { padding-left: 0.2em; }
-.jv-lts-badge { font-size: 75%; vertical-align: 10%; }
+.jv-lts-badge { font-size: 75%; font-weight: 600; padding-top: 0.4em; padding-bottom: 0.38em; vertical-align: 10%; }
 .jv-status { margin-right: 0.25em; }
 .jv-status-current { color: #00d800; }
 .jv-status-future { color: #00c8ff; }
 .jv-status-maintained { color: #ffcf00; }
 .jv-status-old { color: #ff0000; }
 .jv-status-current, .jv-status-future, .jv-status-maintained, .jv-status-old { font-size: 1.12em; vertical-align: -0.06em; }
-.jv-updated-at { color: firebrick; }
+.jv-updated-at { color: firebrick; font-weight: 500; }
 .jv-val { font-weight: 600; }

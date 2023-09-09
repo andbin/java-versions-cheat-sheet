@@ -62,13 +62,14 @@
 				<meta property="og:url" content="{$pageUrl}"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<link rel="stylesheet" href="fonts/roboto-flex.css{$cacheBusting}"/>
 				<link rel="stylesheet" href="styles.css{$cacheBusting}"/>
 				<link rel="stylesheet" href="scrolltop.css{$cacheBusting}"/>
 			</head>
 			<body>
 				<div class="container">
 					<div class="jumbotron border-bottom border-2 border-dark mt-2 mb-2">
-						<h1 class="fs-2 fw-semibold"><xsl:value-of select="$pageTitle"/></h1>
+						<h1 class="fs-2"><xsl:value-of select="$pageTitle"/></h1>
 					</div>
 
 					<div class="table-responsive mb-3">
@@ -315,7 +316,7 @@
 			<div class="card mb-2 border-secondary">
 				<div class="card-body">
 					<h5 class="card-title">
-						<span class="jv-val">
+						<span>
 							<xsl:value-of select="@lang-name"/>
 
 							<xsl:if test="@edition-name">
