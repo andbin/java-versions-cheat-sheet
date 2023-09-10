@@ -2,7 +2,9 @@
     function scrollSetup() {
         scrollButton().onclick = scrollToTop;
         scrollHandler();
-        window.onscroll = scrollHandler;
+        window.addEventListener("scroll", function(e) {
+            scrollHandler();
+        });
     }
 
     function scrollHandler() {
@@ -25,5 +27,7 @@
         return document.getElementById("scrolltop");
     }
 
-    window.onload = scrollSetup;
+    window.addEventListener("load", function(e) {
+        scrollSetup();
+    });
 }());
