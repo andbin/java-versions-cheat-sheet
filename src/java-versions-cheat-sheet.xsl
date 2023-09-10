@@ -68,7 +68,7 @@
 			</head>
 			<body>
 				<div class="container">
-					<div class="jumbotron border-bottom border-2 border-dark mt-2 mb-2">
+					<div class="jumbotron border-bottom border-2 border-dark mt-2 mb-3">
 						<h1 class="fs-2"><xsl:value-of select="$pageTitle"/></h1>
 					</div>
 
@@ -76,16 +76,16 @@
 						<table class="table table-hover border-secondary text-nowrap mb-1">
 							<thead>
 								<tr>
-									<th scope="col" title="Java version">Java version</th>
-									<th scope="col" title="Java Specification Request">JSR</th>
-									<th scope="col" title="Release date" class="text-end">Release date</th>
-									<th scope="col" title="Latest JDK build">Latest build</th>
-									<th scope="col" title="Class file version (major.minor)">Class<br/>vers.</th>
-									<th scope="col" title="JDK Documentation">JDK<br/>Doc.</th>
-									<th scope="col" title="API Specification">API<br/>Spec.</th>
-									<th scope="col" title="API Differences">API Diff.</th>
-									<th scope="col" title="Java Language Specification">JLS</th>
-									<th scope="col" title="Java Virtual Machine Specification">JVMS</th>
+									<th scope="col"><span title="Java version">Java version</span></th>
+									<th scope="col"><span title="Java Specification Request">JSR</span></th>
+									<th scope="col" class="text-end"><span title="First release date">Release date</span></th>
+									<th scope="col"><span title="Latest JDK build">Latest build</span></th>
+									<th scope="col" class="text-center"><span title="Class file version (major.minor)">Cl. Ver.</span></th>
+									<th scope="col"><span title="JDK Documentation">Doc.</span></th>
+									<th scope="col"><span title="API Specification">API</span></th>
+									<th scope="col"><span title="API Differences">API Diff.</span></th>
+									<th scope="col"><span title="Java Language Specification">JLS</span></th>
+									<th scope="col"><span title="Java Virtual Machine Specification">JVMS</span></th>
 								</tr>
 							</thead>
 							<tbody>
@@ -161,9 +161,9 @@
 							<li class="mb-1">
 								<span class="fa-li"><i class="fa-solid fa-code"></i></span>
 								<xsl:text>Coded with </xsl:text>
-								<a href="https://en.wikipedia.org/wiki/XML">XML</a>
+								<a href="https://en.wikipedia.org/wiki/XML" title="eXtensible Markup Language">XML</a>
 								<xsl:text>, </xsl:text>
-								<a href="https://en.wikipedia.org/wiki/XSL">XSL</a>
+								<a href="https://en.wikipedia.org/wiki/XSL" title="eXtensible Stylesheet Language">XSL</a>
 								<xsl:text>, </xsl:text>
 								<a href="https://getbootstrap.com"><i class="fa-brands fa-bootstrap jv-ico-left"></i>Bootstrap</a>
 								<xsl:text>, and </xsl:text>
@@ -252,7 +252,7 @@
 				</xsl:if>
 			</td>
 
-			<td>
+			<td class="text-center">
 				<span title="{@lang-name} class file version">
 					<xsl:value-of select="@class-major"/>
 					<xsl:choose>
@@ -317,14 +317,12 @@
 			<div class="card mb-2 border-secondary">
 				<div class="card-body">
 					<h5 class="card-title">
-						<span>
-							<xsl:value-of select="@lang-name"/>
+						<xsl:value-of select="@lang-name"/>
 
-							<xsl:if test="@edition-name">
-								<xsl:text> / </xsl:text>
-								<xsl:value-of select="@edition-name"/>
-							</xsl:if>
-						</span>
+						<xsl:if test="@edition-name">
+							<xsl:text> / </xsl:text>
+							<xsl:value-of select="@edition-name"/>
+						</xsl:if>
 
 						<xsl:if test="@lts = 'yes'">
 							<xsl:text> </xsl:text>
