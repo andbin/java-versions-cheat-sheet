@@ -152,9 +152,7 @@
 
 							<li class="mb-1">
 								<span class="fa-li"><i class="fa-solid fa-server"></i></span>
-								<xsl:text>Hosted on </xsl:text>
-								<i class="fa-brands fa-github jv-ico-left"></i>
-								<xsl:text>GitHub at </xsl:text>
+								<xsl:text>Hosted on GitHub at </xsl:text>
 								<a href="{$projectUrl}"><xsl:value-of select="$projectName"/></a>
 							</li>
 
@@ -165,9 +163,9 @@
 								<xsl:text>, </xsl:text>
 								<a href="https://en.wikipedia.org/wiki/XSL" title="eXtensible Stylesheet Language">XSL</a>
 								<xsl:text>, </xsl:text>
-								<a href="https://getbootstrap.com"><i class="fa-brands fa-bootstrap jv-ico-left"></i>Bootstrap</a>
+								<a href="https://getbootstrap.com">Bootstrap</a>
 								<xsl:text>, and </xsl:text>
-								<a href="https://fontawesome.com"><i class="fa-brands fa-font-awesome jv-ico-left"></i>Font Awesome</a>
+								<a href="https://fontawesome.com">Font Awesome</a>
 							</li>
 
 							<li class="mb-1">
@@ -184,12 +182,6 @@
 								<span class="fa-li"><i class="fa-solid fa-scale-balanced"></i></span>
 								<xsl:text>Licensed under a </xsl:text>
 								<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
-								<xsl:text> </xsl:text>
-								<i class="fa-brands fa-creative-commons fa-xl"></i>
-								<xsl:text> </xsl:text>
-								<i class="fa-brands fa-creative-commons-by fa-xl"></i>
-								<xsl:text> </xsl:text>
-								<i class="fa-brands fa-creative-commons-sa fa-xl"></i>
 							</li>
 
 							<li class="mb-0">

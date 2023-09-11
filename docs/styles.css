@@ -5,15 +5,12 @@ th { font-weight: 600; }
 .card-list { list-style-type: disc; }
 .card-list ul { list-style-type: square; }
 .card-title { font-weight: 600; }
-.fa-bootstrap { color: #7532f9; }
 .fa-calendar-day { color: chocolate; }
 .fa-circle-user { color: dodgerblue; }
 .fa-code { color: crimson; }
 .fa-file-arrow-down { color: forestgreen; }
 .fa-file-pdf { color: #b30b00; }
-.fa-font-awesome { color: #538dd7; }
 .fa-gear { color: orange; }
-.fa-github { color: #24292f; }
 .fa-heart { color: red; }
 .fa-scale-balanced { color: mediumseagreen; }
 .fa-server { color: darkblue; }
