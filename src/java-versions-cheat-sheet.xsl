@@ -68,9 +68,9 @@
 			</head>
 			<body>
 				<div class="container">
-					<div class="jumbotron border-bottom border-2 border-dark mt-2 mb-3">
-						<h1 class="fs-2"><xsl:value-of select="$pageTitle"/></h1>
-					</div>
+					<h1 class="fs-2 pb-1 border-bottom border-2 border-dark mt-3 mb-3">
+						<xsl:value-of select="$pageTitle"/>
+					</h1>
 
 					<div class="table-responsive mb-3">
 						<table class="table table-hover border-secondary text-nowrap mb-1">
@@ -128,71 +128,77 @@
 						<xsl:apply-templates select="java" mode="card"/>
 					</div>
 
-					<footer class="pt-3 pb-3 mb-3 border-top border-bottom border-2 border-secondary-subtle">
-						<ul class="fa-ul mb-0">
-							<li class="mb-1">
-								<span class="fa-li"><i class="fa-solid fa-calendar-day"></i></span>
-								<xsl:text>Java information updated at </xsl:text>
-								<span class="jv-updated-at"><xsl:value-of select="$infoUpdatedAtFmt"/></span>
-								<script>
-									<xsl:text>var daysAgo = Math.floor((Date.now() - new Date(</xsl:text>
-									<xsl:value-of select="$infoUpdatedAtMillis"/>
-									<xsl:text>)) / 86400000); </xsl:text>
-									<xsl:text>document.write(" (" + daysAgo + " " + (daysAgo == 1 ? "day" : "days") + " ago)");</xsl:text>
-								</script>
-							</li>
+					<footer>
+						<div class="pt-3 mb-3 border-top border-2 border-secondary-subtle">
+							<ul class="fa-ul mb-0">
+								<li class="mb-1">
+									<span class="fa-li"><i class="fa-solid fa-calendar-day"></i></span>
+									<xsl:text>Java information updated at </xsl:text>
+									<span class="jv-updated-at"><xsl:value-of select="$infoUpdatedAtFmt"/></span>
+									<script>
+										<xsl:text>var daysAgo = Math.floor((Date.now() - new Date(</xsl:text>
+										<xsl:value-of select="$infoUpdatedAtMillis"/>
+										<xsl:text>)) / 86400000); </xsl:text>
+										<xsl:text>document.write(" (" + daysAgo + " " + (daysAgo == 1 ? "day" : "days") + " ago)");</xsl:text>
+									</script>
+								</li>
 
-							<li class="mb-1">
-								<span class="fa-li"><i class="fa-solid fa-circle-user"></i></span>
-								<xsl:text>Developed with </xsl:text>
-								<i class="fa-solid fa-heart"></i>
-								<xsl:text> for Java by Andrea Binello (“andbin”) &#x2013; </xsl:text>
-								<a href="https://andbin.dev">andbin.dev</a>
-							</li>
+								<li class="mb-1">
+									<span class="fa-li"><i class="fa-solid fa-circle-user"></i></span>
+									<xsl:text>Developed with </xsl:text>
+									<i class="fa-solid fa-heart"></i>
+									<xsl:text> for Java by Andrea Binello (“andbin”) &#x2013; </xsl:text>
+									<a href="https://andbin.dev">andbin.dev</a>
+								</li>
 
-							<li class="mb-1">
-								<span class="fa-li"><i class="fa-solid fa-server"></i></span>
-								<xsl:text>Hosted on GitHub at </xsl:text>
-								<a href="{$projectUrl}"><xsl:value-of select="$projectName"/></a>
-							</li>
+								<li class="mb-1">
+									<span class="fa-li"><i class="fa-solid fa-server"></i></span>
+									<xsl:text>Hosted on GitHub at </xsl:text>
+									<a href="{$projectUrl}"><xsl:value-of select="$projectName"/></a>
+								</li>
 
-							<li class="mb-1">
-								<span class="fa-li"><i class="fa-solid fa-code"></i></span>
-								<xsl:text>Coded with </xsl:text>
-								<a href="https://en.wikipedia.org/wiki/XML" title="eXtensible Markup Language">XML</a>
-								<xsl:text>, </xsl:text>
-								<a href="https://en.wikipedia.org/wiki/XSL" title="eXtensible Stylesheet Language">XSL</a>
-								<xsl:text>, </xsl:text>
-								<a href="https://getbootstrap.com">Bootstrap</a>
-								<xsl:text>, and </xsl:text>
-								<a href="https://fontawesome.com">Font Awesome</a>
-							</li>
+								<li class="mb-1">
+									<span class="fa-li"><i class="fa-solid fa-code"></i></span>
+									<xsl:text>Coded with </xsl:text>
+									<a href="https://en.wikipedia.org/wiki/XML" title="eXtensible Markup Language">XML</a>
+									<xsl:text>, </xsl:text>
+									<a href="https://en.wikipedia.org/wiki/XSL" title="eXtensible Stylesheet Language">XSL</a>
+									<xsl:text>, </xsl:text>
+									<a href="https://getbootstrap.com">Bootstrap</a>
+									<xsl:text>, and </xsl:text>
+									<a href="https://fontawesome.com">Font Awesome</a>
+								</li>
 
-							<li class="mb-1">
-								<span class="fa-li"><i class="fa-solid fa-gear"></i></span>
-								<xsl:text>Generated with </xsl:text>
-								<xsl:value-of select="$processorName"/>
-								<xsl:text> </xsl:text>
-								<xsl:value-of select="$processorVersion"/>
-								<xsl:text> by </xsl:text>
-								<a href="{$processorVendorUrl}"><xsl:value-of select="$processorVendor"/></a>
-							</li>
+								<li class="mb-1">
+									<span class="fa-li"><i class="fa-solid fa-gear"></i></span>
+									<xsl:text>Generated with </xsl:text>
+									<xsl:value-of select="$processorName"/>
+									<xsl:text> </xsl:text>
+									<xsl:value-of select="$processorVersion"/>
+									<xsl:text> by </xsl:text>
+									<a href="{$processorVendorUrl}"><xsl:value-of select="$processorVendor"/></a>
+								</li>
 
-							<li class="mb-1">
-								<span class="fa-li"><i class="fa-solid fa-scale-balanced"></i></span>
-								<xsl:text>Licensed under a </xsl:text>
-								<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
-							</li>
+								<li class="mb-1">
+									<span class="fa-li"><i class="fa-solid fa-scale-balanced"></i></span>
+									<xsl:text>Licensed under a </xsl:text>
+									<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+								</li>
 
-							<li class="mb-0">
-								<span class="fa-li"><i class="fa-solid fa-shield-halved"></i></span>
-								<xsl:text>Read </xsl:text>
-								<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>
-								<xsl:text> (for this page) and </xsl:text>
-								<a href="https://www.cloudflare.com/privacypolicy">Cloudflare Privacy Policy</a>
-								<xsl:text> (for Bootstrap/Font Awesome usage)</xsl:text>
-							</li>
-						</ul>
+								<li class="mb-0">
+									<span class="fa-li"><i class="fa-solid fa-shield-halved"></i></span>
+									<xsl:text>Read </xsl:text>
+									<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>
+									<xsl:text> (for this page) and </xsl:text>
+									<a href="https://www.cloudflare.com/privacypolicy">Cloudflare Privacy Policy</a>
+									<xsl:text> (for Bootstrap/Font Awesome usage)</xsl:text>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pt-3 mb-3 border-top border-2 border-secondary-subtle text-center">
+							<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img decoding="async" loading="lazy" src="images/cc-by-sa.svg" class="jv-cc-badge" alt="Creative Commons Attribution-ShareAlike License"/></a>
+						</div>
 					</footer>
 				</div>
 

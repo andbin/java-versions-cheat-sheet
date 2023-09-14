@@ -1,0 +1,6 @@
+NOTES ON IMAGES:
+--------------------------------------------------------------------------------
+"by-sa.svg":
+  - image downloaded from: https://creativecommons.org/about/downloads/
+  - minified with online tool: https://vecta.io/nano as "cc-by-sa.svg"
+--------------------------------------------------------------------------------
