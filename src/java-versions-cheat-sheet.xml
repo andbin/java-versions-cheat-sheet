@@ -90,10 +90,12 @@
 		<api-docs
 				title="Java™ Platform, Standard Edition 6 API Specification"
 				url="https://docs.oracle.com/javase/6/docs/api/"/>
-		<jls edition="Third Edition"
+		<jls-docs
+				title="The Java Language Specification, Third Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se6/html/j3TOC.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se6/jls3.pdf"/>
-		<jvms edition="Second Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Second Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se6/html/VMSpecTOC.doc.html"/>
 		<sys-confs
 				title="Oracle Certified System Configurations - Java SE 6"
@@ -113,10 +115,12 @@
 		<api-docs
 				title="Java™ Platform, Standard Edition 7 API Specification"
 				url="https://docs.oracle.com/javase/7/docs/api/"/>
-		<jls edition="Java SE 7 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 7 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se7/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se7/jls7.pdf"/>
-		<jvms edition="Java SE 7 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 7 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se7/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se7/jvms7.pdf"/>
 		<rel-notes
@@ -140,10 +144,12 @@
 		<api-diff
 				title="API Differences between Java SE 7 &amp; Java SE 8 (b129)"
 				url="https://cr.openjdk.org/~iris/se/8/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 8 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 8 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se8/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se8/jls8.pdf"/>
-		<jvms edition="Java SE 8 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 8 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se8/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf"/>
 		<rel-notes
@@ -167,10 +173,12 @@
 		<api-diff
 				title="API Differences between Java SE 8 &amp; Java SE 9 (build 181)"
 				url="https://cr.openjdk.java.net/~iris/se/9/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 9 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 9 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se9/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se9/jls9.pdf"/>
-		<jvms edition="Java SE 9 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 9 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se9/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se9/jvms9.pdf"/>
 		<rel-notes
@@ -194,10 +202,12 @@
 		<api-diff
 				title="API Differences between Java SE 9 (build 181) &amp; Java SE 10 (build 44)"
 				url="https://cr.openjdk.java.net/~iris/se/10/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 10 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 10 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se10/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se10/jls10.pdf"/>
-		<jvms edition="Java SE 10 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 10 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se10/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se10/jvms10.pdf"/>
 		<rel-notes
@@ -221,10 +231,12 @@
 		<api-diff
 				title="API Differences between Java SE 10 (build 45) &amp; Java SE 11 (build 28)"
 				url="https://cr.openjdk.java.net/~iris/se/11/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 11 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 11 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se11/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se11/jls11.pdf"/>
-		<jvms edition="Java SE 11 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 11 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se11/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se11/jvms11.pdf"/>
 		<announcement
@@ -251,10 +263,12 @@
 		<api-diff
 				title="API Differences between Java SE 11 (build 28) &amp; Java SE 12 (build 32)"
 				url="https://cr.openjdk.java.net/~iris/se/12/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 12 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 12 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se12/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se12/jls12.pdf"/>
-		<jvms edition="Java SE 12 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 12 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se12/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se12/jvms12.pdf"/>
 		<announcement
@@ -281,10 +295,12 @@
 		<api-diff
 				title="API Differences between Java SE 12 (build 32) &amp; Java SE 13 (build 33)"
 				url="https://cr.openjdk.java.net/~iris/se/13/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 13 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 13 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se13/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se13/jls13.pdf"/>
-		<jvms edition="Java SE 13 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 13 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se13/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se13/jvms13.pdf"/>
 		<announcement
@@ -311,10 +327,12 @@
 		<api-diff
 				title="API Differences between Java SE 13 (build 33) &amp; Java SE 14 (build 36)"
 				url="https://cr.openjdk.java.net/~iris/se/14/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 14 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 14 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se14/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se14/jls14.pdf"/>
-		<jvms edition="Java SE 14 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 14 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se14/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se14/jvms14.pdf"/>
 		<announcement
@@ -341,10 +359,12 @@
 		<api-diff
 				title="API Differences between Java SE 14 (build 36) &amp; Java SE 15 (build 36)"
 				url="https://cr.openjdk.java.net/~iris/se/15/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 15 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 15 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se15/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se15/jls15.pdf"/>
-		<jvms edition="Java SE 15 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 15 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se15/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se15/jvms15.pdf"/>
 		<announcement
@@ -371,10 +391,12 @@
 		<api-diff
 				title="API Differences between Java SE 15 (build 36) &amp; Java SE 16 (build 36)"
 				url="https://cr.openjdk.java.net/~iris/se/16/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 16 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 16 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se16/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se16/jls16.pdf"/>
-		<jvms edition="Java SE 16 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 16 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se16/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se16/jvms16.pdf"/>
 		<announcement
@@ -401,10 +423,12 @@
 		<api-diff
 				title="API Differences between Java SE 16 (build 36) &amp; Java SE 17 (build 35)"
 				url="https://cr.openjdk.java.net/~iris/se/17/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 17 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 17 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se17/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se17/jls17.pdf"/>
-		<jvms edition="Java SE 17 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 17 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se17/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se17/jvms17.pdf"/>
 		<announcement
@@ -431,10 +455,12 @@
 		<api-diff
 				title="API Differences between Java SE 17 (build 35) &amp; Java SE 18 (build 37)"
 				url="https://cr.openjdk.java.net/~iris/se/18/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 18 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 18 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se18/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se18/jls18.pdf"/>
-		<jvms edition="Java SE 18 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 18 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se18/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se18/jvms18.pdf"/>
 		<announcement
@@ -461,10 +487,12 @@
 		<api-diff
 				title="API Differences between Java SE 18 (build 36) &amp; Java SE 19 (build 36)"
 				url="https://cr.openjdk.java.net/~iris/se/19/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 19 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 19 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se19/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se19/jls19.pdf"/>
-		<jvms edition="Java SE 19 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 19 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se19/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se19/jvms19.pdf"/>
 		<announcement
@@ -491,10 +519,12 @@
 		<api-diff
 				title="API Differences between Java SE 19 (build 36) &amp; Java SE 20 (build 36)"
 				url="https://cr.openjdk.java.net/~iris/se/20/latestSpec/apidiffs/overview-summary.html"/>
-		<jls edition="Java SE 20 Edition"
+		<jls-docs
+				title="The Java Language Specification, Java SE 20 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jls/se20/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jls/se20/jls20.pdf"/>
-		<jvms edition="Java SE 20 Edition"
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 20 Edition"
 				web-url="https://docs.oracle.com/javase/specs/jvms/se20/html/index.html"
 				pdf-url="https://docs.oracle.com/javase/specs/jvms/se20/jvms20.pdf"/>
 		<announcement

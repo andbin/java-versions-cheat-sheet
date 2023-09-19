@@ -284,26 +284,26 @@
 			</td>
 
 			<td>
-				<xsl:if test="jls[1]/@web-url">
-					<a href="{jls[1]/@web-url}" title="The Java Language Specification, {jls[1]/@edition}">JLS</a>
+				<xsl:if test="jls-docs[1]/@web-url">
+					<a href="{jls-docs[1]/@web-url}" title="{jls-docs[1]/@title}">JLS</a>
 				</xsl:if>
-				<xsl:if test="jls[1]/@web-url and jls[1]/@pdf-url">
+				<xsl:if test="jls-docs[1]/@web-url and jls-docs[1]/@pdf-url">
 					<xsl:text> &#x2022; </xsl:text>
 				</xsl:if>
-				<xsl:if test="jls[1]/@pdf-url">
-					<a href="{jls[1]/@pdf-url}" title="The Java Language Specification, {jls[1]/@edition} (PDF)">JLS<i class="fa-solid fa-file-pdf jv-ico-right"></i></a>
+				<xsl:if test="jls-docs[1]/@pdf-url">
+					<a href="{jls-docs[1]/@pdf-url}" title="{jls-docs[1]/@title} (PDF)">JLS<i class="fa-solid fa-file-pdf jv-ico-right"></i></a>
 				</xsl:if>
 			</td>
 
 			<td>
-				<xsl:if test="jvms[1]/@web-url">
-					<a href="{jvms[1]/@web-url}" title="The Java Virtual Machine Specification, {jvms[1]/@edition}">JVMS</a>
+				<xsl:if test="jvms-docs[1]/@web-url">
+					<a href="{jvms-docs[1]/@web-url}" title="{jvms-docs[1]/@title}">JVMS</a>
 				</xsl:if>
-				<xsl:if test="jvms[1]/@web-url and jvms[1]/@pdf-url">
+				<xsl:if test="jvms-docs[1]/@web-url and jvms-docs[1]/@pdf-url">
 					<xsl:text> &#x2022; </xsl:text>
 				</xsl:if>
-				<xsl:if test="jvms[1]/@pdf-url">
-					<a href="{jvms[1]/@pdf-url}" title="The Java Virtual Machine Specification, {jvms[1]/@edition} (PDF)">JVMS<i class="fa-solid fa-file-pdf jv-ico-right"></i></a>
+				<xsl:if test="jvms-docs[1]/@pdf-url">
+					<a href="{jvms-docs[1]/@pdf-url}" title="{jvms-docs[1]/@title} (PDF)">JVMS<i class="fa-solid fa-file-pdf jv-ico-right"></i></a>
 				</xsl:if>
 			</td>
 		</tr>
@@ -428,23 +428,21 @@
 							</li>
 						</xsl:if>
 
-						<xsl:if test="jls[1]">
+						<xsl:if test="jls-docs[1]">
 							<li>
 								<xsl:text>Java Language Specification: </xsl:text>
 								<ul>
-									<xsl:if test="jls[1]/@web-url">
+									<xsl:if test="jls-docs[1]/@web-url">
 										<li>
-											<a href="{jls[1]/@web-url}" class="jv-val">
-												<xsl:text>The Java Language Specification, </xsl:text>
-												<xsl:value-of select="jls[1]/@edition"/>
+											<a href="{jls-docs[1]/@web-url}" class="jv-val">
+												<xsl:value-of select="jls-docs[1]/@title"/>
 											</a>
 										</li>
 									</xsl:if>
-									<xsl:if test="jls[1]/@pdf-url">
+									<xsl:if test="jls-docs[1]/@pdf-url">
 										<li>
-											<a href="{jls[1]/@pdf-url}" class="jv-val">
-												<xsl:text>The Java Language Specification, </xsl:text>
-												<xsl:value-of select="jls[1]/@edition"/>
+											<a href="{jls-docs[1]/@pdf-url}" class="jv-val">
+												<xsl:value-of select="jls-docs[1]/@title"/>
 												<xsl:text> (PDF)</xsl:text>
 											</a>
 										</li>
@@ -453,23 +451,21 @@
 							</li>
 						</xsl:if>
 
-						<xsl:if test="jvms[1]">
+						<xsl:if test="jvms-docs[1]">
 							<li>
 								<xsl:text>JVM Specification: </xsl:text>
 								<ul>
-									<xsl:if test="jvms[1]/@web-url">
+									<xsl:if test="jvms-docs[1]/@web-url">
 										<li>
-											<a href="{jvms[1]/@web-url}" class="jv-val">
-												<xsl:text>The Java Virtual Machine Specification, </xsl:text>
-												<xsl:value-of select="jvms[1]/@edition"/>
+											<a href="{jvms-docs[1]/@web-url}" class="jv-val">
+												<xsl:value-of select="jvms-docs[1]/@title"/>
 											</a>
 										</li>
 									</xsl:if>
-									<xsl:if test="jvms[1]/@pdf-url">
+									<xsl:if test="jvms-docs[1]/@pdf-url">
 										<li>
-											<a href="{jvms[1]/@pdf-url}" class="jv-val">
-												<xsl:text>The Java Virtual Machine Specification, </xsl:text>
-												<xsl:value-of select="jvms[1]/@edition"/>
+											<a href="{jvms-docs[1]/@pdf-url}" class="jv-val">
+												<xsl:value-of select="jvms-docs[1]/@title"/>
 												<xsl:text> (PDF)</xsl:text>
 											</a>
 										</li>
