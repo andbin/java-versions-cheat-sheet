@@ -575,7 +575,8 @@
 			class-major="66">
 		<api-docs
 				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 22 API Specification"
-				url="https://download.java.net/java/early_access/jdk22/docs/api/"/>
+				url="https://download.java.net/java/early_access/jdk22/docs/api/"
+				draft="yes"/>
 	</java>
 
 	<java lang-name="Java 23" edition-name="Java SE 23" jdk-name="JDK 23"

@@ -271,7 +271,18 @@
 
 			<td>
 				<xsl:if test="api-docs[1]">
-					<a href="{api-docs[1]/@url}" title="{api-docs[1]/@title}">API</a>
+					<a href="{api-docs[1]/@url}">
+						<xsl:attribute name="title">
+							<xsl:value-of select="api-docs[1]/@title"/>
+							<xsl:if test="api-docs[1]/@draft = 'yes'">
+								<xsl:text> [DRAFT]</xsl:text>
+							</xsl:if>
+						</xsl:attribute>
+						<xsl:text>API</xsl:text>
+					</a>
+					<xsl:if test="api-docs[1]/@draft = 'yes'">
+						<i class="fa-solid fa-star-half-stroke jv-draft" title="DRAFT"></i>
+					</xsl:if>
 				</xsl:if>
 			</td>
 
@@ -416,6 +427,10 @@
 								<a href="{api-docs[1]/@url}" class="jv-val">
 									<xsl:value-of select="api-docs[1]/@title"/>
 								</a>
+								<xsl:if test="api-docs[1]/@draft = 'yes'">
+									<xsl:text> </xsl:text>
+									<span class="badge rounded-pill jv-draft" title="This API Specification is a “draft”">DRAFT</span>
+								</xsl:if>
 							</li>
 						</xsl:if>
 
