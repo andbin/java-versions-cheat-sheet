@@ -262,12 +262,10 @@
 
 			<td>
 				<xsl:if test="jdk-docs[1]">
-					<a href="{jdk-docs[1]/@url}" title="{jdk-docs[1]/@title}">
-						<xsl:text>Doc</xsl:text>
-						<xsl:if test="jdk-docs[1]/@type = 'download-page'">
-							<i class="fa-solid fa-file-arrow-down jv-ico-right"></i>
-						</xsl:if>
-					</a>
+					<a href="{jdk-docs[1]/@url}" title="{jdk-docs[1]/@title}">Doc</a>
+					<xsl:if test="jdk-docs[1]/@type = 'download-page'">
+						<i class="fa-solid fa-file-arrow-down jv-ico-right" title="Download page"></i>
+					</xsl:if>
 				</xsl:if>
 			</td>
 
@@ -291,7 +289,8 @@
 					<xsl:text> &#x2022; </xsl:text>
 				</xsl:if>
 				<xsl:if test="jls-docs[1]/@pdf-url">
-					<a href="{jls-docs[1]/@pdf-url}" title="{jls-docs[1]/@title} (PDF)">JLS<i class="fa-solid fa-file-pdf jv-ico-right"></i></a>
+					<a href="{jls-docs[1]/@pdf-url}" title="{jls-docs[1]/@title} (PDF)">JLS</a>
+					<i class="fa-solid fa-file-pdf jv-ico-right" title="PDF file"></i>
 				</xsl:if>
 			</td>
 
@@ -303,7 +302,8 @@
 					<xsl:text> &#x2022; </xsl:text>
 				</xsl:if>
 				<xsl:if test="jvms-docs[1]/@pdf-url">
-					<a href="{jvms-docs[1]/@pdf-url}" title="{jvms-docs[1]/@title} (PDF)">JVMS<i class="fa-solid fa-file-pdf jv-ico-right"></i></a>
+					<a href="{jvms-docs[1]/@pdf-url}" title="{jvms-docs[1]/@title} (PDF)">JVMS</a>
+					<i class="fa-solid fa-file-pdf jv-ico-right" title="PDF file"></i>
 				</xsl:if>
 			</td>
 		</tr>
