@@ -323,23 +323,23 @@
 
 	<xsl:template match="java" mode="card">
 		<div id="{jvcs:stringToId(@lang-name)}" class="jv-card-box pt-3">
-			<div class="card mb-2 border-secondary">
+			<div class="card mb-2">
+				<h5 class="card-header">
+					<xsl:value-of select="@lang-name"/>
+
+					<xsl:if test="@edition-name">
+						<xsl:text> / </xsl:text>
+						<xsl:value-of select="@edition-name"/>
+					</xsl:if>
+
+					<xsl:if test="@lts = 'yes'">
+						<xsl:text> </xsl:text>
+						<span class="badge rounded-pill text-bg-primary jv-lts-badge" title="Long-Term Support">LTS</span>
+					</xsl:if>
+				</h5>
+
 				<div class="card-body">
-					<h5 class="card-title">
-						<xsl:value-of select="@lang-name"/>
-
-						<xsl:if test="@edition-name">
-							<xsl:text> / </xsl:text>
-							<xsl:value-of select="@edition-name"/>
-						</xsl:if>
-
-						<xsl:if test="@lts = 'yes'">
-							<xsl:text> </xsl:text>
-							<span class="badge rounded-pill text-bg-primary jv-lts-badge" title="Long-Term Support">LTS</span>
-						</xsl:if>
-					</h5>
-
-					<ul class="card-list">
+					<ul>
 						<li>
 							<xsl:text>Status: </xsl:text>
 							<xsl:call-template name="status-circle"/>
@@ -492,7 +492,7 @@
 
 					<xsl:if test="announcement[1] or rel-notes[1] or sys-confs[1]">
 						<h6 class="jv-extra-info">EXTRA INFO:</h6>
-						<ul class="card-list">
+						<ul>
 							<xsl:if test="announcement[1]">
 								<li>
 									<xsl:text>Announcement: </xsl:text>
