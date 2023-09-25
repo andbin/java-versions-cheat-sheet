@@ -1,10 +1,10 @@
-body { font-family: 'Roboto Flex', var(--bs-body-font-family); }
-h1 { font-weight: 600; }
-th { font-weight: 600; }
+body { font-family: 'Roboto', var(--bs-body-font-family); }
+h1 { font-weight: 700; }
+th { font-weight: 500; }
 .card { border-color: #222; }
 .card ul { list-style: disc; margin-bottom: 0; }
 .card ul ul { list-style: square; }
-.card-header { background-color: #f2f2f2; border-color: #888; font-weight: 600; }
+.card-header { background-color: #f2f2f2; border-color: #888; font-weight: 700; }
 .fa-calendar-day { color: chocolate; }
 .fa-circle-user { color: dodgerblue; }
 .fa-code { color: crimson; }
@@ -19,10 +19,10 @@ th { font-weight: 600; }
 .jv-cc-badge { height: 2.8rem; }
 .jv-draft.badge { background-color: #f040f0; }
 .jv-draft.fa-star-half-stroke { color: #f040f0; }
-.jv-extra-info { font-size: 82%; font-weight: 600; margin-top: 0.6em; margin-bottom: 0.3em; }
+.jv-extra-info { font-size: 82%; font-weight: 700; margin-top: 0.6em; margin-bottom: 0.3em; }
 .jv-ico-left { padding-right: 0.2em; }
 .jv-ico-right { padding-left: 0.2em; }
-.jv-lts-badge { font-size: 75%; font-weight: 600; padding-top: 0.4em; padding-bottom: 0.38em; vertical-align: 10%; }
+.jv-lts-badge { font-size: 75%; font-weight: 700; padding-top: 0.4em; padding-bottom: 0.38em; vertical-align: 10%; }
 .jv-status { margin-right: 0.25em; }
 .jv-status-current { color: #00d800; }
 .jv-status-future { color: #00c8ff; }
@@ -30,7 +30,7 @@ th { font-weight: 600; }
 .jv-status-old { color: #ff0000; }
 .jv-status-current, .jv-status-future, .jv-status-maintained, .jv-status-old { font-size: 1.12em; vertical-align: -0.06em; }
 .jv-updated-at { color: firebrick; font-weight: 500; }
-.jv-val { font-weight: 600; }
+.jv-val { font-weight: 500; }
 .tooltip {
   --bs-tooltip-arrow-height: 0.6rem;
   --bs-tooltip-arrow-width: 0.8rem;
