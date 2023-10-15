@@ -124,6 +124,25 @@
 						</li>
 					</ul>
 
+					<div class="mb-5 card jv-resources">
+						<div class="card-body">
+							<h5 class="card-title">Oracle Resources</h5>
+							<a href="https://www.oracle.com/java/technologies/">Java Technologies</a>
+							<span> — </span>
+							<a href="https://blogs.oracle.com/java/">Java Blog</a>
+							<span> — </span>
+							<a href="https://www.oracle.com/java/technologies/downloads/">Java Downloads</a>
+							<span> — </span>
+							<a href="https://docs.oracle.com/javase/tutorial/">The Java™ Tutorials</a>
+							<span> — </span>
+							<a href="https://www.oracle.com/java/technologies/javase/codeconventions-contents.html">Code Conventions for the Java™ Programming Language</a>
+							<span> — </span>
+							<a href="https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html">Java HotSpot VM Options</a>
+							<span> — </span>
+							<a href="https://www.oracle.com/java/technologies/javase/seccodeguide.html">Secure Coding Guidelines for Java SE</a>
+						</div>
+					</div>
+
 					<div class="mb-5">
 						<xsl:apply-templates select="java" mode="card"/>
 					</div>
@@ -185,13 +204,19 @@
 									<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 								</li>
 
-								<li class="mb-0">
+								<li class="mb-1">
 									<span class="fa-li"><i class="fa-solid fa-shield-halved"></i></span>
 									<xsl:text>Read </xsl:text>
 									<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>
 									<xsl:text> (for this page) and </xsl:text>
 									<a href="https://www.cloudflare.com/privacypolicy">Cloudflare Privacy Policy</a>
 									<xsl:text> (for Bootstrap/Font Awesome usage)</xsl:text>
+								</li>
+
+								<li class="mb-0">
+									<span class="fa-li"><i class="fa-solid fa-registered"></i></span>
+									<xsl:text>Oracle® and Java are registered trademarks of </xsl:text>
+									<a href="https://www.oracle.com">Oracle</a>
 								</li>
 							</ul>
 						</div>
