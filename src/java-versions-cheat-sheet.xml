@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2023-09-21" update-time="14:15:00" update-tz="+02:00">
+<java-versions update-date="2023-10-17" update-time="18:50:00" update-tz="+02:00">
 
 	<java lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -134,7 +134,7 @@
 	<java lang-name="Java 8" edition-name="Java SE 8" jdk-name="JDK 8"
 			status="maintained" jsr-linked="337" lts="yes" release-date="2014-03-18"
 			class-major="52" class-minor="0">
-		<latest-build version="8u381" full-version="8u381-b09" release-date="2023-07-18"/>
+		<latest-build version="8u391" full-version="8u391-b13" release-date="2023-10-17"/>
 		<jdk-docs
 				title="Java Platform Standard Edition 8 Documentation"
 				url="https://docs.oracle.com/javase/8/docs/"/>
@@ -221,7 +221,7 @@
 	<java lang-name="Java 11" edition-name="Java SE 11" jdk-name="JDK 11"
 			status="maintained" jsr-linked="384" lts="yes" release-date="2018-09-25"
 			class-major="55" class-minor="0">
-		<latest-build version="11.0.20" full-version="11.0.20+9" release-date="2023-07-18"/>
+		<latest-build version="11.0.21" full-version="11.0.21+9" release-date="2023-10-17"/>
 		<jdk-docs
 				title="JDK 11 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/11/"/>
@@ -413,7 +413,7 @@
 	<java lang-name="Java 17" edition-name="Java SE 17" jdk-name="JDK 17"
 			status="maintained" jsr-linked="392" lts="yes" release-date="2021-09-14"
 			class-major="61">
-		<latest-build version="17.0.8" full-version="17.0.8+9" release-date="2023-07-18"/>
+		<latest-build version="17.0.9" full-version="17.0.9+11" release-date="2023-10-17"/>
 		<jdk-docs
 				title="JDK 17 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/17/"/>
@@ -541,7 +541,7 @@
 	<java lang-name="Java 21" edition-name="Java SE 21" jdk-name="JDK 21"
 			status="current" jsr-linked="396" lts="yes" release-date="2023-09-19"
 			class-major="65">
-		<latest-build version="21" full-version="21+35" release-date="2023-09-19" />
+		<latest-build version="21.0.1" full-version="21.0.1+12" release-date="2023-10-17" />
 		<jdk-docs
 				title="JDK 21 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/21/"/>
