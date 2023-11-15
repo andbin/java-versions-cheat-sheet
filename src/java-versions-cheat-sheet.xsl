@@ -24,7 +24,7 @@
 		<xsl:value-of select="$processorVersion"/>
 	</xsl:variable>
 
-	<xsl:variable name="epochDateTime" select="xs:dateTime('1970-01-01T00:00:00')"/>
+	<xsl:variable name="epochDateTime" select="xs:dateTime('1970-01-01T00:00:00Z')"/>
 	<xsl:variable name="currDateTime" select="fn:current-dateTime()"/>
 
 	<xsl:variable name="lastModifiedStr" select="fn:format-dateTime($currDateTime, '[FNn,3-3], [D01] [MNn,3-3] [Y0001] [H01]:[m01]:00 [z]', 'en', (), ())"/>
@@ -43,7 +43,7 @@
 
 	<xsl:template match="java-versions">
 		<xsl:variable name="infoUpdatedAt" select="xs:dateTime(fn:concat(@update-date, 'T', @update-time, @update-tz))"/>
-		<xsl:variable name="infoUpdatedAtMillis" select="($infoUpdatedAt - fn:timezone-from-dateTime($infoUpdatedAt) - $epochDateTime) div xs:dayTimeDuration('PT0.001S')"/>
+		<xsl:variable name="infoUpdatedAtMillis" select="($infoUpdatedAt - $epochDateTime) div xs:dayTimeDuration('PT0.001S')"/>
 		<xsl:variable name="infoUpdatedAtFmt" select="fn:format-dateTime($infoUpdatedAt, '[Y0001]-[M01]-[D01] [H01]:[m01]:[s01] [z]')"/>
 
 		<html lang="en">
