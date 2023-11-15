@@ -140,6 +140,8 @@
 							<a href="https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html">Java HotSpot VM Options</a>
 							<span> — </span>
 							<a href="https://www.oracle.com/java/technologies/javase/seccodeguide.html">Secure Coding Guidelines for Java SE</a>
+							<span> — </span>
+							<a href="https://www.oracle.com/java/technologies/tzdata-versions.html">Timezone Data Versions in the Java Runtime</a>
 						</div>
 					</div>
 
