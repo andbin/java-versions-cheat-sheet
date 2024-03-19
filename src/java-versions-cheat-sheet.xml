@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2024-01-17" update-time="14:00:00" update-tz="+01:00">
+<java-versions update-date="2024-03-19" update-time="18:45:00" update-tz="+01:00">
 
 	<java lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -539,7 +539,7 @@
 	</java>
 
 	<java lang-name="Java 21" edition-name="Java SE 21" jdk-name="JDK 21"
-			status="current" jsr-linked="396" lts="yes" release-date="2023-09-19"
+			status="maintained" jsr-linked="396" lts="yes" release-date="2023-09-19"
 			class-major="65">
 		<latest-build version="21.0.2" full-version="21.0.2+13" release-date="2024-01-16" />
 		<jdk-docs
@@ -571,12 +571,35 @@
 	</java>
 
 	<java lang-name="Java 22" edition-name="Java SE 22" jdk-name="JDK 22"
-			status="future" jsr-linked="397" lts="no" release-date="2024-03"
+			status="current" jsr-linked="397" lts="no" release-date="2024-03-19"
 			class-major="66">
+		<latest-build version="22" full-version="22+36" release-date="2024-03-19" />
+		<jdk-docs
+				title="JDK 22 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/22/"/>
 		<api-docs
 				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 22 API Specification"
-				url="https://download.java.net/java/early_access/jdk22/docs/api/"
-				draft="yes"/>
+				url="https://docs.oracle.com/en/java/javase/22/docs/api/index.html"/>
+		<api-diff
+				title="API Specification differences between jdk-21-ga &amp; jdk-22+36"
+				url="https://cr.openjdk.org/~iris/se/22/latestSpec/apidiffs/index.html"/>
+		<jls-docs
+				title="The Java Language Specification, Java SE 22 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se22/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se22/jls22.pdf"/>
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 22 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se22/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se22/jvms22.pdf"/>
+		<announcement
+				title="Oracle Releases Java 22"
+				url="https://www.oracle.com/news/announcement/oracle-releases-java-22-2024-03-19/"/>
+		<rel-notes
+				title="Java Development Kit 22 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/22u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 22 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk22certconfig.html"/>
 	</java>
 
 	<java lang-name="Java 23" edition-name="Java SE 23" jdk-name="JDK 23"
