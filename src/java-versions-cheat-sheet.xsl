@@ -8,7 +8,8 @@
 	<xsl:output method="html" version="5" encoding="UTF-8"/>
 
 	<xsl:variable name="pageTitle">Java Versions Cheat Sheet</xsl:variable>
-	<xsl:variable name="pageDescription">A friendly open-source cheat sheet showing all the Java versions with many valuable information and links</xsl:variable>
+	<xsl:variable name="siteName">andbin.github.io/java-versions-cheat-sheet</xsl:variable>
+	<xsl:variable name="pageDescription">A friendly open-source cheat sheet showing the Java version history with valuable information and links.</xsl:variable>
 	<xsl:variable name="pageUrl">https://andbin.github.io/java-versions-cheat-sheet/</xsl:variable>
 	<xsl:variable name="projectName">java-versions-cheat-sheet</xsl:variable>
 	<xsl:variable name="projectUrl">https://github.com/andbin/java-versions-cheat-sheet</xsl:variable>
@@ -46,20 +47,24 @@
 		<xsl:variable name="infoUpdatedAtMillis" select="($infoUpdatedAt - $epochDateTime) div xs:dayTimeDuration('PT0.001S')"/>
 		<xsl:variable name="infoUpdatedAtFmt" select="fn:format-dateTime($infoUpdatedAt, '[Y0001]-[M01]-[D01] [H01]:[m01]:[s01] [z]')"/>
 
-		<html lang="en">
+		<html lang="en-US">
 			<head>
 				<title><xsl:value-of select="$pageTitle"/></title>
+				<meta charset="UTF-8"/>
 				<meta http-equiv="last-modified" content="{$lastModifiedStr}"/>
 				<meta name="author" content="Andrea Binello"/>
 				<meta name="description" content="{$pageDescription}"/>
 				<meta name="generator" content="{$processorInfo}"/>
-				<meta name="language" content="English"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1"/>
 				<meta property="og:locale" content="en_US"/>
 				<meta property="og:type" content="website"/>
 				<meta property="og:title" content="{$pageTitle}"/>
+				<meta property="og:site_name" content="{$siteName}"/>
 				<meta property="og:description" content="{$pageDescription}"/>
 				<meta property="og:url" content="{$pageUrl}"/>
+				<meta property="twitter:title" content="{$pageTitle}"/>
+				<meta property="twitter:description" content="{$pageDescription}"/>
+				<link rel="canonical" href="{$pageUrl}"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="fonts/roboto.css{$cacheBusting}"/>
@@ -69,7 +74,7 @@
 			<body>
 				<div class="container">
 					<h1 class="fs-2 pb-1 border-bottom border-2 border-dark mt-3 mb-3">
-						<xsl:value-of select="$pageTitle"/>
+						<span title="{$pageDescription}"><xsl:value-of select="$pageTitle"/></span>
 					</h1>
 
 					<div class="table-responsive mb-3">
