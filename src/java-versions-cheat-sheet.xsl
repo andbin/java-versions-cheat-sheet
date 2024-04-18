@@ -70,6 +70,9 @@
 				<link rel="stylesheet" href="fonts/roboto.css{$cacheBusting}"/>
 				<link rel="stylesheet" href="styles.css{$cacheBusting}"/>
 				<link rel="stylesheet" href="scrolltop.css{$cacheBusting}"/>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<script src="script.js{$cacheBusting}"/>
 			</head>
 			<body>
 				<div class="container">
@@ -191,6 +194,8 @@
 									<a href="https://en.wikipedia.org/wiki/XSL" title="eXtensible Stylesheet Language">XSL</a>
 									<xsl:text>, </xsl:text>
 									<a href="https://getbootstrap.com">Bootstrap</a>
+									<xsl:text>, </xsl:text>
+									<a href="https://jquery.com">jQuery</a>
 									<xsl:text>, and </xsl:text>
 									<a href="https://fontawesome.com">Font Awesome</a>
 								</li>
@@ -217,7 +222,7 @@
 									<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>
 									<xsl:text> (for this page) and </xsl:text>
 									<a href="https://www.cloudflare.com/privacypolicy">Cloudflare Privacy Policy</a>
-									<xsl:text> (for Bootstrap/Font Awesome usage)</xsl:text>
+									<xsl:text> (for Bootstrap/jQuery/Font Awesome usage)</xsl:text>
 								</li>
 
 								<li class="mb-0">
@@ -235,9 +240,6 @@
 				</div>
 
 				<button type="button" id="scrolltop" data-bs-placement="left" title="Scroll to top"><i class="fa-solid fa-turn-up"></i></button>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-				<script src="scrolltop.js{$cacheBusting}"/>
-				<script src="script.js{$cacheBusting}"/>
 			</body>
 		</html>
 	</xsl:template>
