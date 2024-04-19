@@ -315,7 +315,7 @@
 						<xsl:text>API</xsl:text>
 					</a>
 					<xsl:if test="api-docs[1]/@draft = 'yes'">
-						<i class="fa-solid fa-star-half-stroke jv-draft" title="DRAFT"></i>
+						<i class="fa-solid fa-pencil jv-draft" title="This API Specification is a “DRAFT”"></i>
 					</xsl:if>
 				</xsl:if>
 			</td>
@@ -463,7 +463,7 @@
 								</a>
 								<xsl:if test="api-docs[1]/@draft = 'yes'">
 									<xsl:text> </xsl:text>
-									<span class="badge rounded-pill jv-draft" title="This API Specification is a “draft”">DRAFT</span>
+									<span class="badge rounded-pill jv-draft" title="This API Specification is a “DRAFT”">DRAFT</span>
 								</xsl:if>
 							</li>
 						</xsl:if>
