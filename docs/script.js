@@ -11,5 +11,8 @@ $(function() {
 		return false;
 	});
 
-	$("[title]").tooltip();
+	$("[title]").tooltip({
+		delay: { "show": 500, "hide": 0 },
+		trigger: "hover"
+	});
 });
