@@ -573,6 +573,11 @@
 						<xsl:text> &#x2013; Public</xsl:text>
 					</xsl:otherwise>
 				</xsl:choose>
+				<xsl:if test="@release-date">
+					<xsl:text>&lt;br&gt;Released on &lt;strong&gt;</xsl:text>
+					<xsl:value-of select="jvcs:dateStr(@release-date)"/>
+					<xsl:text>&lt;/strong&gt;</xsl:text>
+				</xsl:if>
 			</xsl:attribute>
 			<xsl:value-of select="@version"/>
 		</span>
