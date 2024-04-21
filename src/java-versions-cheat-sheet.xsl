@@ -81,7 +81,7 @@
 					</h1>
 
 					<div class="table-responsive mb-3">
-						<table class="table table-hover border-secondary text-nowrap mb-1">
+						<table id="jvcstable" class="table table-hover border-secondary text-nowrap mb-1">
 							<thead>
 								<tr>
 									<th scope="col"><span title="Java version">Java version</span></th>
@@ -164,12 +164,8 @@
 									<span class="fa-li"><i class="fa-solid fa-calendar-day"></i></span>
 									<xsl:text>Java information updated at </xsl:text>
 									<span class="jv-updated-at"><xsl:value-of select="$infoUpdatedAtFmt"/></span>
-									<script>
-										<xsl:text>var daysAgo = Math.floor((Date.now() - new Date(</xsl:text>
-										<xsl:value-of select="$infoUpdatedAtMillis"/>
-										<xsl:text>)) / 86400000); </xsl:text>
-										<xsl:text>document.write(" (" + daysAgo + " " + (daysAgo == 1 ? "day" : "days") + " ago)");</xsl:text>
-									</script>
+									<xsl:text> </xsl:text>
+									<span id="jvcsdaysago" data-millis="{$infoUpdatedAtMillis}"></span>
 								</li>
 
 								<li class="mb-1">
@@ -559,7 +555,11 @@
 		<xsl:if test="position() gt 1">
 			<xsl:text> / </xsl:text>
 		</xsl:if>
-		<span>
+		<span class="latest-build">
+			<xsl:if test="@release-date">
+				<xsl:attribute name="data-release-date"><xsl:value-of select="@release-date"/></xsl:attribute>
+			</xsl:if>
+
 			<xsl:attribute name="title">
 				<xsl:text>Latest </xsl:text>
 				<xsl:value-of select="../@jdk-name"/>
