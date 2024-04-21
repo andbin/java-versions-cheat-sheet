@@ -9,6 +9,7 @@
 
 	<xsl:variable name="pageTitle">Java Versions Cheat Sheet</xsl:variable>
 	<xsl:variable name="siteName">andbin.github.io/java-versions-cheat-sheet</xsl:variable>
+	<xsl:variable name="pageAuthor">Andrea Binello</xsl:variable>
 	<xsl:variable name="pageDescription">A friendly open-source cheat sheet showing the Java version history with valuable information and links.</xsl:variable>
 	<xsl:variable name="pageUrl">https://andbin.github.io/java-versions-cheat-sheet/</xsl:variable>
 	<xsl:variable name="projectName">java-versions-cheat-sheet</xsl:variable>
@@ -49,30 +50,28 @@
 
 		<html lang="en-US">
 			<head>
+				<meta http-equiv="last-modified" content="{$lastModifiedStr}"/>
+				<link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
 				<title><xsl:value-of select="$pageTitle"/></title>
 				<meta charset="UTF-8"/>
-				<meta http-equiv="last-modified" content="{$lastModifiedStr}"/>
-				<meta name="author" content="Andrea Binello"/>
+				<meta name="author" content="{$pageAuthor}"/>
 				<meta name="description" content="{$pageDescription}"/>
 				<meta name="generator" content="{$processorInfo}"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1"/>
-				<meta property="og:locale" content="en_US"/>
-				<meta property="og:type" content="website"/>
-				<meta property="og:title" content="{$pageTitle}"/>
-				<meta property="og:site_name" content="{$siteName}"/>
 				<meta property="og:description" content="{$pageDescription}"/>
+				<meta property="og:locale" content="en_US"/>
+				<meta property="og:site_name" content="{$siteName}"/>
+				<meta property="og:title" content="{$pageTitle}"/>
+				<meta property="og:type" content="website"/>
 				<meta property="og:url" content="{$pageUrl}"/>
-				<meta property="twitter:title" content="{$pageTitle}"/>
 				<meta property="twitter:description" content="{$pageDescription}"/>
+				<meta property="twitter:title" content="{$pageTitle}"/>
 				<link rel="canonical" href="{$pageUrl}"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="fonts/roboto.css{$cacheBusting}"/>
 				<link rel="stylesheet" href="styles.css{$cacheBusting}"/>
 				<link rel="stylesheet" href="scrolltop.css{$cacheBusting}"/>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-				<script src="script.js{$cacheBusting}"/>
 			</head>
 			<body>
 				<div class="container">
@@ -105,28 +104,28 @@
 					<ul class="fa-ul mb-5">
 						<li class="mb-1">
 							<span class="fa-li"><i class="fa-solid fa-circle-minus jv-status-old" title="{$oldVersion}"></i></span>
-							<i class="fa-solid fa-arrow-right-long"></i>
+							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$oldVersion"/>
 						</li>
 
 						<li class="mb-1">
 							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status-maintained" title="{$maintainedVersion}"></i></span>
-							<i class="fa-solid fa-arrow-right-long"></i>
+							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$maintainedVersion"/>
 						</li>
 
 						<li class="mb-1">
 							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status-current" title="{$currentVersion}"></i></span>
-							<i class="fa-solid fa-arrow-right-long"></i>
+							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$currentVersion"/>
 						</li>
 
 						<li class="mb-1">
 							<span class="fa-li"><i class="fa-solid fa-circle-question jv-status-future" title="{$futureVersion}"></i></span>
-							<i class="fa-solid fa-arrow-right-long"></i>
+							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$futureVersion"/>
 						</li>
@@ -161,7 +160,7 @@
 						<div class="pt-3 mb-3 border-top border-2 border-secondary-subtle">
 							<ul class="fa-ul mb-0">
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-calendar-day"></i></span>
+									<span class="fa-li"><i class="fa-solid fa-calendar-day" aria-hidden="true"></i></span>
 									<xsl:text>Java information updated at </xsl:text>
 									<span class="jv-updated-at"><xsl:value-of select="$infoUpdatedAtFmt"/></span>
 									<xsl:text> </xsl:text>
@@ -169,21 +168,21 @@
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-circle-user"></i></span>
+									<span class="fa-li"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></span>
 									<xsl:text>Developed with </xsl:text>
-									<i class="fa-solid fa-heart"></i>
+									<i class="fa-solid fa-heart" title="love"></i>
 									<xsl:text> for Java by Andrea Binello (“andbin”) &#x2013; </xsl:text>
 									<a href="https://andbin.dev">andbin.dev</a>
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-server"></i></span>
+									<span class="fa-li"><i class="fa-solid fa-server" aria-hidden="true"></i></span>
 									<xsl:text>Hosted on GitHub at </xsl:text>
 									<a href="{$projectUrl}"><xsl:value-of select="$projectName"/></a>
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-code"></i></span>
+									<span class="fa-li"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
 									<xsl:text>Coded with </xsl:text>
 									<a href="https://en.wikipedia.org/wiki/XML" title="eXtensible Markup Language">XML</a>
 									<xsl:text>, </xsl:text>
@@ -197,7 +196,7 @@
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-gear"></i></span>
+									<span class="fa-li"><i class="fa-solid fa-gear" aria-hidden="true"></i></span>
 									<xsl:text>Generated with </xsl:text>
 									<xsl:value-of select="$processorName"/>
 									<xsl:text> </xsl:text>
@@ -207,13 +206,13 @@
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-scale-balanced"></i></span>
+									<span class="fa-li"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>
 									<xsl:text>Licensed under a </xsl:text>
 									<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-shield-halved"></i></span>
+									<span class="fa-li"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
 									<xsl:text>Read </xsl:text>
 									<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>
 									<xsl:text> (for this page) and </xsl:text>
@@ -222,7 +221,7 @@
 								</li>
 
 								<li class="mb-0">
-									<span class="fa-li"><i class="fa-solid fa-registered"></i></span>
+									<span class="fa-li"><i class="fa-solid fa-registered" aria-hidden="true"></i></span>
 									<xsl:text>Oracle® and Java are registered trademarks of </xsl:text>
 									<a href="https://www.oracle.com">Oracle</a>
 								</li>
@@ -230,12 +229,16 @@
 						</div>
 
 						<div class="pt-3 mb-3 border-top border-2 border-secondary-subtle text-center">
-							<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img decoding="async" loading="lazy" src="images/cc-by-sa.svg" class="jv-cc-badge" alt="Creative Commons Attribution-ShareAlike License"/></a>
+							<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img decoding="async" loading="lazy" src="images/cc-by-sa.svg" class="jv-cc-badge" alt="Creative Commons Attribution-ShareAlike License" title="Creative Commons Attribution-ShareAlike License"/></a>
 						</div>
 					</footer>
 				</div>
 
-				<button type="button" id="scrolltop" data-bs-placement="left" title="Scroll to top"><i class="fa-solid fa-turn-up"></i></button>
+				<button type="button" id="scrolltop" data-bs-placement="left" title="Scroll to top"><i class="fa-solid fa-turn-up" aria-hidden="true"></i></button>
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+				<script src="script.js{$cacheBusting}"/>
 			</body>
 		</html>
 	</xsl:template>
@@ -285,7 +288,7 @@
 					<xsl:value-of select="@class-major"/>
 					<xsl:choose>
 						<xsl:when test="@class-minor">.<xsl:value-of select="@class-minor"/></xsl:when>
-						<xsl:otherwise>.<em>x</em></xsl:otherwise>
+						<xsl:otherwise>.x</xsl:otherwise>
 					</xsl:choose>
 				</span>
 			</td>
@@ -437,7 +440,7 @@
 								<xsl:value-of select="@class-major"/>
 								<xsl:choose>
 									<xsl:when test="@class-minor">.<xsl:value-of select="@class-minor"/></xsl:when>
-									<xsl:otherwise>.<em>x</em></xsl:otherwise>
+									<xsl:otherwise>.x</xsl:otherwise>
 								</xsl:choose>
 							</span>
 						</li>
