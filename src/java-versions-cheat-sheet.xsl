@@ -71,7 +71,6 @@
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="fonts/roboto.css{$cacheBusting}"/>
 				<link rel="stylesheet" href="styles.css{$cacheBusting}"/>
-				<link rel="stylesheet" href="scrolltop.css{$cacheBusting}"/>
 			</head>
 			<body>
 				<div class="container">
@@ -229,7 +228,7 @@
 						</div>
 
 						<div class="pt-3 mb-3 border-top border-2 border-secondary-subtle text-center">
-							<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img decoding="async" loading="lazy" src="images/cc-by-sa.svg" class="jv-cc-badge" alt="Creative Commons Attribution-ShareAlike License" title="Creative Commons Attribution-ShareAlike License"/></a>
+							<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img decoding="async" loading="lazy" src="images/cc-by-sa.svg" class="jv-cc-banner" alt="Creative Commons Attribution-ShareAlike License" title="Creative Commons Attribution-ShareAlike License"/></a>
 						</div>
 					</footer>
 				</div>
@@ -254,7 +253,7 @@
 
 				<xsl:if test="@lts = 'yes'">
 					<xsl:text> </xsl:text>
-					<span class="badge rounded-pill text-bg-primary jv-lts-badge" title="Long-Term Support">LTS</span>
+					<span class="jv-lts badge rounded-pill" title="Long-Term Support">LTS</span>
 				</xsl:if>
 			</th>
 
@@ -367,7 +366,7 @@
 
 					<xsl:if test="@lts = 'yes'">
 						<xsl:text> </xsl:text>
-						<span class="badge rounded-pill text-bg-primary jv-lts-badge" title="Long-Term Support">LTS</span>
+						<span class="jv-lts badge rounded-pill" title="Long-Term Support">LTS</span>
 					</xsl:if>
 				</h5>
 
