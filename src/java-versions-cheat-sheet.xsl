@@ -74,7 +74,7 @@
 			</head>
 			<body>
 				<div class="container">
-					<h1 class="fs-2 pb-1 border-bottom border-2 border-dark mt-3 mb-3">
+					<h1 class="fs-2 pb-1 border-bottom border-2 border-dark mt-3 mb-2">
 						<span title="{$pageDescription}"><xsl:value-of select="$pageTitle"/></span>
 					</h1>
 
@@ -86,7 +86,7 @@
 									<th scope="col"><span title="Java Specification Request">JSR</span></th>
 									<th scope="col" class="text-end"><span title="First release date">Release date</span></th>
 									<th scope="col"><span title="Latest JDK build">Latest build</span></th>
-									<th scope="col" class="text-center"><span title="Class file version (major.minor)">Cl. Ver.</span></th>
+									<th scope="col" class="text-center"><span title="Class file version (major.minor)">Class<br/>Ver.</span></th>
 									<th scope="col"><span title="JDK Documentation">Doc.</span></th>
 									<th scope="col"><span title="API Specification">API</span></th>
 									<th scope="col"><span title="API Differences">API Diff.</span></th>
@@ -283,7 +283,7 @@
 			</td>
 
 			<td class="text-center">
-				<span title="{@lang-name} class file version">
+				<span title="{@lang-name} class file version (major.minor)">
 					<xsl:value-of select="@class-major"/>
 					<xsl:choose>
 						<xsl:when test="@class-minor">.<xsl:value-of select="@class-minor"/></xsl:when>

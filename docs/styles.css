@@ -1,6 +1,7 @@
 body { font-family: 'Roboto', var(--bs-body-font-family); }
 h1 { font-weight: 700; }
 th { font-weight: 500; }
+thead th { line-height: 1.1em; }
 a:hover { color: #ff1e56; }
 .card { border-color: #222; }
 .card.jv-resources a { font-weight: 500; }
