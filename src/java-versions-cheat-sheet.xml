@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2024-04-20" update-time="14:45:00" update-tz="+02:00">
+<java-versions update-date="2024-05-01" update-time="15:20:00" update-tz="+02:00">
 
 	<java lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
 			class-major="45" class-minor="0">
 		<code-name>Oak</code-name>
 		<latest-build version="1.0.2" release-date="1996-05-07"/>
+		<unicode version="1.1.5" name="Unicode 1.1.5" url="https://www.unicode.org/versions/components-1.1.5.html"/>
 	</java>
 
 	<java lang-name="Java 1.1" edition-name="JDK 1.1" jdk-name="JDK 1.1"
@@ -17,6 +18,7 @@
 		<code-name version="1.1.7">Brutus</code-name>
 		<code-name version="1.1.8">Chelsea</code-name>
 		<latest-build version="1.1.8_16"/>
+		<unicode version="2.0" name="Unicode 2.0.0" url="https://www.unicode.org/versions/components-2.0.0.html"/>
 	</java>
 
 	<java lang-name="Java 1.2" edition-name="J2SE 1.2" jdk-name="JDK 1.2"
@@ -26,6 +28,7 @@
 		<code-name version="1.2.1">Gnat</code-name>
 		<code-name version="1.2.2">Cricket</code-name>
 		<latest-build version="1.2.2_017" release-date="2003-10-02"/>
+		<unicode version="2.0" name="Unicode 2.0.0" url="https://www.unicode.org/versions/components-2.0.0.html"/>
 	</java>
 
 	<java lang-name="Java 1.3" edition-name="J2SE 1.3" jdk-name="JDK 1.3"
@@ -35,6 +38,7 @@
 		<code-name version="1.3.0_01">Firefly</code-name>
 		<code-name version="1.3.1">Ladybird</code-name>
 		<latest-build version="1.3.1_29" full-version="1.3.1_29-b03" release-date="2010-10-12"/>
+		<unicode version="2.0" name="Unicode 2.0.0" url="https://www.unicode.org/versions/components-2.0.0.html"/>
 		<jdk-docs
 				type="download-page"
 				title="Java Archive Downloads - JDK 1.3 Documentation"
@@ -50,6 +54,7 @@
 		<latest-build version="1.4.2_30" full-version="1.4.2_30-b04" release-date="2011-02-15"/>
 		<latest-build version="1.4.2_42" full-version="1.4.2_42-b03" release-date="2013-02-19"
 				channel="Java SE 1.4.2 Advanced (formerly “Java SE for Business 1.4.2”)"/>
+		<unicode version="3.0" name="Unicode 3.0.0" url="https://www.unicode.org/versions/Unicode3.0.0/"/>
 		<jdk-docs
 				type="download-page"
 				title="Java Archive Downloads - JDK 1.4.2 Documentation"
@@ -66,6 +71,7 @@
 		<latest-build version="5.0u22" full-version="1.5.0_22-b03" release-date="2009-11-03"/>
 		<latest-build version="5.0u85" full-version="1.5.0_85-b11" release-date="2015-04-14"
 				channel="Java SE 5.0 Advanced (formerly “Java SE for Business 5.0”)"/>
+		<unicode version="4.0" name="Unicode 4.0.0" url="https://www.unicode.org/versions/Unicode4.0.0/"/>
 		<jdk-docs
 				title="JDK 5 Documentation"
 				url="https://docs.oracle.com/javase/1.5.0/docs/"/>
@@ -84,6 +90,7 @@
 		<latest-build version="6u45" full-version="1.6.0_45-b06" release-date="2013-04-16"/>
 		<latest-build version="6u211" full-version="1.6.0_211-b11" release-date="2018-10-16"
 				channel="Java SE 6 Advanced (formerly “Java SE for Business 6”)"/>
+		<unicode version="4.0" name="Unicode 4.0.0" url="https://www.unicode.org/versions/Unicode4.0.0/"/>
 		<jdk-docs
 				title="Java SE 6 Documentation"
 				url="https://docs.oracle.com/javase/6/docs/"/>
@@ -109,6 +116,7 @@
 		<latest-build version="7u80" full-version="1.7.0_80-b15" release-date="2015-04-14"/>
 		<latest-build version="7u351" full-version="7u351-b07" release-date="2022-07-19"
 				channel="Java SE 7 Advanced (formerly “Java for Business 7”)"/>
+		<unicode version="6.0" name="Unicode 6.0.0" url="https://www.unicode.org/versions/Unicode6.0.0/"/>
 		<jdk-docs
 				title="Java Platform Standard Edition 7 Documentation"
 				url="https://docs.oracle.com/javase/7/docs/"/>
@@ -135,6 +143,7 @@
 			status="maintained" jsr-linked="337" lts="yes" release-date="2014-03-18"
 			class-major="52" class-minor="0">
 		<latest-build version="8u411" full-version="8u411-b09" release-date="2024-04-16"/>
+		<unicode version="6.2" name="Unicode 6.2.0" url="https://www.unicode.org/versions/Unicode6.2.0/"/>
 		<jdk-docs
 				title="Java Platform Standard Edition 8 Documentation"
 				url="https://docs.oracle.com/javase/8/docs/"/>
@@ -164,6 +173,7 @@
 			status="old" jsr-linked="379" lts="no" release-date="2017-09-21"
 			class-major="53" class-minor="0">
 		<latest-build version="9.0.4" full-version="9.0.4+11" release-date="2018-01-16"/>
+		<unicode version="8.0" name="Unicode 8.0.0" url="https://www.unicode.org/versions/Unicode8.0.0/"/>
 		<jdk-docs
 				title="Oracle JDK 9 Documentation"
 				url="https://docs.oracle.com/javase/9/"/>
@@ -193,6 +203,7 @@
 			status="old" jsr-linked="383" lts="no" release-date="2018-03-20"
 			class-major="54" class-minor="0">
 		<latest-build version="10.0.2" full-version="10.0.2+13" release-date="2018-07-17"/>
+		<unicode version="8.0" name="Unicode 8.0.0" url="https://www.unicode.org/versions/Unicode8.0.0/"/>
 		<jdk-docs
 				title="JDK 10 Documentation"
 				url="https://docs.oracle.com/javase/10/"/>
@@ -222,6 +233,7 @@
 			status="maintained" jsr-linked="384" lts="yes" release-date="2018-09-25"
 			class-major="55" class-minor="0">
 		<latest-build version="11.0.23" full-version="11.0.23+7" release-date="2024-04-16"/>
+		<unicode version="10.0" name="Unicode 10.0.0" url="https://www.unicode.org/versions/Unicode10.0.0/"/>
 		<jdk-docs
 				title="JDK 11 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/11/"/>
@@ -254,6 +266,7 @@
 			status="old" jsr-linked="386" lts="no" release-date="2019-03-19"
 			class-major="56">
 		<latest-build version="12.0.2" full-version="12.0.2+10" release-date="2019-07-16"/>
+		<unicode version="11.0" name="Unicode 11.0.0" url="https://www.unicode.org/versions/Unicode11.0.0/"/>
 		<jdk-docs
 				title="JDK 12 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/12/"/>
@@ -286,6 +299,7 @@
 			status="old" jsr-linked="388" lts="no" release-date="2019-09-17"
 			class-major="57">
 		<latest-build version="13.0.2" full-version="13.0.2+8" release-date="2020-01-14"/>
+		<unicode version="12.1" name="Unicode 12.1.0" url="https://www.unicode.org/versions/Unicode12.1.0/"/>
 		<jdk-docs
 				title="JDK 13 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/13/"/>
@@ -318,6 +332,7 @@
 			status="old" jsr-linked="389" lts="no" release-date="2020-03-17"
 			class-major="58">
 		<latest-build version="14.0.2" full-version="14.0.2+12" release-date="2020-07-14"/>
+		<unicode version="12.1" name="Unicode 12.1.0" url="https://www.unicode.org/versions/Unicode12.1.0/"/>
 		<jdk-docs
 				title="JDK 14 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/14/"/>
@@ -350,6 +365,7 @@
 			status="old" jsr-linked="390" lts="no" release-date="2020-09-16"
 			class-major="59">
 		<latest-build version="15.0.2" full-version="15.0.2+7" release-date="2021-01-19"/>
+		<unicode version="13.0" name="Unicode 13.0.0" url="https://www.unicode.org/versions/Unicode13.0.0/"/>
 		<jdk-docs
 				title="JDK 15 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/15/"/>
@@ -382,6 +398,7 @@
 			status="old" jsr-linked="391" lts="no" release-date="2021-03-16"
 			class-major="60">
 		<latest-build version="16.0.2" full-version="16.0.2+7" release-date="2021-07-20"/>
+		<unicode version="13.0" name="Unicode 13.0.0" url="https://www.unicode.org/versions/Unicode13.0.0/"/>
 		<jdk-docs
 				title="JDK 16 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/16/"/>
@@ -414,6 +431,7 @@
 			status="maintained" jsr-linked="392" lts="yes" release-date="2021-09-14"
 			class-major="61">
 		<latest-build version="17.0.11" full-version="17.0.11+7" release-date="2024-04-16"/>
+		<unicode version="13.0" name="Unicode 13.0.0" url="https://www.unicode.org/versions/Unicode13.0.0/"/>
 		<jdk-docs
 				title="JDK 17 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/17/"/>
@@ -446,6 +464,7 @@
 			status="old" jsr-linked="393" lts="no" release-date="2022-03-22"
 			class-major="62">
 		<latest-build version="18.0.2.1" full-version="18.0.2.1+1" release-date="2022-08-18"/>
+		<unicode version="13.0" name="Unicode 13.0.0" url="https://www.unicode.org/versions/Unicode13.0.0/"/>
 		<jdk-docs
 				title="JDK 18 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/18/"/>
@@ -478,6 +497,7 @@
 			status="old" jsr-linked="394" lts="no" release-date="2022-09-20"
 			class-major="63">
 		<latest-build version="19.0.2" full-version="19.0.2+7" release-date="2023-01-17"/>
+		<unicode version="14.0" name="Unicode 14.0.0" url="https://www.unicode.org/versions/Unicode14.0.0/"/>
 		<jdk-docs
 				title="JDK 19 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/19/"/>
@@ -510,6 +530,7 @@
 			status="old" jsr-linked="395" lts="no" release-date="2023-03-21"
 			class-major="64">
 		<latest-build version="20.0.2" full-version="20.0.2+9" release-date="2023-07-18" />
+		<unicode version="15.0" name="Unicode 15.0.0" url="https://www.unicode.org/versions/Unicode15.0.0/"/>
 		<jdk-docs
 				title="JDK 20 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/20/"/>
@@ -542,6 +563,7 @@
 			status="maintained" jsr-linked="396" lts="yes" release-date="2023-09-19"
 			class-major="65">
 		<latest-build version="21.0.3" full-version="21.0.3+7" release-date="2024-04-16" />
+		<unicode version="15.0" name="Unicode 15.0.0" url="https://www.unicode.org/versions/Unicode15.0.0/"/>
 		<jdk-docs
 				title="JDK 21 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/21/"/>
@@ -574,6 +596,7 @@
 			status="current" jsr-linked="397" lts="no" release-date="2024-03-19"
 			class-major="66">
 		<latest-build version="22.0.1" full-version="22.0.1+8" release-date="2024-04-16" />
+		<unicode version="15.1" name="Unicode 15.1.0" url="https://www.unicode.org/versions/Unicode15.1.0/"/>
 		<jdk-docs
 				title="JDK 22 Documentation - Home"
 				url="https://docs.oracle.com/en/java/javase/22/"/>
@@ -605,6 +628,7 @@
 	<java lang-name="Java 23" edition-name="Java SE 23" jdk-name="JDK 23"
 			status="future" jsr-linked="398" lts="no" release-date="2024-09"
 			class-major="67">
+		<unicode version="15.1" name="Unicode 15.1.0" url="https://www.unicode.org/versions/Unicode15.1.0/"/>
 		<api-docs
 				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 23 API Specification"
 				url="https://download.java.net/java/early_access/jdk23/docs/api/"

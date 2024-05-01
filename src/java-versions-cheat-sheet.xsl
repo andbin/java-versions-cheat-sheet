@@ -87,6 +87,7 @@
 									<th scope="col" class="text-end"><span title="First release date">Release date</span></th>
 									<th scope="col"><span title="Latest JDK build">Latest build</span></th>
 									<th scope="col" class="text-center"><span title="Class file version (major.minor)">Class<br/>Ver.</span></th>
+									<th scope="col" class="text-center"><span title="Unicode Standard version">Unicode<br/>Ver.</span></th>
 									<th scope="col"><span title="JDK Documentation">Doc.</span></th>
 									<th scope="col"><span title="API Specification">API</span></th>
 									<th scope="col"><span title="API Differences">API Diff.</span></th>
@@ -292,6 +293,19 @@
 				</span>
 			</td>
 
+			<td class="text-center">
+				<xsl:if test="unicode[1]">
+					<xsl:choose>
+						<xsl:when test="unicode[1]/@url">
+							<a href="{unicode[1]/@url}" title="{@edition-name} Unicode Standard version"><xsl:value-of select="unicode[1]/@version"/></a>
+						</xsl:when>
+						<xsl:otherwise>
+							<span title="{@edition-name} Unicode Standard version"><xsl:value-of select="unicode[1]/@version"/></span>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:if>
+			</td>
+
 			<td>
 				<xsl:if test="jdk-docs[1]">
 					<a href="{jdk-docs[1]/@url}" title="{jdk-docs[1]/@title}">Doc</a>
@@ -443,6 +457,20 @@
 								</xsl:choose>
 							</span>
 						</li>
+
+						<xsl:if test="unicode[1]">
+							<li>
+								<xsl:text>Unicode Standard version: </xsl:text>
+								<span class="jv-val">
+									<xsl:value-of select="unicode[1]/@version"/>
+								</span>
+								<xsl:if test="unicode[1]/@url">
+									<xsl:text> (</xsl:text>
+									<a href="{unicode[1]/@url}"><xsl:value-of select="unicode[1]/@name"/></a>
+									<xsl:text>)</xsl:text>
+								</xsl:if>
+							</li>
+						</xsl:if>
 
 						<xsl:if test="jdk-docs[1]">
 							<li>
