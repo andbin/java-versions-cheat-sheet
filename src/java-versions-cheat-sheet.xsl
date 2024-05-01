@@ -406,7 +406,7 @@
 								<xsl:text>Java Specification Request: </xsl:text>
 								<xsl:choose>
 									<xsl:when test="@jsr-linked">
-										<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" class="jv-val">JSR-<xsl:value-of select="@jsr-linked"/></a>
+										<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}">JSR-<xsl:value-of select="@jsr-linked"/></a>
 									</xsl:when>
 									<xsl:when test="@jsr">
 										<span class="jv-val">JSR-<xsl:value-of select="@jsr"/></span>
@@ -447,7 +447,7 @@
 						<xsl:if test="jdk-docs[1]">
 							<li>
 								<xsl:text>JDK Documentation: </xsl:text>
-								<a href="{jdk-docs[1]/@url}" class="jv-val">
+								<a href="{jdk-docs[1]/@url}">
 									<xsl:value-of select="jdk-docs[1]/@title"/>
 								</a>
 							</li>
@@ -456,7 +456,7 @@
 						<xsl:if test="api-docs[1]">
 							<li>
 								<xsl:text>API Specification: </xsl:text>
-								<a href="{api-docs[1]/@url}" class="jv-val">
+								<a href="{api-docs[1]/@url}">
 									<xsl:value-of select="api-docs[1]/@title"/>
 								</a>
 								<xsl:if test="api-docs[1]/@draft = 'yes'">
@@ -469,7 +469,7 @@
 						<xsl:if test="api-diff[1]">
 							<li>
 								<xsl:text>API Differences: </xsl:text>
-								<a href="{api-diff[1]/@url}" class="jv-val">
+								<a href="{api-diff[1]/@url}">
 									<xsl:value-of select="api-diff[1]/@title"/>
 								</a>
 							</li>
@@ -481,14 +481,14 @@
 								<ul>
 									<xsl:if test="jls-docs[1]/@web-url">
 										<li>
-											<a href="{jls-docs[1]/@web-url}" class="jv-val">
+											<a href="{jls-docs[1]/@web-url}">
 												<xsl:value-of select="jls-docs[1]/@title"/>
 											</a>
 										</li>
 									</xsl:if>
 									<xsl:if test="jls-docs[1]/@pdf-url">
 										<li>
-											<a href="{jls-docs[1]/@pdf-url}" class="jv-val">
+											<a href="{jls-docs[1]/@pdf-url}">
 												<xsl:value-of select="jls-docs[1]/@title"/>
 												<xsl:text> (PDF)</xsl:text>
 											</a>
@@ -504,14 +504,14 @@
 								<ul>
 									<xsl:if test="jvms-docs[1]/@web-url">
 										<li>
-											<a href="{jvms-docs[1]/@web-url}" class="jv-val">
+											<a href="{jvms-docs[1]/@web-url}">
 												<xsl:value-of select="jvms-docs[1]/@title"/>
 											</a>
 										</li>
 									</xsl:if>
 									<xsl:if test="jvms-docs[1]/@pdf-url">
 										<li>
-											<a href="{jvms-docs[1]/@pdf-url}" class="jv-val">
+											<a href="{jvms-docs[1]/@pdf-url}">
 												<xsl:value-of select="jvms-docs[1]/@title"/>
 												<xsl:text> (PDF)</xsl:text>
 											</a>
@@ -528,21 +528,21 @@
 							<xsl:if test="announcement[1]">
 								<li>
 									<xsl:text>Announcement: </xsl:text>
-									<a href="{announcement[1]/@url}" class="jv-val"><xsl:value-of select="announcement[1]/@title"/></a>
+									<a href="{announcement[1]/@url}"><xsl:value-of select="announcement[1]/@title"/></a>
 								</li>
 							</xsl:if>
 
 							<xsl:if test="rel-notes[1]">
 								<li>
 									<xsl:text>Release notes: </xsl:text>
-									<a href="{rel-notes[1]/@url}" class="jv-val"><xsl:value-of select="rel-notes[1]/@title"/></a>
+									<a href="{rel-notes[1]/@url}"><xsl:value-of select="rel-notes[1]/@title"/></a>
 								</li>
 							</xsl:if>
 
 							<xsl:if test="sys-confs[1]">
 								<li>
 									<xsl:text>System configurations: </xsl:text>
-									<a href="{sys-confs[1]/@url}" class="jv-val"><xsl:value-of select="sys-confs[1]/@title"/></a>
+									<a href="{sys-confs[1]/@url}"><xsl:value-of select="sys-confs[1]/@title"/></a>
 								</li>
 							</xsl:if>
 						</ul>
