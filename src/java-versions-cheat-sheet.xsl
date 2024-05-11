@@ -103,28 +103,28 @@
 
 					<ul class="fa-ul mb-5">
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-minus jv-status-old" title="{$oldVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle-minus jv-status jv-old" aria-hidden="true"></i></span>
 							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$oldVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status-maintained" title="{$maintainedVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status jv-maintained" aria-hidden="true"></i></span>
 							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$maintainedVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status-current" title="{$currentVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status jv-current" aria-hidden="true"></i></span>
 							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$currentVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-question jv-status-future" title="{$futureVersion}"></i></span>
+							<span class="fa-li"><i class="fa-solid fa-circle-question jv-status jv-future" aria-hidden="true"></i></span>
 							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$futureVersion"/>
@@ -343,7 +343,9 @@
 					<a href="{jls-docs[1]/@web-url}" title="{jls-docs[1]/@title}">JLS</a>
 				</xsl:if>
 				<xsl:if test="jls-docs[1]/@web-url and jls-docs[1]/@pdf-url">
-					<xsl:text> &#x2022; </xsl:text>
+					<xsl:text> </xsl:text>
+					<span class="jv-sep">|</span>
+					<xsl:text> </xsl:text>
 				</xsl:if>
 				<xsl:if test="jls-docs[1]/@pdf-url">
 					<a href="{jls-docs[1]/@pdf-url}" title="{jls-docs[1]/@title} (PDF)">JLS</a>
@@ -356,7 +358,9 @@
 					<a href="{jvms-docs[1]/@web-url}" title="{jvms-docs[1]/@title}">JVMS</a>
 				</xsl:if>
 				<xsl:if test="jvms-docs[1]/@web-url and jvms-docs[1]/@pdf-url">
-					<xsl:text> &#x2022; </xsl:text>
+					<xsl:text> </xsl:text>
+					<span class="jv-sep">|</span>
+					<xsl:text> </xsl:text>
 				</xsl:if>
 				<xsl:if test="jvms-docs[1]/@pdf-url">
 					<a href="{jvms-docs[1]/@pdf-url}" title="{jvms-docs[1]/@title} (PDF)">JVMS</a>
@@ -666,16 +670,16 @@
 	<xsl:template name="status-circle">
 		<xsl:choose>
 			<xsl:when test="@status = 'old'">
-				<i class="fa-solid fa-circle-minus jv-status jv-status-old" title="{$oldVersion}"></i>
+				<i class="fa-solid fa-circle-minus jv-status jv-old" title="{$oldVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'maintained'">
-				<i class="fa-solid fa-circle-check jv-status jv-status-maintained" title="{$maintainedVersion}"></i>
+				<i class="fa-solid fa-circle-check jv-status jv-maintained" title="{$maintainedVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'current'">
-				<i class="fa-solid fa-circle-check jv-status jv-status-current" title="{$currentVersion}"></i>
+				<i class="fa-solid fa-circle-check jv-status jv-current" title="{$currentVersion}"></i>
 			</xsl:when>
 			<xsl:when test="@status = 'future'">
-				<i class="fa-solid fa-circle-question jv-status jv-status-future" title="{$futureVersion}"></i>
+				<i class="fa-solid fa-circle-question jv-status jv-future" title="{$futureVersion}"></i>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>

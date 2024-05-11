@@ -21,7 +21,7 @@ $(function() {
 		var releaseDateStr = $(this).data("release-date");
 		if (releaseDateStr) {
 			if (daysDiff(now, new Date(releaseDateStr)) < 90) {
-				$("<span class='jv-new badge rounded-pill' title='This build was released less than 90 days ago'>NEW</span>").insertAfter(this);
+				$(this).after(" ", "<span class='jv-new badge rounded-pill' title='This build was released less than 90 days ago'>NEW</span>");
 			}
 		}
 	});

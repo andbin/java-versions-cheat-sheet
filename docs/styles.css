@@ -3,6 +3,7 @@ h1 { font-weight: 700; }
 th { font-weight: 500; }
 thead th { line-height: 1.1em; }
 a:hover { color: #ff1e56; }
+footer .fa-li i { font-size: 110%; vertical-align: -5%; }
 .card { border-color: #222; }
 .card.jv-resources span { padding-left: 0.18em; padding-right: 0.18em; }
 .card ul { list-style: disc; margin-bottom: 0; }
@@ -16,24 +17,24 @@ a:hover { color: #ff1e56; }
 .fa-file-pdf { color: #b30b00; }
 .fa-gear { color: orange; }
 .fa-heart { color: red; }
+.fa-registered { color: #c74634; }
 .fa-scale-balanced { color: mediumseagreen; }
 .fa-server { color: darkblue; }
 .fa-shield-halved { color: darkorchid; }
 .jv-card-box:target .card { -webkit-box-shadow: 0px 0px 12px -2px #666; -moz-box-shadow: 0px 0px 12px -2px #666; -o-box-shadow: 0px 0px 12px -2px #666; box-shadow: 0px 0px 12px -2px #666; }
 .jv-cc-banner { height: 2.8rem; }
 .jv-draft.badge { background-color: #9932cc; }
-.jv-draft.fa-pencil { color: #9932cc; margin-left: 0.2em; }
+.jv-draft.fa-pencil { color: #9932cc; font-size: 0.875em; margin-left: 0.2em; }
 .jv-extra-info { font-size: 82%; font-weight: 700; margin-top: 0.6em; margin-bottom: 0.3em; }
-.jv-ico-left { padding-right: 0.2em; }
 .jv-ico-right { padding-left: 0.2em; }
-.jv-lts.badge { background-color: #0000ee; font-size: 75%; font-weight: 700; padding-top: 0.4em; padding-bottom: 0.38em; vertical-align: 10%; }
-.jv-new.badge { background-color: #228b22; font-size: 70%; font-weight: 500; margin-left: 0.18rem; vertical-align: 15%; }
-.jv-status { margin-right: 0.25em; }
-.jv-status-current { color: #00d800; }
-.jv-status-future { color: #00c8ff; }
-.jv-status-maintained { color: #ffcf00; }
-.jv-status-old { color: #ff0000; }
-.jv-status-current, .jv-status-future, .jv-status-maintained, .jv-status-old { font-size: 1.12em; vertical-align: -0.06em; }
+.jv-lts.badge { background-color: #0000ee; font-size: 76%; font-weight: 700; padding-top: 0.4em; padding-bottom: 0.38em; vertical-align: 12%; }
+.jv-new.badge { background-color: #228b22; font-size: 64%; font-weight: 500; padding-top: 0.4em; padding-bottom: 0.38em; vertical-align: 18%; }
+.jv-sep { color: #90979d; font-size: 130%; vertical-align: -5%; line-height: 1; }
+.jv-status { font-size: 112%; margin-right: 0.25em; vertical-align: -6%; }
+.jv-status.jv-current { color: #00d800; }
+.jv-status.jv-future { color: #00a8ff; }
+.jv-status.jv-maintained { color: #ffbb00; }
+.jv-status.jv-old { color: #ff0000; }
 .jv-updated-at { color: firebrick; font-weight: 500; }
 .jv-val { font-weight: 500; }
 .tooltip { --bs-tooltip-arrow-height: 0.6rem; --bs-tooltip-arrow-width: 0.8rem; --bs-tooltip-bg: #555; --bs-tooltip-border-radius: 0.5rem; --bs-tooltip-color: white; --bs-tooltip-font-size: 0.9rem; --bs-tooltip-max-width: 20rem; --bs-tooltip-opacity: 1; font-family: inherit; font-weight: 400; }
