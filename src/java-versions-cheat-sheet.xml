@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2024-07-06" update-time="10:50:00" update-tz="+02:00">
+<java-versions update-date="2024-07-06" update-time="17:00:00" update-tz="+02:00">
 
 	<java lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -602,7 +602,7 @@
 				url="https://docs.oracle.com/en/java/javase/22/"/>
 		<api-docs
 				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 22 API Specification"
-				url="https://docs.oracle.com/en/java/javase/22/docs/api/index.html"/>
+				url="https://docs.oracle.com/en/java/javase/22/docs/api/"/>
 		<api-diff
 				title="API Specification differences between jdk-21-ga &amp; jdk-22+36"
 				url="https://cr.openjdk.org/~iris/se/22/latestSpec/apidiffs/index.html"/>
