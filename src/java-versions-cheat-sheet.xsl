@@ -259,14 +259,16 @@
 			</th>
 
 			<td>
-				<xsl:choose>
-					<xsl:when test="@jsr-linked">
-						<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}" title="{@edition-name} Java Specification Request"><xsl:value-of select="@jsr-linked"/></a>
-					</xsl:when>
-					<xsl:when test="@jsr">
-						<span title="{@edition-name} Java Specification Request (link not yet available)"><xsl:value-of select="@jsr"/></span>
-					</xsl:when>
-				</xsl:choose>
+				<xsl:if test="jsr[1]">
+					<xsl:choose>
+						<xsl:when test="jsr[1]/@nolink">
+							<span title="{@edition-name} Java Specification Request (link not yet available)"><xsl:value-of select="jsr[1]/@id"/></span>
+						</xsl:when>
+						<xsl:otherwise>
+							<a href="https://jcp.org/en/jsr/summary?id={jsr[1]/@id}" title="{@edition-name} Java Specification Request"><xsl:value-of select="jsr[1]/@id"/></a>
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:if>
 			</td>
 
 			<td class="text-end">
@@ -419,16 +421,16 @@
 							</li>
 						</xsl:if>
 
-						<xsl:if test="@jsr-linked or @jsr">
+						<xsl:if test="jsr[1]">
 							<li>
 								<xsl:text>Java Specification Request: </xsl:text>
 								<xsl:choose>
-									<xsl:when test="@jsr-linked">
-										<a href="https://jcp.org/en/jsr/summary?id={@jsr-linked}">JSR-<xsl:value-of select="@jsr-linked"/></a>
+									<xsl:when test="jsr[1]/@nolink">
+										<span class="jv-val">JSR <xsl:value-of select="jsr[1]/@id"/></span>
 									</xsl:when>
-									<xsl:when test="@jsr">
-										<span class="jv-val">JSR-<xsl:value-of select="@jsr"/></span>
-									</xsl:when>
+									<xsl:otherwise>
+										<a href="https://jcp.org/en/jsr/summary?id={jsr[1]/@id}">JSR <xsl:value-of select="jsr[1]/@id"/>: <xsl:value-of select="jsr[1]/@title"/></a>
+									</xsl:otherwise>
 								</xsl:choose>
 							</li>
 						</xsl:if>
