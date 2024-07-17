@@ -82,7 +82,7 @@
 						<table id="jvcstable" class="table table-hover border-secondary text-nowrap mb-1">
 							<thead>
 								<tr>
-									<th scope="col"><span title="Java version">Java version</span></th>
+									<th scope="col" colspan="2"><span title="Java version">Java version</span></th>
 									<th scope="col"><span title="Java Specification Request">JSR</span></th>
 									<th scope="col" class="text-end"><span title="First release date">Release date</span></th>
 									<th scope="col"><span title="Latest JDK build">Latest build</span></th>
@@ -246,17 +246,18 @@
 
 	<xsl:template match="java" mode="table">
 		<tr>
-			<th scope="row">
+			<th scope="row" class="pe-1">
 				<xsl:call-template name="status-circle"/>
 				<a href="#{jvcs:stringToId(@lang-name)}">
 					<xsl:value-of select="@lang-name"/>
 				</a>
+			</th>
 
+			<td class="ps-1">
 				<xsl:if test="@lts = 'yes'">
-					<xsl:text> </xsl:text>
 					<span class="jv-lts badge rounded-pill" title="Long-Term Support">LTS</span>
 				</xsl:if>
-			</th>
+			</td>
 
 			<td>
 				<xsl:if test="jsr[1]">
