@@ -248,7 +248,7 @@
 		<tr>
 			<th scope="row" class="pe-1">
 				<xsl:call-template name="status-circle"/>
-				<a href="#{jvcs:stringToId(@lang-name)}">
+				<a href="#{@id}">
 					<xsl:value-of select="@lang-name"/>
 				</a>
 			</th>
@@ -375,7 +375,7 @@
 
 
 	<xsl:template match="java" mode="card">
-		<div id="{jvcs:stringToId(@lang-name)}" class="jv-card-box pt-3">
+		<div id="{@id}" class="jv-card-box pt-3">
 			<div class="card mb-2">
 				<h5 class="card-header">
 					<xsl:value-of select="@lang-name"/>
@@ -704,12 +704,6 @@
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
-
-
-	<xsl:function name="jvcs:stringToId" as="xs:string">
-		<xsl:param name="str" as="xs:string"/>
-		<xsl:sequence select="fn:replace(fn:lower-case($str), '\s+', '-')"/>
-	</xsl:function>
 
 
 	<xsl:function name="jvcs:dateStr" as="xs:string">

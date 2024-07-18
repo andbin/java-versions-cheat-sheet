@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java-versions update-date="2024-07-16" update-time="18:40:00" update-tz="+02:00">
 
-	<java lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
+	<java id="java-1.0" lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
 			class-major="45" class-minor="0">
 		<code-name>Oak</code-name>
@@ -9,7 +9,7 @@
 		<unicode version="1.1.5" name="Unicode 1.1.5" url="https://www.unicode.org/versions/components-1.1.5.html"/>
 	</java>
 
-	<java lang-name="Java 1.1" edition-name="JDK 1.1" jdk-name="JDK 1.1"
+	<java id="java-1.1" lang-name="Java 1.1" edition-name="JDK 1.1" jdk-name="JDK 1.1"
 			status="old" lts="no" release-date="1997-02-02"
 			class-major="45" class-minor="3">
 		<code-name version="1.1.4">Sparkler</code-name>
@@ -21,7 +21,7 @@
 		<unicode version="2.0" name="Unicode 2.0.0" url="https://www.unicode.org/versions/Unicode2.0.0/"/>
 	</java>
 
-	<java lang-name="Java 1.2" edition-name="J2SE 1.2" jdk-name="JDK 1.2"
+	<java id="java-1.2" lang-name="Java 1.2" edition-name="J2SE 1.2" jdk-name="JDK 1.2"
 			status="old" lts="no" release-date="1998-12-04"
 			class-major="46" class-minor="0">
 		<code-name version="1.2">Playground</code-name>
@@ -31,7 +31,7 @@
 		<unicode version="2.0" name="Unicode 2.0.0" url="https://www.unicode.org/versions/Unicode2.0.0/"/>
 	</java>
 
-	<java lang-name="Java 1.3" edition-name="J2SE 1.3" jdk-name="JDK 1.3"
+	<java id="java-1.3" lang-name="Java 1.3" edition-name="J2SE 1.3" jdk-name="JDK 1.3"
 			status="old" lts="no" release-date="2000-05-08"
 			class-major="47" class-minor="0">
 		<code-name version="1.3">Kestrel</code-name>
@@ -45,7 +45,7 @@
 				url="https://www.oracle.com/java/technologies/java-archive-13docs-downloads.html"/>
 	</java>
 
-	<java lang-name="Java 1.4" edition-name="J2SE 1.4" jdk-name="JDK 1.4"
+	<java id="java-1.4" lang-name="Java 1.4" edition-name="J2SE 1.4" jdk-name="JDK 1.4"
 			status="old" lts="no" release-date="2002-02-13"
 			class-major="48" class-minor="0">
 		<code-name version="1.4.0">Merlin</code-name>
@@ -65,7 +65,7 @@
 				url="https://www.oracle.com/java/technologies/javase/javase-system-configurations.html"/>
 	</java>
 
-	<java lang-name="Java 5" edition-name="J2SE 5.0" jdk-name="JDK 5.0"
+	<java id="java-5" lang-name="Java 5" edition-name="J2SE 5.0" jdk-name="JDK 5.0"
 			status="old" lts="no" release-date="2004-09-29"
 			class-major="49" class-minor="0">
 		<code-name>Tiger</code-name>
@@ -85,7 +85,7 @@
 				url="https://www.oracle.com/java/technologies/javase/system-configurations.html"/>
 	</java>
 
-	<java lang-name="Java 6" edition-name="Java SE 6" jdk-name="JDK 6"
+	<java id="java-6" lang-name="Java 6" edition-name="Java SE 6" jdk-name="JDK 6"
 			status="old" lts="no" release-date="2006-12-11"
 			class-major="50" class-minor="0">
 		<code-name>Mustang</code-name>
@@ -112,7 +112,7 @@
 				url="https://www.oracle.com/java/technologies/system-configurations.html"/>
 	</java>
 
-	<java lang-name="Java 7" edition-name="Java SE 7" jdk-name="JDK 7"
+	<java id="java-7" lang-name="Java 7" edition-name="Java SE 7" jdk-name="JDK 7"
 			status="old" lts="no" release-date="2011-07-28"
 			class-major="51" class-minor="0">
 		<code-name>Dolphin</code-name>
@@ -143,7 +143,7 @@
 				url="https://www.oracle.com/java/technologies/jdk-jre-7-cs-config.html"/>
 	</java>
 
-	<java lang-name="Java 8" edition-name="Java SE 8" jdk-name="JDK 8"
+	<java id="java-8" lang-name="Java 8" edition-name="Java SE 8" jdk-name="JDK 8"
 			status="maintained" lts="yes" release-date="2014-03-18"
 			class-major="52" class-minor="0">
 		<jsr id="337" title="Java™ SE 8 Release Contents"/>
@@ -174,7 +174,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk8-jre8-certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 9" edition-name="Java SE 9" jdk-name="JDK 9"
+	<java id="java-9" lang-name="Java 9" edition-name="Java SE 9" jdk-name="JDK 9"
 			status="old" lts="no" release-date="2017-09-21"
 			class-major="53" class-minor="0">
 		<jsr id="379" title="Java™ SE 9 Release Contents"/>
@@ -205,7 +205,7 @@
 				url="https://www.oracle.com/java/technologies/jdk9certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 10" edition-name="Java SE 10" jdk-name="JDK 10"
+	<java id="java-10" lang-name="Java 10" edition-name="Java SE 10" jdk-name="JDK 10"
 			status="old" lts="no" release-date="2018-03-20"
 			class-major="54" class-minor="0">
 		<jsr id="383" title="Java™ SE 10 (18.3)"/>
@@ -236,7 +236,7 @@
 				url="https://www.oracle.com/java/technologies/jdk10certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 11" edition-name="Java SE 11" jdk-name="JDK 11"
+	<java id="java-11" lang-name="Java 11" edition-name="Java SE 11" jdk-name="JDK 11"
 			status="maintained" lts="yes" release-date="2018-09-25"
 			class-major="55" class-minor="0">
 		<jsr id="384" title="Java™ SE 11 (18.9)"/>
@@ -270,7 +270,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk11certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 12" edition-name="Java SE 12" jdk-name="JDK 12"
+	<java id="java-12" lang-name="Java 12" edition-name="Java SE 12" jdk-name="JDK 12"
 			status="old" lts="no" release-date="2019-03-19"
 			class-major="56">
 		<jsr id="386" title="Java™ SE 12"/>
@@ -304,7 +304,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk12certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 13" edition-name="Java SE 13" jdk-name="JDK 13"
+	<java id="java-13" lang-name="Java 13" edition-name="Java SE 13" jdk-name="JDK 13"
 			status="old" lts="no" release-date="2019-09-17"
 			class-major="57">
 		<jsr id="388" title="Java™ SE 13"/>
@@ -338,7 +338,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk13certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 14" edition-name="Java SE 14" jdk-name="JDK 14"
+	<java id="java-14" lang-name="Java 14" edition-name="Java SE 14" jdk-name="JDK 14"
 			status="old" lts="no" release-date="2020-03-17"
 			class-major="58">
 		<jsr id="389" title="Java™ SE 14"/>
@@ -372,7 +372,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk14certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 15" edition-name="Java SE 15" jdk-name="JDK 15"
+	<java id="java-15" lang-name="Java 15" edition-name="Java SE 15" jdk-name="JDK 15"
 			status="old" lts="no" release-date="2020-09-16"
 			class-major="59">
 		<jsr id="390" title="Java™ SE 15"/>
@@ -406,7 +406,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk15certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 16" edition-name="Java SE 16" jdk-name="JDK 16"
+	<java id="java-16" lang-name="Java 16" edition-name="Java SE 16" jdk-name="JDK 16"
 			status="old" lts="no" release-date="2021-03-16"
 			class-major="60">
 		<jsr id="391" title="Java™ SE 16"/>
@@ -440,7 +440,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk16certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 17" edition-name="Java SE 17" jdk-name="JDK 17"
+	<java id="java-17" lang-name="Java 17" edition-name="Java SE 17" jdk-name="JDK 17"
 			status="maintained" lts="yes" release-date="2021-09-14"
 			class-major="61">
 		<jsr id="392" title="Java™ SE 17"/>
@@ -474,7 +474,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk17certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 18" edition-name="Java SE 18" jdk-name="JDK 18"
+	<java id="java-18" lang-name="Java 18" edition-name="Java SE 18" jdk-name="JDK 18"
 			status="old" lts="no" release-date="2022-03-22"
 			class-major="62">
 		<jsr id="393" title="Java™ SE 18"/>
@@ -508,7 +508,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk18certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 19" edition-name="Java SE 19" jdk-name="JDK 19"
+	<java id="java-19" lang-name="Java 19" edition-name="Java SE 19" jdk-name="JDK 19"
 			status="old" lts="no" release-date="2022-09-20"
 			class-major="63">
 		<jsr id="394" title="Java™ SE 19"/>
@@ -542,7 +542,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk19certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 20" edition-name="Java SE 20" jdk-name="JDK 20"
+	<java id="java-20" lang-name="Java 20" edition-name="Java SE 20" jdk-name="JDK 20"
 			status="old" lts="no" release-date="2023-03-21"
 			class-major="64">
 		<jsr id="395" title="Java™ SE 20"/>
@@ -576,7 +576,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk20certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 21" edition-name="Java SE 21" jdk-name="JDK 21"
+	<java id="java-21" lang-name="Java 21" edition-name="Java SE 21" jdk-name="JDK 21"
 			status="maintained" lts="yes" release-date="2023-09-19"
 			class-major="65">
 		<jsr id="396" title="Java™ SE 21"/>
@@ -610,7 +610,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk21certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 22" edition-name="Java SE 22" jdk-name="JDK 22"
+	<java id="java-22" lang-name="Java 22" edition-name="Java SE 22" jdk-name="JDK 22"
 			status="current" lts="no" release-date="2024-03-19"
 			class-major="66">
 		<jsr id="397" title="Java™ SE 22"/>
@@ -644,7 +644,7 @@
 				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk22certconfig.html"/>
 	</java>
 
-	<java lang-name="Java 23" edition-name="Java SE 23" jdk-name="JDK 23"
+	<java id="java-23" lang-name="Java 23" edition-name="Java SE 23" jdk-name="JDK 23"
 			status="future" lts="no" release-date="2024-09"
 			class-major="67">
 		<jsr id="398" title="Java™ SE 23"/>
@@ -655,7 +655,7 @@
 				draft="yes"/>
 	</java>
 
-	<java lang-name="Java 24" edition-name="Java SE 24" jdk-name="JDK 24"
+	<java id="java-24" lang-name="Java 24" edition-name="Java SE 24" jdk-name="JDK 24"
 			status="future" lts="no" release-date="2025-03"
 			class-major="68">
 		<jsr id="399" title="Java™ SE 24"/>
@@ -666,12 +666,12 @@
 				draft="yes"/>
 	</java>
 
-	<java lang-name="Java 25" edition-name="Java SE 25" jdk-name="JDK 25"
+	<java id="java-25" lang-name="Java 25" edition-name="Java SE 25" jdk-name="JDK 25"
 			status="future" lts="yes" release-date="2025-09"
 			class-major="69">
 	</java>
 
-	<java lang-name="Java 26" edition-name="Java SE 26" jdk-name="JDK 26"
+	<java id="java-26" lang-name="Java 26" edition-name="Java SE 26" jdk-name="JDK 26"
 			status="future" lts="no" release-date="2026-03"
 			class-major="70">
 	</java>
