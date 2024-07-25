@@ -103,29 +103,29 @@
 
 					<ul class="fa-ul mb-5">
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-minus jv-status jv-old" aria-hidden="true"></i></span>
-							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+							<span class="fa-li"><xsl:sequence select="jvcs:icon('old-version-legend')"/></span>
+							<xsl:sequence select="jvcs:icon('arrow-right')"/>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$oldVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status jv-maintained" aria-hidden="true"></i></span>
-							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+							<span class="fa-li"><xsl:sequence select="jvcs:icon('maintained-version-legend')"/></span>
+							<xsl:sequence select="jvcs:icon('arrow-right')"/>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$maintainedVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-check jv-status jv-current" aria-hidden="true"></i></span>
-							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+							<span class="fa-li"><xsl:sequence select="jvcs:icon('current-version-legend')"/></span>
+							<xsl:sequence select="jvcs:icon('arrow-right')"/>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$currentVersion"/>
 						</li>
 
 						<li class="mb-1">
-							<span class="fa-li"><i class="fa-solid fa-circle-question jv-status jv-future" aria-hidden="true"></i></span>
-							<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+							<span class="fa-li"><xsl:sequence select="jvcs:icon('future-version-legend')"/></span>
+							<xsl:sequence select="jvcs:icon('arrow-right')"/>
 							<xsl:text> </xsl:text>
 							<xsl:value-of select="$futureVersion"/>
 						</li>
@@ -160,7 +160,7 @@
 						<div class="pt-3 mb-3 border-top border-2 border-secondary-subtle">
 							<ul class="fa-ul mb-0">
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-calendar-day" aria-hidden="true"></i></span>
+									<span class="fa-li"><xsl:sequence select="jvcs:icon('updated-at')"/></span>
 									<xsl:text>Java information updated at </xsl:text>
 									<span class="jv-updated-at"><xsl:value-of select="$infoUpdatedAtFmt"/></span>
 									<xsl:text> </xsl:text>
@@ -168,21 +168,21 @@
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-circle-user" aria-hidden="true"></i></span>
+									<span class="fa-li"><xsl:sequence select="jvcs:icon('developed-by')"/></span>
 									<xsl:text>Developed with </xsl:text>
-									<i class="fa-solid fa-heart" title="love"></i>
+									<xsl:sequence select="jvcs:icon('love')"/>
 									<xsl:text> for Java by Andrea Binello (“andbin”) &#x2013; </xsl:text>
 									<a href="https://andbin.dev">andbin.dev</a>
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-server" aria-hidden="true"></i></span>
+									<span class="fa-li"><xsl:sequence select="jvcs:icon('hosted')"/></span>
 									<xsl:text>Hosted on GitHub at </xsl:text>
 									<a href="{$projectUrl}"><xsl:value-of select="$projectName"/></a>
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+									<span class="fa-li"><xsl:sequence select="jvcs:icon('coded')"/></span>
 									<xsl:text>Coded with </xsl:text>
 									<a href="https://en.wikipedia.org/wiki/XML" title="eXtensible Markup Language">XML</a>
 									<xsl:text>, </xsl:text>
@@ -196,7 +196,7 @@
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-gear" aria-hidden="true"></i></span>
+									<span class="fa-li"><xsl:sequence select="jvcs:icon('generated')"/></span>
 									<xsl:text>Generated with </xsl:text>
 									<xsl:value-of select="$processorName"/>
 									<xsl:text> </xsl:text>
@@ -206,13 +206,13 @@
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span>
+									<span class="fa-li"><xsl:sequence select="jvcs:icon('licensed')"/></span>
 									<xsl:text>Licensed under a </xsl:text>
 									<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 								</li>
 
 								<li class="mb-1">
-									<span class="fa-li"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+									<span class="fa-li"><xsl:sequence select="jvcs:icon('privacy')"/></span>
 									<xsl:text>Read </xsl:text>
 									<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub Privacy Statement</a>
 									<xsl:text> (for this page) and </xsl:text>
@@ -221,7 +221,7 @@
 								</li>
 
 								<li class="mb-0">
-									<span class="fa-li"><i class="fa-solid fa-registered" aria-hidden="true"></i></span>
+									<span class="fa-li"><xsl:sequence select="jvcs:icon('registered')"/></span>
 									<xsl:text>Oracle® and Java are registered trademarks of </xsl:text>
 									<a href="https://www.oracle.com">Oracle</a>
 								</li>
@@ -234,7 +234,9 @@
 					</footer>
 				</div>
 
-				<button type="button" id="scrolltop" data-bs-placement="left" title="Scroll to top"><i class="fa-solid fa-turn-up" aria-hidden="true"></i></button>
+				<button type="button" id="scrolltop" data-bs-placement="left" title="Scroll to top">
+					<xsl:sequence select="jvcs:icon('scroll-top')"/>
+				</button>
 
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -247,7 +249,7 @@
 	<xsl:template match="java" mode="table">
 		<tr>
 			<th scope="row" class="pe-1">
-				<xsl:call-template name="status-circle"/>
+				<xsl:call-template name="status-icon"/>
 				<a href="#{@id}">
 					<xsl:value-of select="@lang-name"/>
 				</a>
@@ -313,7 +315,7 @@
 				<xsl:if test="jdk-docs[1]">
 					<a href="{jdk-docs[1]/@url}" title="{jdk-docs[1]/@title}">Doc</a>
 					<xsl:if test="jdk-docs[1]/@type = 'download-page'">
-						<i class="fa-solid fa-file-arrow-down jv-ico-right" title="Download page"></i>
+						<xsl:sequence select="jvcs:icon('download-page')"/>
 					</xsl:if>
 				</xsl:if>
 			</td>
@@ -330,7 +332,7 @@
 						<xsl:text>API</xsl:text>
 					</a>
 					<xsl:if test="api-docs[1]/@draft = 'yes'">
-						<i class="fa-solid fa-pencil jv-draft" title="This API Specification is a “DRAFT”"></i>
+						<xsl:sequence select="jvcs:icon('api-draft')"/>
 					</xsl:if>
 				</xsl:if>
 			</td>
@@ -352,7 +354,7 @@
 				</xsl:if>
 				<xsl:if test="jls-docs[1]/@pdf-url">
 					<a href="{jls-docs[1]/@pdf-url}" title="{jls-docs[1]/@title} (PDF)">JLS</a>
-					<i class="fa-solid fa-file-pdf jv-ico-right" title="PDF file"></i>
+					<xsl:sequence select="jvcs:icon('pdf-file')"/>
 				</xsl:if>
 			</td>
 
@@ -367,7 +369,7 @@
 				</xsl:if>
 				<xsl:if test="jvms-docs[1]/@pdf-url">
 					<a href="{jvms-docs[1]/@pdf-url}" title="{jvms-docs[1]/@title} (PDF)">JVMS</a>
-					<i class="fa-solid fa-file-pdf jv-ico-right" title="PDF file"></i>
+					<xsl:sequence select="jvcs:icon('pdf-file')"/>
 				</xsl:if>
 			</td>
 		</tr>
@@ -395,7 +397,7 @@
 					<ul>
 						<li>
 							<xsl:text>Status: </xsl:text>
-							<xsl:call-template name="status-circle"/>
+							<xsl:call-template name="status-icon"/>
 							<span class="jv-val">
 								<xsl:call-template name="status-desc"/>
 							</span>
@@ -670,21 +672,8 @@
 	</xsl:template>
 
 
-	<xsl:template name="status-circle">
-		<xsl:choose>
-			<xsl:when test="@status = 'old'">
-				<i class="fa-solid fa-circle-minus jv-status jv-old" title="{$oldVersion}"></i>
-			</xsl:when>
-			<xsl:when test="@status = 'maintained'">
-				<i class="fa-solid fa-circle-check jv-status jv-maintained" title="{$maintainedVersion}"></i>
-			</xsl:when>
-			<xsl:when test="@status = 'current'">
-				<i class="fa-solid fa-circle-check jv-status jv-current" title="{$currentVersion}"></i>
-			</xsl:when>
-			<xsl:when test="@status = 'future'">
-				<i class="fa-solid fa-circle-question jv-status jv-future" title="{$futureVersion}"></i>
-			</xsl:when>
-		</xsl:choose>
+	<xsl:template name="status-icon">
+		<xsl:sequence select="jvcs:icon(fn:concat(@status, '-version'))"/>
 	</xsl:template>
 
 
@@ -717,6 +706,87 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:message terminate="yes">Invalid date argument: <xsl:value-of select="$dt"/></xsl:message>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+
+
+	<xsl:function name="jvcs:icon">
+		<xsl:param name="key" as="xs:string"/>
+		<xsl:choose>
+			<xsl:when test="$key = 'old-version'">
+				<i class="fa-solid fa-circle-minus jv-status jv-old" title="{$oldVersion}"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'old-version-legend'">
+				<i class="fa-solid fa-circle-minus jv-status jv-old" aria-hidden="true"></i>
+			</xsl:when>
+
+			<xsl:when test="$key = 'maintained-version'">
+				<i class="fa-solid fa-circle-check jv-status jv-maintained" title="{$maintainedVersion}"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'maintained-version-legend'">
+				<i class="fa-solid fa-circle-check jv-status jv-maintained" aria-hidden="true"></i>
+			</xsl:when>
+
+			<xsl:when test="$key = 'current-version'">
+				<i class="fa-solid fa-circle-check jv-status jv-current" title="{$currentVersion}"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'current-version-legend'">
+				<i class="fa-solid fa-circle-check jv-status jv-current" aria-hidden="true"></i>
+			</xsl:when>
+
+			<xsl:when test="$key = 'future-version'">
+				<i class="fa-solid fa-circle-question jv-status jv-future" title="{$futureVersion}"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'future-version-legend'">
+				<i class="fa-solid fa-circle-question jv-status jv-future" aria-hidden="true"></i>
+			</xsl:when>
+
+			<xsl:when test="$key = 'arrow-right'">
+				<i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'updated-at'">
+				<i class="fa-solid fa-calendar-day" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'developed-by'">
+				<i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'love'">
+				<i class="fa-solid fa-heart" title="love"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'hosted'">
+				<i class="fa-solid fa-server" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'coded'">
+				<i class="fa-solid fa-code" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'generated'">
+				<i class="fa-solid fa-gear" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'licensed'">
+				<i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'privacy'">
+				<i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'registered'">
+				<i class="fa-solid fa-registered" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'scroll-top'">
+				<i class="fa-solid fa-turn-up" aria-hidden="true"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'download-page'">
+				<i class="fa-solid fa-file-arrow-down jv-ico-right" title="Download page"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'api-draft'">
+				<i class="fa-solid fa-pencil jv-draft" title="This API Specification is a “DRAFT”"></i>
+			</xsl:when>
+			<xsl:when test="$key = 'pdf-file'">
+				<i class="fa-solid fa-file-pdf jv-ico-right" title="PDF file"></i>
+			</xsl:when>
+
+			<xsl:otherwise>
+				<xsl:message terminate="yes">Invalid icon key: <xsl:value-of select="$key"/></xsl:message>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
