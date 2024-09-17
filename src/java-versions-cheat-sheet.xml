@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2024-07-16" update-time="18:40:00" update-tz="+02:00">
+<java-versions update-date="2024-09-17" update-time="18:30:00" update-tz="+02:00">
 
 	<java id="java-1.0" lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -611,7 +611,7 @@
 	</java>
 
 	<java id="java-22" lang-name="Java 22" edition-name="Java SE 22" jdk-name="JDK 22"
-			status="current" lts="no" release-date="2024-03-19"
+			status="old" lts="no" release-date="2024-03-19"
 			class-major="66">
 		<jsr id="397" title="Java™ SE 22"/>
 		<latest-build version="22.0.2" full-version="22.0.2+9" release-date="2024-07-16" />
@@ -645,14 +645,37 @@
 	</java>
 
 	<java id="java-23" lang-name="Java 23" edition-name="Java SE 23" jdk-name="JDK 23"
-			status="future" lts="no" release-date="2024-09"
+			status="current" lts="no" release-date="2024-09-17"
 			class-major="67">
 		<jsr id="398" title="Java™ SE 23"/>
+		<latest-build version="23" full-version="23+37" release-date="2024-09-17" />
 		<unicode version="15.1" name="Unicode 15.1.0" url="https://www.unicode.org/versions/Unicode15.1.0/"/>
+		<jdk-docs
+				title="JDK 23 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/23/"/>
 		<api-docs
 				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 23 API Specification"
-				url="https://download.java.net/java/early_access/jdk23/docs/api/"
-				draft="yes"/>
+				url="https://docs.oracle.com/en/java/javase/23/docs/api/"/>
+		<api-diff
+				title="API Specification differences between jdk-22-ga &amp; jdk-23+37"
+				url="https://cr.openjdk.org/~iris/se/23/latestSpec/apidiffs/index.html"/>
+		<jls-docs
+				title="The Java Language Specification, Java SE 23 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se23/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se23/jls23.pdf"/>
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 23 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se23/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se23/jvms23.pdf"/>
+		<announcement
+				title="The Arrival of Java 23"
+				url="https://blogs.oracle.com/java/post/the-arrival-of-java-23"/>
+		<rel-notes
+				title="Java Development Kit 23 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/23u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 23 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk23certconfig.html"/>
 	</java>
 
 	<java id="java-24" lang-name="Java 24" edition-name="Java SE 24" jdk-name="JDK 24"
