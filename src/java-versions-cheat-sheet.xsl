@@ -50,10 +50,10 @@
 
 		<html lang="en-US">
 			<head>
+				<meta charset="UTF-8"/>
 				<meta http-equiv="last-modified" content="{$lastModifiedStr}"/>
 				<link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
 				<title><xsl:value-of select="$pageTitle"/></title>
-				<meta charset="UTF-8"/>
 				<meta name="author" content="{$pageAuthor}"/>
 				<meta name="description" content="{$pageDescription}"/>
 				<meta name="generator" content="{$processorInfo}"/>
@@ -87,7 +87,7 @@
 									<th scope="col" class="text-end"><span title="First release date">Release date</span></th>
 									<th scope="col"><span title="Latest JDK build">Latest build</span></th>
 									<th scope="col" class="text-center"><span title="Class file version (major.minor)">Class<br/>Ver.</span></th>
-									<th scope="col" class="text-center"><span title="Unicode Standard version">Unicode<br/>Ver.</span></th>
+									<th scope="col" class="text-center"><span title="Unicode Standard version (as specified by class java.lang.Character)">Unicode<br/>Ver.</span></th>
 									<th scope="col"><span title="JDK Documentation">Doc.</span></th>
 									<th scope="col"><span title="API Specification">API</span></th>
 									<th scope="col"><span title="API Differences">API Diff.</span></th>
@@ -169,15 +169,17 @@
 
 								<li class="mb-1">
 									<span class="fa-li"><xsl:sequence select="jvcs:icon('developed-by')"/></span>
-									<xsl:text>Developed with </xsl:text>
-									<xsl:sequence select="jvcs:icon('love')"/>
+									<xsl:text>Developed with love</xsl:text>
+									<xsl:sequence select="jvcs:icon('with-love')"/>
 									<xsl:text> for Java by Andrea Binello (“andbin”) &#x2013; </xsl:text>
 									<a href="https://andbin.dev">andbin.dev</a>
 								</li>
 
 								<li class="mb-1">
 									<span class="fa-li"><xsl:sequence select="jvcs:icon('hosted')"/></span>
-									<xsl:text>Hosted on GitHub at </xsl:text>
+									<xsl:text>Hosted on </xsl:text>
+									<a href="https://github.com">GitHub</a>
+									<xsl:text> at </xsl:text>
 									<a href="{$projectUrl}"><xsl:value-of select="$projectName"/></a>
 								</li>
 
@@ -353,8 +355,7 @@
 					<xsl:text> </xsl:text>
 				</xsl:if>
 				<xsl:if test="jls-docs[1]/@pdf-url">
-					<a href="{jls-docs[1]/@pdf-url}" title="{jls-docs[1]/@title} (PDF)">JLS</a>
-					<xsl:sequence select="jvcs:icon('pdf-file')"/>
+					<a href="{jls-docs[1]/@pdf-url}" title="{jls-docs[1]/@title} (PDF)">JLS<xsl:sequence select="jvcs:icon('pdf-file')"/></a>
 				</xsl:if>
 			</td>
 
@@ -368,8 +369,7 @@
 					<xsl:text> </xsl:text>
 				</xsl:if>
 				<xsl:if test="jvms-docs[1]/@pdf-url">
-					<a href="{jvms-docs[1]/@pdf-url}" title="{jvms-docs[1]/@title} (PDF)">JVMS</a>
-					<xsl:sequence select="jvcs:icon('pdf-file')"/>
+					<a href="{jvms-docs[1]/@pdf-url}" title="{jvms-docs[1]/@title} (PDF)">JVMS<xsl:sequence select="jvcs:icon('pdf-file')"/></a>
 				</xsl:if>
 			</td>
 		</tr>
@@ -751,8 +751,8 @@
 			<xsl:when test="$key = 'developed-by'">
 				<i class="fa-solid fa-circle-user" aria-hidden="true"></i>
 			</xsl:when>
-			<xsl:when test="$key = 'love'">
-				<i class="fa-solid fa-heart" title="love"></i>
+			<xsl:when test="$key = 'with-love'">
+				<i class="fa-solid fa-heart" aria-hidden="true" style="padding-left:0.25em"></i>
 			</xsl:when>
 			<xsl:when test="$key = 'hosted'">
 				<i class="fa-solid fa-server" aria-hidden="true"></i>
@@ -782,7 +782,7 @@
 				<i class="fa-solid fa-pencil jv-draft" title="This API Specification is a “DRAFT”"></i>
 			</xsl:when>
 			<xsl:when test="$key = 'pdf-file'">
-				<i class="fa-solid fa-file-pdf jv-ico-right" title="PDF file"></i>
+				<i class="fa-solid fa-file-pdf jv-ico-right" aria-hidden="true"></i>
 			</xsl:when>
 
 			<xsl:otherwise>
