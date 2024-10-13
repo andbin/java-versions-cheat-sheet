@@ -20,8 +20,11 @@ $(function() {
 	$("#jvcstable span.latest-build").each(function() {
 		var releaseDateStr = $(this).data("release-date");
 		if (releaseDateStr) {
-			if (daysDiff(now, new Date(releaseDateStr)) < 90) {
-				$(this).after(" ", "<span class='jv-new badge rounded-pill' title='This build was released less than 90 days ago'>NEW</span>");
+			var days = daysDiff(now, new Date(releaseDateStr));
+			if (days <= 90) {
+				var msg = "This build was released " + days + (days == 1 ? " day" : " days") + " ago";
+				var clr = Math.floor(102 + 102 * (90 - days) / 90);
+				$(this).after(" ", "<span class='jv-new badge rounded-pill' title='" + msg + "' style='background-color: rgb(0," + clr + ",0)'>NEW</span>");
 			}
 		}
 	});
