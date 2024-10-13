@@ -4,6 +4,7 @@ th { font-weight: 500; }
 thead th { line-height: 1.1em; }
 a:hover { color: #ff1e56; }
 footer .fa-li i { font-size: 110%; vertical-align: -5%; }
+.badge { cursor: default; }
 .card { border-color: #222; }
 .card.jv-resources span { padding-left: 0.18em; padding-right: 0.18em; }
 .card ul { list-style: disc; margin-bottom: 0; }
