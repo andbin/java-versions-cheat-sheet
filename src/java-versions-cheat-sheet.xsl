@@ -134,21 +134,27 @@
 					<div class="mb-5 card jv-resources">
 						<div class="card-body">
 							<h5 class="card-title">Oracle Resources</h5>
-							<a href="https://www.oracle.com/java/technologies/">Java Technologies</a>
-							<span> — </span>
-							<a href="https://blogs.oracle.com/java/">Java Blog</a>
-							<span> — </span>
-							<a href="https://www.oracle.com/java/technologies/downloads/">Java Downloads</a>
-							<span> — </span>
-							<a href="https://docs.oracle.com/javase/tutorial/">The Java™ Tutorials</a>
-							<span> — </span>
-							<a href="https://www.oracle.com/java/technologies/javase/codeconventions-contents.html">Code Conventions for the Java™ Programming Language</a>
-							<span> — </span>
-							<a href="https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html">Java HotSpot VM Options</a>
-							<span> — </span>
-							<a href="https://www.oracle.com/java/technologies/javase/seccodeguide.html">Secure Coding Guidelines for Java SE</a>
-							<span> — </span>
-							<a href="https://www.oracle.com/java/technologies/tzdata-versions.html">Timezone Data Versions in the Java Runtime</a>
+							<div class="row">
+								<span><a href="https://blogs.oracle.com/java/" title="Oracle Blogs | Java Blog">Java Blog</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://www.oracle.com/java/technologies/javase/codeconventions-contents.html" title="Code Conventions for the Java Programming Language">Java Code Conventions</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://www.oracle.com/java/technologies/downloads/" title="Java Downloads | Oracle">Java Downloads</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html" title="Java HotSpot VM Options">Java HotSpot VM Options</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://www.oracle.com/java/technologies/javase/seccodeguide.html" title="Secure Coding Guidelines for Java SE">Java SE Secure Coding</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://www.oracle.com/java/technologies/java-se-support-roadmap.html" title="Oracle Java SE Support Roadmap">Java SE Support Roadmap</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://www.oracle.com/java/technologies/" title="Oracle Java Technologies | Oracle">Java Technologies</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://docs.oracle.com/javase/tutorial/" title="The Java™ Tutorials">Java Tutorials</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html" title="JDK Release Notes">JDK Release Notes</a></span>
+								<xsl:text> </xsl:text>
+								<span><a href="https://www.oracle.com/java/technologies/tzdata-versions.html" title="Timezone Data Versions in the JRE Software">JRE Timezone Data Versions</a></span>
+							</div>
 						</div>
 					</div>
 
