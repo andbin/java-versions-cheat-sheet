@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2025-01-21" update-time="16:00:00" update-tz="+01:00">
+<java-versions update-date="2025-03-18" update-time="17:40:00" update-tz="+01:00">
 
 	<java id="java-1.0" lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -645,7 +645,7 @@
 	</java>
 
 	<java id="java-23" lang-name="Java 23" edition-name="Java SE 23" jdk-name="JDK 23"
-			status="current" lts="no" release-date="2024-09-17"
+			status="old" lts="no" release-date="2024-09-17"
 			class-major="67">
 		<jsr id="398" title="Java™ SE 23"/>
 		<latest-build version="23.0.2" full-version="23.0.2+7" release-date="2025-01-21"/>
@@ -679,14 +679,37 @@
 	</java>
 
 	<java id="java-24" lang-name="Java 24" edition-name="Java SE 24" jdk-name="JDK 24"
-			status="future" lts="no" release-date="2025-03"
+			status="current" lts="no" release-date="2025-03-18"
 			class-major="68">
 		<jsr id="399" title="Java™ SE 24"/>
+		<latest-build version="24" full-version="24+36" release-date="2025-03-18"/>
 		<unicode version="16.0" name="Unicode 16.0.0" url="https://www.unicode.org/versions/Unicode16.0.0/"/>
+		<jdk-docs
+				title="JDK 24 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/24/"/>
 		<api-docs
 				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 24 API Specification"
-				url="https://download.java.net/java/early_access/jdk24/docs/api/"
-				draft="yes"/>
+				url="https://docs.oracle.com/en/java/javase/24/docs/api/"/>
+		<api-diff
+				title="API Specification differences between jdk-23-ga &amp; jdk-24+36"
+				url="https://cr.openjdk.org/~iris/se/24/latestSpec/apidiffs/index.html"/>
+		<jls-docs
+				title="The Java Language Specification, Java SE 24 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se24/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se24/jls24.pdf"/>
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 24 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se24/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se24/jvms24.pdf"/>
+		<announcement
+				title="The Arrival of Java 24"
+				url="https://blogs.oracle.com/java/post/the-arrival-of-java-24"/>
+		<rel-notes
+				title="Java Development Kit 24 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/24u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 24 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk24certconfig.html"/>
 	</java>
 
 	<java id="java-25" lang-name="Java 25" edition-name="Java SE 25" jdk-name="JDK 25"
