@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2025-03-18" update-time="17:40:00" update-tz="+01:00">
+<java-versions update-date="2025-04-16" update-time="10:00:00" update-tz="+02:00">
 
 	<java id="java-1.0" lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -147,7 +147,7 @@
 			status="maintained" lts="yes" release-date="2014-03-18"
 			class-major="52" class-minor="0">
 		<jsr id="337" title="Java™ SE 8 Release Contents"/>
-		<latest-build version="8u441" full-version="1.8.0_441-b07" release-date="2025-01-21"/>
+		<latest-build version="8u451" full-version="1.8.0_451-b10" release-date="2025-04-15"/>
 		<unicode version="6.2" name="Unicode 6.2.0" url="https://www.unicode.org/versions/Unicode6.2.0/"/>
 		<jdk-docs
 				title="Java Platform Standard Edition 8 Documentation"
@@ -240,7 +240,7 @@
 			status="maintained" lts="yes" release-date="2018-09-25"
 			class-major="55" class-minor="0">
 		<jsr id="384" title="Java™ SE 11 (18.9)"/>
-		<latest-build version="11.0.26" full-version="11.0.26+7" release-date="2025-01-21"/>
+		<latest-build version="11.0.27" full-version="11.0.27+8" release-date="2025-04-15"/>
 		<unicode version="10.0" name="Unicode 10.0.0" url="https://www.unicode.org/versions/Unicode10.0.0/"/>
 		<jdk-docs
 				title="JDK 11 Documentation - Home"
@@ -444,7 +444,7 @@
 			status="maintained" lts="yes" release-date="2021-09-14"
 			class-major="61">
 		<jsr id="392" title="Java™ SE 17"/>
-		<latest-build version="17.0.14" full-version="17.0.14+8" release-date="2025-01-21"/>
+		<latest-build version="17.0.15" full-version="17.0.15+9" release-date="2025-04-15"/>
 		<unicode version="13.0" name="Unicode 13.0.0" url="https://www.unicode.org/versions/Unicode13.0.0/"/>
 		<jdk-docs
 				title="JDK 17 Documentation - Home"
@@ -580,7 +580,7 @@
 			status="maintained" lts="yes" release-date="2023-09-19"
 			class-major="65">
 		<jsr id="396" title="Java™ SE 21"/>
-		<latest-build version="21.0.6" full-version="21.0.6+8" release-date="2025-01-21"/>
+		<latest-build version="21.0.7" full-version="21.0.7+8" release-date="2025-04-15"/>
 		<unicode version="15.0" name="Unicode 15.0.0" url="https://www.unicode.org/versions/Unicode15.0.0/"/>
 		<jdk-docs
 				title="JDK 21 Documentation - Home"
@@ -682,7 +682,7 @@
 			status="current" lts="no" release-date="2025-03-18"
 			class-major="68">
 		<jsr id="399" title="Java™ SE 24"/>
-		<latest-build version="24" full-version="24+36" release-date="2025-03-18"/>
+		<latest-build version="24.0.1" full-version="24.0.1+9" release-date="2025-04-15"/>
 		<unicode version="16.0" name="Unicode 16.0.0" url="https://www.unicode.org/versions/Unicode16.0.0/"/>
 		<jdk-docs
 				title="JDK 24 Documentation - Home"
