@@ -30,7 +30,7 @@ footer .fa-li i { font-size: 110%; vertical-align: -5%; }
 .jv-lts.badge { background-color: #0000ee; font-size: 76%; font-weight: 700; padding-top: 0.4em; padding-bottom: 0.38em; vertical-align: 12%; }
 .jv-new.badge { background-color: #009900; font-size: 64%; font-weight: 500; padding-top: 0.4em; padding-bottom: 0.38em; vertical-align: 18%; }
 .jv-resources .row span { display: inline-block; max-width: 16.5em; }
-.jv-sep { color: #90979d; font-size: 130%; vertical-align: -5%; line-height: 1; }
+.jv-sep { color: #90979d; font-size: 130%; vertical-align: -5%; line-height: 1; padding: 0 0.1em; }
 .jv-status { font-size: 112%; margin-right: 0.25em; vertical-align: -6%; }
 .jv-status.jv-current { color: #00d800; }
 .jv-status.jv-future { color: #00a8ff; }

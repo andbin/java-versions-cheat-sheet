@@ -356,9 +356,7 @@
 					<a href="{jls-docs[1]/@web-url}" title="{jls-docs[1]/@title}">JLS</a>
 				</xsl:if>
 				<xsl:if test="jls-docs[1]/@web-url and jls-docs[1]/@pdf-url">
-					<xsl:text> </xsl:text>
 					<span class="jv-sep">|</span>
-					<xsl:text> </xsl:text>
 				</xsl:if>
 				<xsl:if test="jls-docs[1]/@pdf-url">
 					<a href="{jls-docs[1]/@pdf-url}" title="{jls-docs[1]/@title} (PDF)">JLS<xsl:sequence select="jvcs:icon('pdf-file')"/></a>
@@ -370,9 +368,7 @@
 					<a href="{jvms-docs[1]/@web-url}" title="{jvms-docs[1]/@title}">JVMS</a>
 				</xsl:if>
 				<xsl:if test="jvms-docs[1]/@web-url and jvms-docs[1]/@pdf-url">
-					<xsl:text> </xsl:text>
 					<span class="jv-sep">|</span>
-					<xsl:text> </xsl:text>
 				</xsl:if>
 				<xsl:if test="jvms-docs[1]/@pdf-url">
 					<a href="{jvms-docs[1]/@pdf-url}" title="{jvms-docs[1]/@title} (PDF)">JVMS<xsl:sequence select="jvcs:icon('pdf-file')"/></a>
