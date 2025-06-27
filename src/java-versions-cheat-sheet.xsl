@@ -48,7 +48,7 @@
 		<xsl:variable name="infoUpdatedAtMillis" select="($infoUpdatedAt - $epochDateTime) div xs:dayTimeDuration('PT0.001S')"/>
 		<xsl:variable name="infoUpdatedAtFmt" select="fn:format-dateTime($infoUpdatedAt, '[Y0001]-[M01]-[D01] [H01]:[m01]:[s01] [z]')"/>
 
-		<html lang="en-US">
+		<html lang="en-US" class="notranslate" translate="no">
 			<head>
 				<meta charset="UTF-8"/>
 				<meta http-equiv="last-modified" content="{$lastModifiedStr}"/>
