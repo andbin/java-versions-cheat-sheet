@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2025-10-29" update-time="09:30:00" update-tz="+01:00">
+<java-versions update-date="2025-12-14" update-time="15:40:00" update-tz="+01:00">
 
 	<java id="java-1.0" lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -782,6 +782,13 @@
 	<java id="java-27" lang-name="Java 27" edition-name="Java SE 27" jdk-name="JDK 27"
 			status="future" lts="no" release-date="2026-09"
 			class-major="71">
+		<jsr id="402" title="Java™ SE 27"/>
+		<unicode version="17.0" name="Unicode 17.0.0" url="https://www.unicode.org/versions/Unicode17.0.0/"
+				character-javadoc-url="https://download.java.net/java/early_access/jdk27/docs/api/java.base/java/lang/Character.html"/>
+		<api-docs
+				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 27 API Specification"
+				url="https://download.java.net/java/early_access/jdk27/docs/api/"
+				draft="yes"/>
 	</java>
 
 	<java id="java-28" lang-name="Java 28" edition-name="Java SE 28" jdk-name="JDK 28"
