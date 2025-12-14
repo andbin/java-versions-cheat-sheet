@@ -3,6 +3,7 @@ h1 { font-weight: 700; }
 th { font-weight: 500; }
 thead th { line-height: 1.1em; }
 a:hover { color: #ff1e56; }
+code { font-size: inherit; }
 footer .fa-li i { font-size: 110%; vertical-align: -5%; }
 .badge { cursor: default; }
 .card { border-color: #222; }

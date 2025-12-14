@@ -480,6 +480,10 @@
 									<a href="{unicode[1]/@url}"><xsl:value-of select="unicode[1]/@name"/></a>
 									<xsl:text>)</xsl:text>
 								</xsl:if>
+								<xsl:if test="unicode[1]/@character-javadoc-url">
+									<xsl:text>, see also </xsl:text>
+									<a href="{unicode[1]/@character-javadoc-url}"><code>java.lang.Character</code></a>
+								</xsl:if>
 							</li>
 						</xsl:if>
 
