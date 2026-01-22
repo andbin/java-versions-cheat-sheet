@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2025-12-14" update-time="15:50:00" update-tz="+01:00">
+<java-versions update-date="2026-01-22" update-time="14:20:00" update-tz="+01:00">
 
 	<java id="java-1.0" lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -150,7 +150,7 @@
 			status="maintained" lts="yes" release-date="2014-03-18"
 			class-major="52" class-minor="0">
 		<jsr id="337" title="Java™ SE 8 Release Contents"/>
-		<latest-build version="8u471" full-version="1.8.0_471-b09" release-date="2025-10-21"/>
+		<latest-build version="8u481" full-version="1.8.0_481-b10" release-date="2026-01-20"/>
 		<unicode version="6.2" name="Unicode 6.2.0" url="https://www.unicode.org/versions/Unicode6.2.0/"
 				character-javadoc-url="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html"/>
 		<jdk-docs
@@ -246,7 +246,7 @@
 			status="maintained" lts="yes" release-date="2018-09-25"
 			class-major="55" class-minor="0">
 		<jsr id="384" title="Java™ SE 11 (18.9)"/>
-		<latest-build version="11.0.29" full-version="11.0.29+8" release-date="2025-10-21"/>
+		<latest-build version="11.0.30" full-version="11.0.30+7" release-date="2026-01-20"/>
 		<unicode version="10.0" name="Unicode 10.0.0" url="https://www.unicode.org/versions/Unicode10.0.0/"
 				character-javadoc-url="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html"/>
 		<jdk-docs
@@ -456,7 +456,7 @@
 			status="maintained" lts="yes" release-date="2021-09-14"
 			class-major="61">
 		<jsr id="392" title="Java™ SE 17"/>
-		<latest-build version="17.0.17" full-version="17.0.17+8" release-date="2025-10-21"/>
+		<latest-build version="17.0.18" full-version="17.0.18+8" release-date="2026-01-20"/>
 		<unicode version="13.0" name="Unicode 13.0.0" url="https://www.unicode.org/versions/Unicode13.0.0/"
 				character-javadoc-url="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html"/>
 		<jdk-docs
@@ -596,7 +596,7 @@
 			status="maintained" lts="yes" release-date="2023-09-19"
 			class-major="65">
 		<jsr id="396" title="Java™ SE 21"/>
-		<latest-build version="21.0.9" full-version="21.0.9+7" release-date="2025-10-21"/>
+		<latest-build version="21.0.10" full-version="21.0.10+8" release-date="2026-01-20"/>
 		<unicode version="15.0" name="Unicode 15.0.0" url="https://www.unicode.org/versions/Unicode15.0.0/"
 				character-javadoc-url="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Character.html"/>
 		<jdk-docs
@@ -736,7 +736,7 @@
 			status="current" lts="yes" release-date="2025-09-16"
 			class-major="69">
 		<jsr id="400" title="Java™ SE 25"/>
-		<latest-build version="25.0.1" full-version="25.0.1+8" release-date="2025-10-21"/>
+		<latest-build version="25.0.2" full-version="25.0.2+10" release-date="2026-01-20"/>
 		<unicode version="16.0" name="Unicode 16.0.0" url="https://www.unicode.org/versions/Unicode16.0.0/"
 				character-javadoc-url="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Character.html"/>
 		<jdk-docs
