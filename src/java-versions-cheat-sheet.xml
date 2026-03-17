@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2026-01-22" update-time="14:20:00" update-tz="+01:00">
+<java-versions update-date="2026-03-17" update-time="16:00:00" update-tz="+01:00">
 
 	<java id="java-1.0" lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -733,7 +733,7 @@
 	</java>
 
 	<java id="java-25" lang-name="Java 25" edition-name="Java SE 25" jdk-name="JDK 25"
-			status="current" lts="yes" release-date="2025-09-16"
+			status="maintained" lts="yes" release-date="2025-09-16"
 			class-major="69">
 		<jsr id="400" title="Java™ SE 25"/>
 		<latest-build version="25.0.2" full-version="25.0.2+10" release-date="2026-01-20"/>
@@ -768,15 +768,38 @@
 	</java>
 
 	<java id="java-26" lang-name="Java 26" edition-name="Java SE 26" jdk-name="JDK 26"
-			status="future" lts="no" release-date="2026-03"
+			status="current" lts="no" release-date="2026-03-17"
 			class-major="70">
 		<jsr id="401" title="Java™ SE 26"/>
+		<latest-build version="26" full-version="26+35" release-date="2026-03-17"/>
 		<unicode version="17.0" name="Unicode 17.0.0" url="https://www.unicode.org/versions/Unicode17.0.0/"
-				character-javadoc-url="https://download.java.net/java/early_access/jdk26/docs/api/java.base/java/lang/Character.html"/>
+				character-javadoc-url="https://docs.oracle.com/en/java/javase/26/docs/api/java.base/java/lang/Character.html"/>
+		<jdk-docs
+				title="JDK 26 Documentation - Home"
+				url="https://docs.oracle.com/en/java/javase/26/"/>
 		<api-docs
 				title="Java® Platform, Standard Edition &amp; Java Development Kit Version 26 API Specification"
-				url="https://download.java.net/java/early_access/jdk26/docs/api/"
-				draft="yes"/>
+				url="https://docs.oracle.com/en/java/javase/26/docs/api/"/>
+		<api-diff
+				title="API Specification differences between jdk-25-ga &amp; jdk-26+35"
+				url="https://cr.openjdk.org/~iris/se/26/latestSpec/apidiffs/index.html"/>
+		<jls-docs
+				title="The Java Language Specification, Java SE 26 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jls/se26/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jls/se26/jls26.pdf"/>
+		<jvms-docs
+				title="The Java Virtual Machine Specification, Java SE 26 Edition"
+				web-url="https://docs.oracle.com/javase/specs/jvms/se26/html/index.html"
+				pdf-url="https://docs.oracle.com/javase/specs/jvms/se26/jvms26.pdf"/>
+		<announcement
+				title="The Arrival of Java 26"
+				url="https://blogs.oracle.com/java/the-arrival-of-java-26"/>
+		<rel-notes
+				title="Java Development Kit 26 Release Notes"
+				url="https://www.oracle.com/java/technologies/javase/26u-relnotes.html"/>
+		<sys-confs
+				title="Oracle JDK 26 Certified System Configurations"
+				url="https://www.oracle.com/java/technologies/javase/products-doc-jdk26certconfig.html"/>
 	</java>
 
 	<java id="java-27" lang-name="Java 27" edition-name="Java SE 27" jdk-name="JDK 27"
