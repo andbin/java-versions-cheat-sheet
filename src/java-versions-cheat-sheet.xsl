@@ -177,8 +177,7 @@
 									<span class="fa-li"><xsl:sequence select="jvcs:icon('developed-by')"/></span>
 									<xsl:text>Developed with love</xsl:text>
 									<xsl:sequence select="jvcs:icon('with-love')"/>
-									<xsl:text> for Java by Andrea Binello (“andbin”) &#x2013; </xsl:text>
-									<a href="https://andbin.dev">andbin.dev</a>
+									<xsl:text> for Java by Andrea Binello (“andbin”)</xsl:text>
 								</li>
 
 								<li class="mb-1">
