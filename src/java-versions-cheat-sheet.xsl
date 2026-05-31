@@ -7,6 +7,9 @@
 
 	<xsl:output method="html" version="5" encoding="UTF-8"/>
 
+	<xsl:param name="extraMeta1"/>
+	<xsl:param name="extraMeta2"/>
+
 	<xsl:variable name="pageTitle">Java Versions Cheat Sheet</xsl:variable>
 	<xsl:variable name="siteName">andbin.github.io/java-versions-cheat-sheet</xsl:variable>
 	<xsl:variable name="pageAuthor">Andrea Binello</xsl:variable>
@@ -66,6 +69,8 @@
 				<meta property="og:url" content="{$pageUrl}"/>
 				<meta property="twitter:description" content="{$pageDescription}"/>
 				<meta property="twitter:title" content="{$pageTitle}"/>
+				<xsl:sequence select="jvcs:generateMeta($extraMeta1)"/>
+				<xsl:sequence select="jvcs:generateMeta($extraMeta2)"/>
 				<link rel="canonical" href="{$pageUrl}"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -794,6 +799,13 @@
 				<xsl:message terminate="yes">Invalid icon key: <xsl:value-of select="$key"/></xsl:message>
 			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:function>
+
+	<xsl:function name="jvcs:generateMeta">
+		<xsl:param name="metaKV" as="xs:string"/>
+		<xsl:if test="$metaKV">
+			<meta name="{fn:substring-before($metaKV,'=')}" content="{fn:substring-after($metaKV,'=')}"/>
+		</xsl:if>
 	</xsl:function>
 
 </xsl:stylesheet>
