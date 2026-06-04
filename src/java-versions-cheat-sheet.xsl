@@ -287,7 +287,7 @@
 							<span title="{@edition-name} Java Specification Request (link not yet available)"><xsl:value-of select="jsr[1]/@id"/></span>
 						</xsl:when>
 						<xsl:otherwise>
-							<a href="https://jcp.org/en/jsr/summary?id={jsr[1]/@id}" title="{@edition-name} Java Specification Request"><xsl:value-of select="jsr[1]/@id"/></a>
+							<a href="https://jcp.org/en/jsr/detail?id={jsr[1]/@id}" title="{@edition-name} Java Specification Request"><xsl:value-of select="jsr[1]/@id"/></a>
 						</xsl:otherwise>
 					</xsl:choose>
 				</xsl:if>
@@ -445,7 +445,7 @@
 										<span class="jv-val">JSR <xsl:value-of select="jsr[1]/@id"/></span>
 									</xsl:when>
 									<xsl:otherwise>
-										<a href="https://jcp.org/en/jsr/summary?id={jsr[1]/@id}">JSR <xsl:value-of select="jsr[1]/@id"/>: <xsl:value-of select="jsr[1]/@title"/></a>
+										<a href="https://jcp.org/en/jsr/detail?id={jsr[1]/@id}">JSR <xsl:value-of select="jsr[1]/@id"/>: <xsl:value-of select="jsr[1]/@title"/></a>
 									</xsl:otherwise>
 								</xsl:choose>
 							</li>
