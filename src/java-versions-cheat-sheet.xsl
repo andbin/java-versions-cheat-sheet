@@ -182,7 +182,14 @@
 									<span class="fa-li"><xsl:sequence select="jvcs:icon('developed-by')"/></span>
 									<xsl:text>Developed with love</xsl:text>
 									<xsl:sequence select="jvcs:icon('with-love')"/>
-									<xsl:text> for Java by Andrea Binello (“andbin”)</xsl:text>
+									<xsl:text> for Java by Andrea Binello (“andbin”), </xsl:text>
+									<em>Senior Java developer</em>
+									<xsl:text> – </xsl:text>
+									<small>
+										<abbr title="Sun Certified Programmer for the Java 2 Platform, Standard Edition 5.0">SCJP5</abbr>
+										<xsl:text>/</xsl:text>
+										<abbr title="Sun Certified Web Component Developer for the Java Platform, Enterprise Edition 5">SCWCD5</abbr>
+									</small>
 								</li>
 
 								<li class="mb-1">
