@@ -6,6 +6,7 @@
 		exclude-result-prefixes="fn xs jvcs">
 
 	<xsl:output method="html" version="5" encoding="UTF-8"/>
+	<xsl:output method="xml" encoding="UTF-8" indent="yes" name="xml-sitemap"/>
 
 	<xsl:param name="extraMeta1"/>
 	<xsl:param name="extraMeta2"/>
@@ -33,6 +34,7 @@
 	<xsl:variable name="currDateTime" select="fn:current-dateTime()"/>
 
 	<xsl:variable name="lastModifiedStr" select="fn:format-dateTime($currDateTime, '[FNn,3-3], [D01] [MNn,3-3] [Y0001] [H01]:[m01]:00 [z]', 'en', (), ())"/>
+	<xsl:variable name="lastModifiedIso" select="fn:format-dateTime($currDateTime, '[Y0001]-[M01]-[D01]T[H01]:[m01]:00[Z]', 'en', (), ())"/>
 	<xsl:variable name="cacheBusting" select="fn:format-dateTime($currDateTime, '?v=[Y01][M01][D01][H01][m01]', 'en', (), ())"/>
 
 	<xsl:variable name="oldVersion">Old version</xsl:variable>
@@ -43,6 +45,20 @@
 
 	<xsl:template match="/">
 		<xsl:apply-templates select="java-versions"/>
+
+		<!-- BEGIN SITEMAP GENERATION -->
+		<xsl:result-document href="sitemap.xml" format="xml-sitemap">
+			<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+					xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+				<url>
+					<loc><xsl:value-of select="$pageUrl"/></loc>
+					<lastmod><xsl:value-of select="$lastModifiedIso"/></lastmod>
+					<changefreq>weekly</changefreq>
+				</url>
+			</urlset>
+		</xsl:result-document>
+		<!-- END SITEMAP GENERATION -->
 	</xsl:template>
 
 
