@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java-versions update-date="2026-09-24" update-time="12:00:00" update-tz="+02:00">
+<java-versions update-date="2026-09-24" update-time="12:10:00" update-tz="+02:00">
 
 	<java id="java-1.0" lang-name="Java 1.0" edition-name="JDK 1.0" jdk-name="JDK 1.0"
 			status="old" lts="no" release-date="1996-01-23"
@@ -857,6 +857,11 @@
 	<java id="java-30" lang-name="Java 30" edition-name="Java SE 30" jdk-name="JDK 30"
 			status="future" lts="no" release-date="2028-03-21"
 			class-major="74">
+	</java>
+
+	<java id="java-31" lang-name="Java 31" edition-name="Java SE 31" jdk-name="JDK 31"
+			status="future" lts="no" release-date="2028-09-19"
+			class-major="75">
 	</java>
 
 </java-versions>
